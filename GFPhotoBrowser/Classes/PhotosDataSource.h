@@ -49,6 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (PhotoSectionInfo *)sectionInfoForSection:(NSInteger)section;
 
 - (NSArray <PHAsset *> *)fetchedObjects;
+- (PHAsset *)nextObjectWithOptions:(NSEnumerationOptions)opt forObj:(PHAsset *)asset;
 
 @end
 

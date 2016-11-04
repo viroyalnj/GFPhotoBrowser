@@ -152,4 +152,25 @@
     return [NSArray arrayWithArray:arr];
 }
 
+- (PHAsset *)nextObjectWithOptions:(NSEnumerationOptions)opt forObj:(PHAsset *)asset {
+    NSArray *arr = [self fetchedObjects];
+    NSUInteger index = [arr indexOfObject:asset];
+    if (index == NSNotFound) {
+        return nil;
+    }
+    
+    if (opt == NSEnumerationReverse) {
+        index--;
+    }
+    else {
+        index++;
+    }
+    
+    if (index >= 0 && index <= [arr count]) {
+        return arr[index];
+    }
+    
+    return nil;
+}
+
 @end
