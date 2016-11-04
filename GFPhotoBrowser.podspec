@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GFPhotoBrowser'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of GFPhotoBrowser.'
+  s.summary          = 'iOS Photos框架的简单封装'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                    一个查询数据的Data source
+                    若干相关界面
                        DESC
 
   s.homepage         = 'https://github.com/guofengld/GFPhotoBrowser'

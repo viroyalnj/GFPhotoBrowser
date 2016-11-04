@@ -143,4 +143,13 @@
     return self.sectionInfo[section];
 }
 
+- (NSArray<PHAsset *> *)fetchedObjects {
+    NSMutableArray *arr = [NSMutableArray new];
+    for (PhotoSectionInfo *item in self.sectionInfo) {
+        [arr addObjectsFromArray:item.objects];
+    }
+    
+    return [NSArray arrayWithArray:arr];
+}
+
 @end

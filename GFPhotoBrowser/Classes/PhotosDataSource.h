@@ -48,6 +48,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (PHAsset *)objectAtIndexPath:(NSIndexPath *)indexPath;
 - (PhotoSectionInfo *)sectionInfoForSection:(NSInteger)section;
 
+- (NSArray <PHAsset *> *)fetchedObjects;
+
 @end
 
 NS_ASSUME_NONNULL_END
