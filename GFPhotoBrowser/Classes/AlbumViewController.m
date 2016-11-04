@@ -8,68 +8,8 @@
 
 #import "AlbumViewController.h"
 #import "PhotosDataSource.h"
-#import <Masonry/Masonry.h>
+#import "AlbumCell.h"
 
-@interface AlbumCell : UITableViewCell
-
-@property (nonatomic, copy) PhotoSectionInfo        *sectionInfo;
-
-@property (nonatomic, strong)   UIImageView         *iconView;
-@property (nonatomic, strong)   UILabel             *labelView;
-
-+ (NSString *)cellIdentifier;
-
-@end
-
-@implementation AlbumCell
-
-+ (NSString *)cellIdentifier {
-    return NSStringFromClass(self);
-}
-
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        NSInteger padding = 1;
-        
-        self.iconView = [[UIImageView alloc] init];
-        self.iconView.contentMode = UIViewContentModeScaleAspectFill;
-        self.iconView.layer.masksToBounds = YES;
-        [self.contentView addSubview:self.iconView];
-        [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.contentView.mas_left).offset(padding);
-            make.top.equalTo(self.contentView.mas_top).offset(padding);
-            make.bottom.equalTo(self.contentView.mas_bottom).offset(padding);
-            make.width.equalTo(self.iconView.mas_height);
-        }];
-        
-        self.labelView = [[UILabel alloc] init];
-        [self.contentView addSubview:self.labelView];
-        [self.labelView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.iconView.mas_right).offset(padding);
-            make.top.equalTo(self.contentView);
-            make.right.equalTo(self.contentView);
-            make.bottom.equalTo(self.contentView);
-        }];
-    }
-    
-    return self;
-}
-
-- (void)setSectionInfo:(PhotoSectionInfo *)sectionInfo {
-    self.labelView.text = sectionInfo.title;
-    
-    PHAsset *asset = [sectionInfo.objects firstObject];
-    [[PHImageManager defaultManager] requestImageForAsset:asset
-                                               targetSize:CGSizeMake(128, 128)
-                                              contentMode:PHImageContentModeDefault
-                                                  options:nil
-                                            resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                                                self.iconView.image = result;
-                                            }];
-}
-
-
-@end
 
 @interface AlbumViewController () < PhotosDataDelegate >
 

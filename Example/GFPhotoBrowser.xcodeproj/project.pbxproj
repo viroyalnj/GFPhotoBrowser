@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		034433031DCC7443004E55EA /* PhotoSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034433021DCC7443004E55EA /* PhotoSelectViewController.m */; };
-		034433061DCC7463004E55EA /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 034433051DCC7463004E55EA /* PhotoCell.m */; };
-		0344330B1DCC74C1004E55EA /* PhotoBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034433081DCC74C1004E55EA /* PhotoBrowserNavigationController.m */; };
-		0344330C1DCC74C1004E55EA /* PhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0344330A1DCC74C1004E55EA /* PhotoBrowserViewController.m */; };
-		0344330F1DCC74D2004E55EA /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0344330E1DCC74D2004E55EA /* AlbumViewController.m */; };
 		034433111DCC757F004E55EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034433101DCC757F004E55EA /* LaunchScreen.storyboard */; };
 		079776945C3C76AA8DEF58CA /* Pods_GFPhotoBrowser_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF3E65438765A0EE95BFF5E /* Pods_GFPhotoBrowser_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -27,14 +23,6 @@
 /* Begin PBXFileReference section */
 		034433011DCC7443004E55EA /* PhotoSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSelectViewController.h; sourceTree = "<group>"; };
 		034433021DCC7443004E55EA /* PhotoSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSelectViewController.m; sourceTree = "<group>"; };
-		034433041DCC7463004E55EA /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
-		034433051DCC7463004E55EA /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
-		034433071DCC74C1004E55EA /* PhotoBrowserNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowserNavigationController.h; sourceTree = "<group>"; };
-		034433081DCC74C1004E55EA /* PhotoBrowserNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserNavigationController.m; sourceTree = "<group>"; };
-		034433091DCC74C1004E55EA /* PhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowserViewController.h; sourceTree = "<group>"; };
-		0344330A1DCC74C1004E55EA /* PhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserViewController.m; sourceTree = "<group>"; };
-		0344330D1DCC74D2004E55EA /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
-		0344330E1DCC74D2004E55EA /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
 		034433101DCC757F004E55EA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32F7C5A70D1FCA7D087ACFAE /* GFPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GFPhotoBrowser.podspec; path = ../GFPhotoBrowser.podspec; sourceTree = "<group>"; };
 		3A73FAE4EB28F4723A321BD3 /* Pods-GFPhotoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,14 +121,6 @@
 				6003F5A6195388D20070C39A /* ViewController.m */,
 				034433011DCC7443004E55EA /* PhotoSelectViewController.h */,
 				034433021DCC7443004E55EA /* PhotoSelectViewController.m */,
-				034433041DCC7463004E55EA /* PhotoCell.h */,
-				034433051DCC7463004E55EA /* PhotoCell.m */,
-				034433071DCC74C1004E55EA /* PhotoBrowserNavigationController.h */,
-				034433081DCC74C1004E55EA /* PhotoBrowserNavigationController.m */,
-				034433091DCC74C1004E55EA /* PhotoBrowserViewController.h */,
-				0344330A1DCC74C1004E55EA /* PhotoBrowserViewController.m */,
-				0344330D1DCC74D2004E55EA /* AlbumViewController.h */,
-				0344330E1DCC74D2004E55EA /* AlbumViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				034433101DCC757F004E55EA /* LaunchScreen.storyboard */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -311,12 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0344330F1DCC74D2004E55EA /* AlbumViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
-				034433061DCC7463004E55EA /* PhotoCell.m in Sources */,
-				0344330C1DCC74C1004E55EA /* PhotoBrowserViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* ViewController.m in Sources */,
-				0344330B1DCC74C1004E55EA /* PhotoBrowserNavigationController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				034433031DCC7443004E55EA /* PhotoSelectViewController.m in Sources */,
 			);
