@@ -154,7 +154,7 @@
 
 - (PHAsset *)nextObjectWithOptions:(NSEnumerationOptions)opt forObj:(PHAsset *)asset {
     NSArray *arr = [self fetchedObjects];
-    NSUInteger index = [arr indexOfObject:asset];
+    NSInteger index = [arr indexOfObject:asset];
     if (index == NSNotFound) {
         return nil;
     }
