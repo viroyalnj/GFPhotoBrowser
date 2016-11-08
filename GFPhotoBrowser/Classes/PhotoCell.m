@@ -29,37 +29,37 @@
         [self.contentView addSubview:self.imageView];
         
         self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
-        [self.imageView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
-                                                                  attribute:NSLayoutAttributeLeft
-                                                                  relatedBy:NSLayoutRelationEqual
-                                                                     toItem:self.contentView
-                                                                  attribute:NSLayoutAttributeLeft
-                                                                 multiplier:1.0
-                                                                    constant:1]];
+        [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
+                                                                     attribute:NSLayoutAttributeLeft
+                                                                     relatedBy:NSLayoutRelationEqual
+                                                                        toItem:self.contentView
+                                                                     attribute:NSLayoutAttributeLeft
+                                                                    multiplier:1.0
+                                                                      constant:1]];
         
-        [self.imageView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
-                                                                   attribute:NSLayoutAttributeTop
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:self.contentView
-                                                                   attribute:NSLayoutAttributeTop
-                                                                  multiplier:1.0
-                                                                    constant:1]];
+        [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
+                                                                     attribute:NSLayoutAttributeTop
+                                                                     relatedBy:NSLayoutRelationEqual
+                                                                        toItem:self.contentView
+                                                                     attribute:NSLayoutAttributeTop
+                                                                    multiplier:1.0
+                                                                      constant:1]];
         
-        [self.imageView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
-                                                                   attribute:NSLayoutAttributeRight
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:self.contentView
-                                                                   attribute:NSLayoutAttributeRight
-                                                                  multiplier:1.0
-                                                                    constant:-1]];
+        [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
+                                                                     attribute:NSLayoutAttributeRight
+                                                                     relatedBy:NSLayoutRelationEqual
+                                                                        toItem:self.contentView
+                                                                     attribute:NSLayoutAttributeRight
+                                                                    multiplier:1.0
+                                                                      constant:-1]];
         
-        [self.imageView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
-                                                                   attribute:NSLayoutAttributeBottom
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:self.contentView
-                                                                   attribute:NSLayoutAttributeBottom
-                                                                  multiplier:1.0
-                                                                    constant:-1]];
+        [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
+                                                                     attribute:NSLayoutAttributeBottom
+                                                                     relatedBy:NSLayoutRelationEqual
+                                                                        toItem:self.contentView
+                                                                     attribute:NSLayoutAttributeBottom
+                                                                    multiplier:1.0
+                                                                      constant:-1]];
     }
     
     return self;

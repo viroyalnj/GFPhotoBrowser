@@ -24,52 +24,97 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         NSInteger padding = 1;
+        UIView *superView = self.contentView;
         
         self.iconView = [[UIImageView alloc] init];
         self.iconView.contentMode = UIViewContentModeScaleAspectFill;
         self.iconView.layer.masksToBounds = YES;
-        [self.contentView addSubview:self.iconView];
+        [superView addSubview:self.iconView];
         
         self.iconView.translatesAutoresizingMaskIntoConstraints = NO;
+        [superView addConstraint:[NSLayoutConstraint constraintWithItem:self.iconView
+                                                              attribute:NSLayoutAttributeLeft
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:superView
+                                                              attribute:NSLayoutAttributeLeft
+                                                             multiplier:1.0
+                                                               constant:padding]];
         
-        [self.imageView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
-                                                                   attribute:NSLayoutAttributeLeft
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:self.contentView
-                                                                   attribute:NSLayoutAttributeLeft
-                                                                  multiplier:1.0
-                                                                    constant:padding]];
+        [superView addConstraint:[NSLayoutConstraint constraintWithItem:self.iconView
+                                                              attribute:NSLayoutAttributeTop
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:superView
+                                                              attribute:NSLayoutAttributeTop
+                                                             multiplier:1.0
+                                                               constant:padding]];
         
-        [self.imageView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
-                                                                   attribute:NSLayoutAttributeTop
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:self.contentView
-                                                                   attribute:NSLayoutAttributeTop
-                                                                  multiplier:1.0
-                                                                    constant:padding]];
+        [superView addConstraint:[NSLayoutConstraint constraintWithItem:self.iconView
+                                                              attribute:NSLayoutAttributeBottom
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:superView
+                                                              attribute:NSLayoutAttributeBottom
+                                                             multiplier:1.0
+                                                               constant:-padding]];
         
-        [self.imageView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
-                                                                   attribute:NSLayoutAttributeBottom
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:self.contentView
-                                                                   attribute:NSLayoutAttributeBottom
-                                                                  multiplier:1.0
-                                                                    constant:padding]];
+        [superView addConstraint:[NSLayoutConstraint constraintWithItem:self.iconView
+                                                              attribute:NSLayoutAttributeWidth
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:self.iconView
+                                                              attribute:NSLayoutAttributeHeight
+                                                             multiplier:1.0
+                                                               constant:0]];
         
-        [self.imageView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageView
-                                                                   attribute:NSLayoutAttributeWidth
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:self.imageView
-                                                                   attribute:NSLayoutAttributeWidth
-                                                                  multiplier:1.0
-                                                                    constant:0]];
+        self.labelView = [[UILabel alloc] init];
+        [superView addSubview:self.labelView];
+        
+        self.labelView.translatesAutoresizingMaskIntoConstraints = NO;
+        [superView addConstraint:[NSLayoutConstraint constraintWithItem:self.labelView
+                                                                    attribute:NSLayoutAttributeLeft
+                                                                    relatedBy:NSLayoutRelationEqual
+                                                                       toItem:self.iconView
+                                                                    attribute:NSLayoutAttributeRight
+                                                                   multiplier:1.0
+                                                                      constant:4]];
+        
+        [superView addConstraint:[NSLayoutConstraint constraintWithItem:self.labelView
+                                                              attribute:NSLayoutAttributeTop
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:superView
+                                                              attribute:NSLayoutAttributeTop
+                                                             multiplier:1.0
+                                                               constant:padding]];
+        
+        [superView addConstraint:[NSLayoutConstraint constraintWithItem:self.labelView
+                                                              attribute:NSLayoutAttributeBottom
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:superView
+                                                              attribute:NSLayoutAttributeBottom
+                                                             multiplier:1.0
+                                                               constant:-padding]];
+        
+        [superView addConstraint:[NSLayoutConstraint constraintWithItem:self.labelView
+                                                              attribute:NSLayoutAttributeRight
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:superView
+                                                              attribute:NSLayoutAttributeRight
+                                                             multiplier:1.0
+                                                               constant:-padding]];
     }
     
     return self;
 }
 
 - (void)setSectionInfo:(PhotoSectionInfo *)sectionInfo {
-    self.labelView.text = sectionInfo.title;
+    NSAttributedString *name = [[NSAttributedString alloc] initWithString:sectionInfo.title
+                                                               attributes:@{ NSFontAttributeName : [UIFont boldSystemFontOfSize:16],
+                                                                             NSForegroundColorAttributeName : [UIColor blackColor]}];
+    
+    NSAttributedString *number = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" (%ld)", sectionInfo.numberOfObjects]
+                                                                 attributes:@{ NSFontAttributeName : [UIFont systemFontOfSize:12],
+                                                                               NSForegroundColorAttributeName : [UIColor darkTextColor]}];
+    NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithAttributedString:name];
+    [string appendAttributedString:number];
+    self.labelView.attributedText = string;
     
     PHAsset *asset = [sectionInfo.objects firstObject];
     [[PHImageManager defaultManager] requestImageForAsset:asset

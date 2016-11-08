@@ -29,36 +29,13 @@
 
 @interface PhotosDataSource ()
 
-@property (nonatomic, strong)   PHPhotoLibrary              *photoLibrary;
+@property (nonatomic, strong)   PHPhotoLibrary                      *photoLibrary;
 
-@property (nonatomic, strong)   NSMutableArray<PhotoSectionInfo *>   *sectionInfo;
+@property (nonatomic, strong)   NSMutableArray<PhotoSectionInfo *>  *sectionInfo;
 
 @end
 
 @implementation PhotosDataSource
-
-- (instancetype)initWithType:(PHAssetCollectionType)type {
-    return [self initWithType:type
-                      subType:PHAssetCollectionSubtypeAny];
-}
-
-- (instancetype)initWithType:(PHAssetCollectionType)type
-                     subType:(PHAssetCollectionSubtype)subType {
-    if (self = [super init]) {
-        
-        self.photoLibrary = [PHPhotoLibrary sharedPhotoLibrary];
-        
-        [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self dataInitWillBegin];
-                [self fetchDataType:type subType:subType];
-                [self dataInitDidFinish];
-            });
-        }];
-    }
-    
-    return self;
-}
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -68,9 +45,39 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self dataInitWillBegin];
                 
-                [self fetchDataType:PHAssetCollectionTypeSmartAlbum subType:PHAssetCollectionSubtypeAny];
-                [self fetchDataType:PHAssetCollectionTypeAlbum subType:PHAssetCollectionSubtypeAny];
+                [self fetchDataType:PHAssetCollectionTypeSmartAlbum subType:PHAssetCollectionSubtypeAny mediaType:PHAssetMediaTypeUnknown];
+                [self fetchDataType:PHAssetCollectionTypeAlbum subType:PHAssetCollectionSubtypeAny mediaType:PHAssetMediaTypeUnknown];
                 
+                [self dataInitDidFinish];
+            });
+        }];
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithType:(PHAssetCollectionType)type {
+    return [self initWithType:type
+                      subType:PHAssetCollectionSubtypeAny];
+}
+
+- (instancetype)initWithType:(PHAssetCollectionType)type
+                     subType:(PHAssetCollectionSubtype)subType {
+    return [self initWithType:type
+                      subType:subType
+                    mediaType:PHAssetMediaTypeUnknown];
+}
+
+- (instancetype)initWithType:(PHAssetCollectionType)type
+                     subType:(PHAssetCollectionSubtype)subType
+                   mediaType:(PHAssetMediaType)mediaType {
+    if (self = [super init]) {
+        self.photoLibrary = [PHPhotoLibrary sharedPhotoLibrary];
+        
+        [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self dataInitWillBegin];
+                [self fetchDataType:type subType:subType mediaType:mediaType];
                 [self dataInitDidFinish];
             });
         }];
@@ -89,7 +96,9 @@
     [self.delegate dataInitDidFinish];
 }
 
-- (void)fetchDataType:(PHAssetCollectionType)type subType:(PHAssetCollectionSubtype)subType {
+- (void)fetchDataType:(PHAssetCollectionType)type
+              subType:(PHAssetCollectionSubtype)subType
+            mediaType:(PHAssetMediaType)mediaType{
     PHFetchOptions *options = [[PHFetchOptions alloc] init];
     options.includeHiddenAssets = NO;
     

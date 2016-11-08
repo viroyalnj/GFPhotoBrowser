@@ -39,8 +39,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id <PhotosDataDelegate>   delegate;
 
 - (instancetype)initWithType:(PHAssetCollectionType)type;
+
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType;
+
+- (instancetype)initWithType:(PHAssetCollectionType)type
+                     subType:(PHAssetCollectionSubtype)subType
+                   mediaType:(PHAssetMediaType)mediaType;
 
 - (NSInteger)numberOfSections;
 - (NSInteger)numberOfItemsInSection:(NSInteger)section;

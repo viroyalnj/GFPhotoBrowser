@@ -73,15 +73,23 @@
 
 - (void)browserNavi:(PhotoBrowserNavigationController *)nav
          selectItem:(PHAsset *)asset {
+    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+    options.networkAccessAllowed = YES;
+    
     __weak typeof(self) wself = self;
     [[PHImageManager defaultManager] requestImageForAsset:asset
                                                targetSize:CGSizeMake(1024, 1024)
                                               contentMode:PHImageContentModeDefault
-                                                  options:nil
+                                                  options:options
                                             resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                                                NSLog(@"image size: %@", NSStringFromCGSize(result.size));
-                                                wself.imageView.image = result;
-                                                wself.imageView.backgroundColor = [UIColor clearColor];
+                                                if (result) {
+                                                    NSLog(@"image size: %@", NSStringFromCGSize(result.size));
+                                                    wself.imageView.image = result;
+                                                    wself.imageView.backgroundColor = [UIColor clearColor];
+                                                }
+                                                else {
+                                                    wself.imageView.backgroundColor = [UIColor purpleColor];
+                                                }
                                             }];
 }
 
