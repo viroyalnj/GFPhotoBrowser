@@ -109,7 +109,7 @@
                                                                attributes:@{ NSFontAttributeName : [UIFont boldSystemFontOfSize:16],
                                                                              NSForegroundColorAttributeName : [UIColor blackColor]}];
     
-    NSAttributedString *number = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" (%ld)", sectionInfo.numberOfObjects]
+    NSAttributedString *number = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" (%ld)", (long)sectionInfo.numberOfObjects]
                                                                  attributes:@{ NSFontAttributeName : [UIFont systemFontOfSize:12],
                                                                                NSForegroundColorAttributeName : [UIColor darkTextColor]}];
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithAttributedString:name];
