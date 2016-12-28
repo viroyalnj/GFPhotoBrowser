@@ -18,5 +18,6 @@ before_install:
  - gem install cocoapods # Since Travis is not always on latest version
  - pod install --verbose --project-directory=Example
 script:
-- xcodebuild clean -destination "platform=iOS Simulator,OS=$OS,name=$name" -workspace Example/GFPhotoBrowser.xcworkspace -scheme GFPhotoBrowser-Example -sdk iphonesimulator10.1 ONLY_ACTIVE_ARCH=NO
+- xcodebuild clean -workspace Example/GFPhotoBrowser.xcworkspace -scheme GFPhotoBrowser-Example
+- xcodebuild -destination "platform=iOS Simulator,OS=10.1,name=iPhone 6" -workspace Example/GFPhotoBrowser.xcworkspace -scheme GFPhotoBrowser-Example -sdk iphonesimulator10.1 ONLY_ACTIVE_ARCH=NO
 - pod lib lint GFPhotoBrowser.podspec

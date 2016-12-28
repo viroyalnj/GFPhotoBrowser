@@ -47,6 +47,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6BDECC104523377EB7C10A41 /* Pods-GFPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
 		83FCCC9FE2B25C13071E29AB /* Pods-GFPhotoBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Tests/Pods-GFPhotoBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEA7AE5E1E13425500C44636 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		C9F13C85DE8DDB2D83E11F46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E2901D9361B508FB936C373D /* Pods-GFPhotoBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Tests/Pods-GFPhotoBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FDF3E65438765A0EE95BFF5E /* Pods_GFPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GFPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +166,7 @@
 				32F7C5A70D1FCA7D087ACFAE /* GFPhotoBrowser.podspec */,
 				FE0D4109DDAAB50CAE8B4250 /* README.md */,
 				C9F13C85DE8DDB2D83E11F46 /* LICENSE */,
+				AEA7AE5E1E13425500C44636 /* .travis.yml */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
