@@ -1,6 +1,6 @@
 {
   "name": "GFPhotoBrowser",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "summary": "iOS Photos框架的简单封装",
   "description": "一个查询数据的Data source\n若干相关界面",
   "homepage": "https://github.com/guofengld/GFPhotoBrowser",
@@ -13,12 +13,13 @@
   },
   "source": {
     "git": "https://github.com/guofengld/GFPhotoBrowser.git",
-    "tag": "0.1.1"
+    "tag": "0.1.3"
   },
+  "social_media_url": "https://twitter.com/guofengjd",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "GFPhotoBrowser/Classes/**/*",
+  "source_files": "GFPhotoBrowser/**/*",
   "subspecs": [
     {
       "name": "Models",
