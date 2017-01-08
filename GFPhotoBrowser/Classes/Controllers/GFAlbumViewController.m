@@ -1,28 +1,28 @@
 //
-//  AlbumViewController.m
+//  GFAlbumViewController.m
 //  Photos
 //
 //  Created by 熊国锋 on 2016/11/4.
 //  Copyright © 2016年 viroyal. All rights reserved.
 //
 
-#import "AlbumViewController.h"
-#import "PhotosDataSource.h"
-#import "AlbumCell.h"
+#import "GFAlbumViewController.h"
+#import "GFPhotosDataSource.h"
+#import "GFAlbumCell.h"
 
 
-@interface AlbumViewController () < PhotosDataDelegate >
+@interface GFAlbumViewController () < PhotosDataDelegate >
 
-@property (nonatomic, strong) PhotosDataSource          *dataSource;
+@property (nonatomic, strong) GFPhotosDataSource          *dataSource;
 
 @end
 
-@implementation AlbumViewController
+@implementation GFAlbumViewController
 
 - (instancetype)init {
     if (self = [super initWithStyle:UITableViewStylePlain]) {
-        [self.tableView registerClass:[AlbumCell class]
-               forCellReuseIdentifier:[AlbumCell cellIdentifier]];
+        [self.tableView registerClass:[GFAlbumCell class]
+               forCellReuseIdentifier:[GFAlbumCell cellIdentifier]];
     }
     
     return self;
@@ -32,7 +32,7 @@
     [super viewDidLoad];
     self.title = @"Photos";
     
-    self.dataSource = [[PhotosDataSource alloc] init];
+    self.dataSource = [[GFPhotosDataSource alloc] init];
     self.dataSource.delegate = self;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Cancel"
@@ -73,14 +73,14 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[AlbumCell cellIdentifier]
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[GFAlbumCell cellIdentifier]
                                                             forIndexPath:indexPath];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView
-  willDisplayCell:(AlbumCell *)cell
+  willDisplayCell:(GFAlbumCell *)cell
 forRowAtIndexPath:(NSIndexPath *)indexPath {
     cell.sectionInfo = [self.dataSource sectionInfoForSection:indexPath.row];
 }

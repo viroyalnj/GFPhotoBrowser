@@ -1,20 +1,20 @@
 //
-//  PhotoCell.m
+//  GFPhotoCell.m
 //  Photos
 //
 //  Created by 熊国锋 on 2016/11/3.
 //  Copyright © 2016年 guofengld. All rights reserved.
 //
 
-#import "PhotoCell.h"
+#import "GFPhotoCell.h"
 
-@interface PhotoCell ()
+@interface GFPhotoCell ()
 
 @property (nonatomic, strong)   UIImageView     *imageView;
 
 @end
 
-@implementation PhotoCell
+@implementation GFPhotoCell
 
 + (NSString *)cellIdentifier {
     return NSStringFromClass(self);

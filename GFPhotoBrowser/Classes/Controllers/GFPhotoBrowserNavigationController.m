@@ -1,29 +1,29 @@
 //
-//  PhotoBrowserNavigationController.m
+//  GFPhotoBrowserNavigationController.m
 //  Photos
 //
 //  Created by 熊国锋 on 2016/11/4.
 //  Copyright © 2016年 viroyal. All rights reserved.
 //
 
-#import "PhotoBrowserNavigationController.h"
-#import "AlbumViewController.h"
-#import "PhotoBrowserViewController.h"
+#import "GFPhotoBrowserNavigationController.h"
+#import "GFAlbumViewController.h"
+#import "GFPhotoBrowserViewController.h"
 
-@interface PhotoBrowserNavigationController () < AlbumViewDelegate, PhotoBrowserDelegate >
+@interface GFPhotoBrowserNavigationController () < AlbumViewDelegate, PhotoBrowserDelegate >
 
-@property (nonatomic, strong) PhotoBrowserViewController        *browserView;
+@property (nonatomic, strong) GFPhotoBrowserViewController        *browserView;
 
 @end
 
-@implementation PhotoBrowserNavigationController
+@implementation GFPhotoBrowserNavigationController
 
 @dynamic delegate;
 
 - (instancetype)initWithType:(PHAssetCollectionType)type subType:(PHAssetCollectionSubtype)subType {
-    AlbumViewController *album = [[AlbumViewController alloc] init];
+    GFAlbumViewController *album = [[GFAlbumViewController alloc] init];
     if (self = [super initWithRootViewController:album]) {
-        self.browserView = [[PhotoBrowserViewController alloc] initWithType:PHAssetCollectionTypeSmartAlbum
+        self.browserView = [[GFPhotoBrowserViewController alloc] initWithType:PHAssetCollectionTypeSmartAlbum
                                                                     subType:PHAssetCollectionSubtypeSmartAlbumUserLibrary];
         
         album.delegate = self;
@@ -36,8 +36,8 @@
 
 #pragma mark - AlbumViewDelegate
 
-- (void)album:(AlbumViewController *)album selectSection:(PhotoSectionInfo *)sectionInfo {
-    self.browserView = [[PhotoBrowserViewController alloc] initWithType:sectionInfo.type
+- (void)album:(GFAlbumViewController *)album selectSection:(PhotoSectionInfo *)sectionInfo {
+    self.browserView = [[GFPhotoBrowserViewController alloc] initWithType:sectionInfo.type
                                                                 subType:sectionInfo.subType];
     self.browserView.delegate = self;
     [self pushViewController:self.browserView animated:YES];
@@ -45,7 +45,7 @@
 
 #pragma mark - PhotoBrowserDelegate
 
-- (void)browser:(PhotoBrowserViewController *)browser selectItem:(PHAsset *)asset {
+- (void)browser:(GFPhotoBrowserViewController *)browser selectItem:(PHAsset *)asset {
     [self dismissViewControllerAnimated:YES completion:^{
         [self.delegate browserNavi:self selectItem:asset];
     }];

@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-#import "PhotosDataSource.h"
+#import "GFPhotosDataSource.h"
 
 @interface ViewController : UICollectionViewController
 

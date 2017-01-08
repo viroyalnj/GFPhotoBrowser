@@ -1,24 +1,24 @@
 //
-//  PhotoBrowserViewController.m
+//  GFPhotoBrowserViewController.m
 //  Photos
 //
 //  Created by 熊国锋 on 2016/11/4.
 //  Copyright © 2016年 guofengld. All rights reserved.
 //
 
-#import "PhotoBrowserViewController.h"
-#import "PhotoCell.h"
-#import "PhotosDataSource.h"
+#import "GFPhotoBrowserViewController.h"
+#import "GFPhotoCell.h"
+#import "GFPhotosDataSource.h"
 
-@interface PhotoBrowserViewController () < PhotosDataDelegate >
+@interface GFPhotoBrowserViewController () < PhotosDataDelegate >
 
 @property (nonatomic, assign) PHAssetCollectionType     type;
 @property (nonatomic, assign) PHAssetCollectionSubtype  subType;
-@property (nonatomic, strong) PhotosDataSource          *dataSource;
+@property (nonatomic, strong) GFPhotosDataSource          *dataSource;
 
 @end
 
-@implementation PhotoBrowserViewController
+@implementation GFPhotoBrowserViewController
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType {
@@ -30,8 +30,8 @@
         self.subType = subType;
         self.collectionView.backgroundColor = [UIColor whiteColor];
         
-        [self.collectionView registerClass:[PhotoCell class]
-                forCellWithReuseIdentifier:[PhotoCell cellIdentifier]];
+        [self.collectionView registerClass:[GFPhotoCell class]
+                forCellWithReuseIdentifier:[GFPhotoCell cellIdentifier]];
     }
     
     return self;
@@ -42,7 +42,7 @@
     
     self.title = @"Photo browser";
     
-    self.dataSource = [[PhotosDataSource alloc] initWithType:self.type
+    self.dataSource = [[GFPhotosDataSource alloc] initWithType:self.type
                                                      subType:self.subType];
     self.dataSource.delegate = self;
     
@@ -84,7 +84,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[PhotoCell cellIdentifier]
+    GFPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[GFPhotoCell cellIdentifier]
                                                                 forIndexPath:indexPath];
     
     return cell;
@@ -93,7 +93,7 @@
 #pragma mark <UICollectionViewDelegate>
 
 - (void)collectionView:(UICollectionView *)collectionView
-       willDisplayCell:(PhotoCell *)cell
+       willDisplayCell:(GFPhotoCell *)cell
     forItemAtIndexPath:(NSIndexPath *)indexPath {
     cell.asset = [self.dataSource objectAtIndexPath:indexPath];
 }

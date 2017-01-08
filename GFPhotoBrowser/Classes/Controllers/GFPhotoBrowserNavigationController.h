@@ -1,5 +1,5 @@
 //
-//  PhotoBrowserNavigationController.h
+//  GFPhotoBrowserNavigationController.h
 //  Photos
 //
 //  Created by 熊国锋 on 2016/11/4.
@@ -9,15 +9,15 @@
 #import <UIKit/UIKit.h>
 #import <Photos/Photos.h>
 
-@class PhotoBrowserNavigationController;
+@class GFPhotoBrowserNavigationController;
 
 @protocol PhotoBrowserNavigationDelegate <UINavigationControllerDelegate>
 
-- (void)browserNavi:(PhotoBrowserNavigationController *)nav selectItem:(PHAsset *)asset;
+- (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectItem:(PHAsset *)asset;
 
 @end
 
-@interface PhotoBrowserNavigationController : UINavigationController
+@interface GFPhotoBrowserNavigationController : UINavigationController
 
 @property (nonatomic, weak) id <PhotoBrowserNavigationDelegate> delegate;
 

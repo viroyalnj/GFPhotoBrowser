@@ -8,8 +8,8 @@
 
 
 #import "ViewController.h"
-#import "PhotosDataSource.h"
-#import "PhotoCell.h"
+#import "GFPhotosDataSource.h"
+#import "GFPhotoCell.h"
 #import <Masonry/Masonry.h>
 
 @interface ImageHeader : UICollectionReusableView
@@ -69,7 +69,7 @@
 @interface ViewController () < PhotosDataDelegate >
 
 @property (nonatomic, assign) PHAssetCollectionType     type;
-@property (nonatomic, strong) PhotosDataSource          *dataSource;
+@property (nonatomic, strong) GFPhotosDataSource          *dataSource;
 
 @end
 
@@ -84,8 +84,8 @@
         self.type = type;
         self.collectionView.backgroundColor = [UIColor whiteColor];
         
-        [self.collectionView registerClass:[PhotoCell class]
-                forCellWithReuseIdentifier:[PhotoCell cellIdentifier]];
+        [self.collectionView registerClass:[GFPhotoCell class]
+                forCellWithReuseIdentifier:[GFPhotoCell cellIdentifier]];
         
         [self.collectionView registerClass:[ImageHeader class]
                 forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
@@ -112,7 +112,7 @@
             break;
     }
     
-    self.dataSource = [[PhotosDataSource alloc] initWithType:self.type];
+    self.dataSource = [[GFPhotosDataSource alloc] initWithType:self.type];
     self.dataSource.delegate = self;
 }
 
@@ -148,7 +148,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    PhotoCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:[PhotoCell cellIdentifier]
+    GFPhotoCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:[GFPhotoCell cellIdentifier]
                                                                  forIndexPath:indexPath];
     
     return cell;
@@ -165,7 +165,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView
-       willDisplayCell:(PhotoCell *)cell
+       willDisplayCell:(GFPhotoCell *)cell
     forItemAtIndexPath:(NSIndexPath *)indexPath {
     cell.asset = [self.dataSource objectAtIndexPath:indexPath];
 }

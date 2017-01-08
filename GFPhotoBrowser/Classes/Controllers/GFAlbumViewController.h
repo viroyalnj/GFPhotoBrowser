@@ -1,5 +1,5 @@
 //
-//  AlbumViewController.h
+//  GFAlbumViewController.h
 //  Photos
 //
 //  Created by 熊国锋 on 2016/11/4.
@@ -7,17 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PhotosDataSource.h"
+#import "GFPhotosDataSource.h"
 
-@class AlbumViewController;
+@class GFAlbumViewController;
 
 @protocol AlbumViewDelegate <NSObject>
 
-- (void)album:(AlbumViewController *)album selectSection:(PhotoSectionInfo *)sectionInfo;
+- (void)album:(GFAlbumViewController *)album selectSection:(PhotoSectionInfo *)sectionInfo;
 
 @end
 
-@interface AlbumViewController : UITableViewController
+@interface GFAlbumViewController : UITableViewController
 
 @property (nonatomic, weak) id<AlbumViewDelegate>   delegate;
 

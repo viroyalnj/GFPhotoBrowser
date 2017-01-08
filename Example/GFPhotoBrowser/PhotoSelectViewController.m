@@ -7,10 +7,10 @@
 //
 
 #import "PhotoSelectViewController.h"
-#import "PhotoBrowserViewController.h"
-#import "AlbumViewController.h"
+#import "GFPhotoBrowserViewController.h"
+#import "GFAlbumViewController.h"
 #import <Masonry/Masonry.h>
-#import "PhotoBrowserNavigationController.h"
+#import "GFPhotoBrowserNavigationController.h"
 
 @interface PhotoSelectViewController () < PhotoBrowserNavigationDelegate >
 
@@ -55,7 +55,7 @@
 }
 
 - (void)selectPhoto {
-    PhotoBrowserNavigationController *nav = [[PhotoBrowserNavigationController alloc] initWithType:PHAssetCollectionTypeSmartAlbum
+    GFPhotoBrowserNavigationController *nav = [[GFPhotoBrowserNavigationController alloc] initWithType:PHAssetCollectionTypeSmartAlbum
                                                                                            subType:PHAssetCollectionSubtypeSmartAlbumUserLibrary];
     nav.delegate = self;
     
@@ -71,7 +71,7 @@
 
 #pragma mark - PhotoBrowserNavigationDelegate
 
-- (void)browserNavi:(PhotoBrowserNavigationController *)nav
+- (void)browserNavi:(GFPhotoBrowserNavigationController *)nav
          selectItem:(PHAsset *)asset {
     PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
     options.networkAccessAllowed = YES;

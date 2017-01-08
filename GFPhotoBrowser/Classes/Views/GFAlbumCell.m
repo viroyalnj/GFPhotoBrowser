@@ -1,21 +1,21 @@
 //
-//  AlbumCell.m
+//  GFAlbumCell.m
 //  Pods
 //
 //  Created by 熊国锋 on 2016/11/4.
 //
 //
 
-#import "AlbumCell.h"
+#import "GFAlbumCell.h"
 
-@interface AlbumCell ()
+@interface GFAlbumCell ()
 
 @property (nonatomic, strong)   UIImageView         *iconView;
 @property (nonatomic, strong)   UILabel             *labelView;
 
 @end
 
-@implementation AlbumCell
+@implementation GFAlbumCell
 
 + (NSString *)cellIdentifier {
     return NSStringFromClass(self);

@@ -1,5 +1,5 @@
 //
-//  AlbumCell.h
+//  GFAlbumCell.h
 //  Pods
 //
 //  Created by 熊国锋 on 2016/11/4.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PhotosDataSource.h"
+#import "GFPhotosDataSource.h"
 
-@interface AlbumCell : UITableViewCell
+@interface GFAlbumCell : UITableViewCell
 
 @property (nonatomic, copy) PhotoSectionInfo        *sectionInfo;
 

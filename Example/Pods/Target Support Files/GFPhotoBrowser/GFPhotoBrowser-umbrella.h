@@ -2,12 +2,13 @@
 #import <UIKit/UIKit.h>
 #endif
 
-#import "AlbumCell.h"
-#import "AlbumViewController.h"
-#import "PhotoBrowserNavigationController.h"
-#import "PhotoBrowserViewController.h"
-#import "PhotoCell.h"
-#import "PhotosDataSource.h"
+#import "GFAlbumViewController.h"
+#import "GFPhotoBrowserNavigationController.h"
+#import "GFPhotoBrowserViewController.h"
+#import "GFPhotoBrowser.h"
+#import "GFPhotosDataSource.h"
+#import "GFAlbumCell.h"
+#import "GFPhotoCell.h"
 
 FOUNDATION_EXPORT double GFPhotoBrowserVersionNumber;
 FOUNDATION_EXPORT const unsigned char GFPhotoBrowserVersionString[];

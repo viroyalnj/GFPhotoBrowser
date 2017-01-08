@@ -1,5 +1,5 @@
 //
-//  PhotoBrowserViewController.h
+//  GFPhotoBrowserViewController.h
 //  Photos
 //
 //  Created by 熊国锋 on 2016/11/4.
@@ -9,15 +9,15 @@
 #import <UIKit/UIKit.h>
 #import <Photos/Photos.h>
 
-@class PhotoBrowserViewController;
+@class GFPhotoBrowserViewController;
 
 @protocol PhotoBrowserDelegate <NSObject>
 
-- (void)browser:(PhotoBrowserViewController *)browser selectItem:(PHAsset *)asset;
+- (void)browser:(GFPhotoBrowserViewController *)browser selectItem:(PHAsset *)asset;
 
 @end
 
-@interface PhotoBrowserViewController : UICollectionViewController
+@interface GFPhotoBrowserViewController : UICollectionViewController
 
 @property (nonatomic, weak) id <PhotoBrowserDelegate>   delegate;
 

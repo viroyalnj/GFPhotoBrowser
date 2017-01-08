@@ -1,12 +1,12 @@
 //
-//  PhotosDataSource.m
+//  GFPhotosDataSource.m
 //  Photos
 //
 //  Created by 熊国锋 on 2016/11/3.
 //  Copyright © 2016年 guofengld. All rights reserved.
 //
 
-#import "PhotosDataSource.h"
+#import "GFPhotosDataSource.h"
 
 @implementation PhotoSectionInfo
 
@@ -25,9 +25,9 @@
 
 @end
 
-#pragma mark - PhotosDataSource
+#pragma mark - GFPhotosDataSource
 
-@interface PhotosDataSource ()
+@interface GFPhotosDataSource ()
 
 @property (nonatomic, strong)   PHPhotoLibrary                      *photoLibrary;
 
@@ -35,7 +35,7 @@
 
 @end
 
-@implementation PhotosDataSource
+@implementation GFPhotosDataSource
 
 - (instancetype)init {
     if (self = [super init]) {
