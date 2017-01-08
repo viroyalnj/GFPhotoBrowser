@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GFPhotoBrowser'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'iOS Photos框架的简单封装'
 
 # This description is used to generate tags and improve search results.
@@ -40,9 +40,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-
-  s.subspec 'Models' do |ss|
-    ss.source_files = 'GFPhotoBrowser/GFPhotoDataSource.{h,m}'
-  end
 
 end
