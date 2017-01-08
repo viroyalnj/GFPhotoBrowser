@@ -18,5 +18,11 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "GFPhotoBrowser/Classes/**/*"
+  "source_files": "GFPhotoBrowser/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "Models",
+      "source_files": "GFPhotoBrowser/GFPhotoDataSource.{h,m}"
+    }
+  ]
 }

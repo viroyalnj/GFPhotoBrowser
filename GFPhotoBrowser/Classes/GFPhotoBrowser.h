@@ -9,7 +9,7 @@
 #ifndef GFPhotoBrowser_h
 #define GFPhotoBrowser_h
 
-#import "GFPhotosDataSource"
-#import "GFPhotoBrowserViewController"
+#import "GFPhotosDataSource.h"
+#import "GFPhotoBrowserViewController.h"
 
 #endif /* GFPhotoBrowser_h */

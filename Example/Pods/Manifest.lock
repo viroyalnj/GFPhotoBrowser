@@ -1,5 +1,7 @@
 PODS:
-  - GFPhotoBrowser (0.1.1)
+  - GFPhotoBrowser (0.1.1):
+    - GFPhotoBrowser/Models (= 0.1.1)
+  - GFPhotoBrowser/Models (0.1.1)
   - Masonry (1.0.2)
 
 DEPENDENCIES:
@@ -11,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  GFPhotoBrowser: 3823f527f13cd8971e8c2d043b44a1e730c31cc7
+  GFPhotoBrowser: fe3c7f7619239e5c5a8ab4b34990df966fe19cbf
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
 
 PODFILE CHECKSUM: 46ddeed8652f82b6c321b4c7a4d322014983b1c3

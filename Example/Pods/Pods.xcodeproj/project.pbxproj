@@ -10,25 +10,25 @@
 		04A7D6AADAB213CE7D26F8EAD2F87536 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AD04C760F0EB4FE7B23D85D56145A97F /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		068EF598E554EC57038ACFB89CC2C47A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FF217FE4E512E3883BAD867868CB42D9 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		091D17D5D8F832D28546A72B788CF0AE /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0183E721D7FD6AF70B4A911C1B1B95 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0CAB93FE559745D02FC624611C9E7C31 /* GFPhotoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 536D7A852BEB06D3EA957CEF6129470B /* GFPhotoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CAB93FE559745D02FC624611C9E7C31 /* GFPhotoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 53474284EBB4755925A14D7290866424 /* GFPhotoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F3DF5C3BEFCC9838B53C37735B414BE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A214B89738295B4A4B00EEB1960E8865 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		0FDB2B4F75591851F0F119EAE70B3F63 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F69E835336330FF06E7268D32D667C9 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1296A1AB6C74526543B4BC980156F9DF /* GFPhotoBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FC4CFA02D6D03D8BB29F1EB5285D6686 /* GFPhotoBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12EAFCEF051E44578C9005A4C2497ADC /* GFAlbumCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BF81ED86825EFC86693CED2E62AD98 /* GFAlbumCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1296A1AB6C74526543B4BC980156F9DF /* GFPhotoBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA8A921BCED374ECD56F0381F1657FF /* GFPhotoBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12EAFCEF051E44578C9005A4C2497ADC /* GFAlbumCell.h in Headers */ = {isa = PBXBuildFile; fileRef = EE17F3A4DDAE8C37DB4FB1043026A848 /* GFAlbumCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2854C9B1086758BD2B6681206B6759B4 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D5C71A7A4B3156186EC98A377E8543 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3205E9D7DCE048B857081AD7D48FA4C4 /* Pods-GFPhotoBrowser_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB21B3D937BA361C3CBCB61531FDF37 /* Pods-GFPhotoBrowser_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		457ACF9150DCF9AF445B129CC9678FB6 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FC8E35EDBC629D62166DD797E6DE52 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D4F2050654580FE1F1D5F4F82CEDDB8 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F2CF8861113B6F7AAE7EA65C6A7C1B /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53BDF81D0A52EA526D597A5C5B139D7F /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 537638D0C329C86D4ED401237F5D895F /* MASCompositeConstraint.m */; };
-		546A9090515F4E5F57EA3324036A0459 /* GFAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B569C17E9D95BF809938DDE6067F0702 /* GFAlbumCell.m */; };
+		546A9090515F4E5F57EA3324036A0459 /* GFAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAAA0C4F3B3FABA9473872207AB4A2 /* GFAlbumCell.m */; };
 		59F81DE0305CC2AC448D2A3C6B3280A2 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 986CB32629319F7F2256662716334944 /* MASConstraint.m */; };
 		5F3C7A5EEE31763D425F76A4F3E6C6BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		6230C102162087640821ABDE5F0BC534 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		62AF06973D1D2BF2C810A19E7ED9AC88 /* GFPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9F22035C421E2BD82EAC93C0FBEBD3 /* GFPhotoCell.m */; };
+		62AF06973D1D2BF2C810A19E7ED9AC88 /* GFPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60596AF7C8CED7B9624E9768B5E98676 /* GFPhotoCell.m */; };
 		636BBA734C1A17A734761D674FAE8800 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 96DCAB46CA2931B8140F2639F17404AF /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6AFE011ABB03BD5BA8567A62FC418B70 /* GFPhotosDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 017482B127D83453B289529230CEE480 /* GFPhotosDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFE011ABB03BD5BA8567A62FC418B70 /* GFPhotosDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FDA4B117993D06493D51B0A7E0D0D08 /* GFPhotosDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C23BBF56ED4DCC10CA1765A6736D1F8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 611E26C24600589F4729E5EF510272FB /* MASLayoutConstraint.m */; };
-		7060BC11865F9F3BACE995A65C1A7DA8 /* GFPhotoBrowserNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = F585B6205F4E2F807DB3ED4C72CB85E3 /* GFPhotoBrowserNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7060BC11865F9F3BACE995A65C1A7DA8 /* GFPhotoBrowserNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = C88500238BD802218F2E2E1B3B9CFC32 /* GFPhotoBrowserNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73BBDACC22CCA36A6DAAA167AD780BAF /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3818136FED67BD32E3A7FAEDE4F68F /* MASConstraintMaker.m */; };
 		756DF24546C7D91459DCADC8F1C98660 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4875E63FFAFF84A3CDFE99F28B551E /* MASViewConstraint.m */; };
 		7C17BEA6034027310D1D205DB2008CA5 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C484EF8499F67EC81CA7E27930A63CDC /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,9 +36,9 @@
 		88DE7BAB1F4999A5F4B617F44E5FD1D3 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = A02D339E60E114FCC992372E93245BA1 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A6EEF68E7625AB66A3A8DED1594F88F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3980E01C213ECEDEABAC38C1CFD3946D /* ViewController+MASAdditions.m */; };
 		8CD45B754192DE834B642975E85257AB /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BEFB59B86F59C579FF7594DCF78FEB /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92C77A9B6CBDF29983127D06DCC3D1F1 /* GFPhotosDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F037B7AA8A7D31B6F70B04DCBC746B5 /* GFPhotosDataSource.m */; };
+		92C77A9B6CBDF29983127D06DCC3D1F1 /* GFPhotosDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C513491328A5ACB8E966B46A6B6B0 /* GFPhotosDataSource.m */; };
 		9E76A03C1C04FCD4BA9E5A36C15AC425 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		A074EFE3FF0385591FFFD12BA53AD757 /* GFAlbumViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F7C1C1625B32E7F5818519031C2D18 /* GFAlbumViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A074EFE3FF0385591FFFD12BA53AD757 /* GFAlbumViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 798D69E20319A9F012764D3588DCBB6E /* GFAlbumViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A08A8AB356264E248D01F1BC0EF08166 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE937DE71A73D4B7779FF934EC2373E2 /* Masonry-dummy.m */; };
 		A7370CE9231F9A4927142D79021879EC /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 0925CC604B01F156279E8952DDE3EDDB /* MASViewAttribute.m */; };
 		A7AB2DED88C960B7034087C0B0B32956 /* Pods-GFPhotoBrowser_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F46B0142C3181A7097E0BF126364A64C /* Pods-GFPhotoBrowser_Example-dummy.m */; };
@@ -50,11 +50,11 @@
 		D84B2C1B8AABF5EC9C83511CCADCDE25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		D8B1525CB3DFCBD8E5032680530413D9 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F8187F5CAD09C6C6B2B54C65B4A807C9 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E72EDE323AC9F92EC8A00A93AC186093 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C550CDA10D592ABB6A0383A3509F05 /* NSArray+MASAdditions.m */; };
-		F292F44843FC49F77C43D15002E0447D /* GFPhotoBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C49EA2A2517BB57CB8F95F208EEDA /* GFPhotoBrowserNavigationController.m */; };
-		F3E47FE2910F8FE676AC6AE368791FA6 /* GFPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125527E2CA4BEE1D9286CC8A8F1BF28D /* GFPhotoBrowserViewController.m */; };
+		F292F44843FC49F77C43D15002E0447D /* GFPhotoBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A864B76F68488C55E7D779C391DB7BE1 /* GFPhotoBrowserNavigationController.m */; };
+		F3E47FE2910F8FE676AC6AE368791FA6 /* GFPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632C0F8A48A4E1B6611C1BA9A194952 /* GFPhotoBrowserViewController.m */; };
 		F4B3E44D5D2F6508BC1BB35A9FBDEC70 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC0A25DD6F58D072A4ACFC92D9237BF /* View+MASAdditions.m */; };
-		F5CBEA9970E13F3B68555325BAAF5F57 /* GFAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687514F08AFD712105B708AFAA92047B /* GFAlbumViewController.m */; };
-		FCDE8C4D5B751399B52DA9AEDAB1A9DB /* GFPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF202147DBA05DC5C2799D8452423E3 /* GFPhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5CBEA9970E13F3B68555325BAAF5F57 /* GFAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DB236D22BCA87FCEBE49E68870B03E /* GFAlbumViewController.m */; };
+		FCDE8C4D5B751399B52DA9AEDAB1A9DB /* GFPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D4B8C71DB312099809E0D5756C104FD /* GFPhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,12 +75,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		017482B127D83453B289529230CEE480 /* GFPhotosDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotosDataSource.h; sourceTree = "<group>"; };
 		0925CC604B01F156279E8952DDE3EDDB /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
-		125527E2CA4BEE1D9286CC8A8F1BF28D /* GFPhotoBrowserViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoBrowserViewController.m; sourceTree = "<group>"; };
 		13FC8E35EDBC629D62166DD797E6DE52 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
 		1504AA25235C88ED33088CC0AAF09851 /* Pods_GFPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GFPhotoBrowser_Example.framework; path = "Pods-GFPhotoBrowser_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BF202147DBA05DC5C2799D8452423E3 /* GFPhotoBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowser.h; sourceTree = "<group>"; };
 		1D513D897FBA988FD23B74DCFB969111 /* Pods-GFPhotoBrowser_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GFPhotoBrowser_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1F0183E721D7FD6AF70B4A911C1B1B95 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		1FB21B3D937BA361C3CBCB61531FDF37 /* Pods-GFPhotoBrowser_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GFPhotoBrowser_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -90,54 +87,57 @@
 		303B58A2959C8EEE96799AD558DDA1D3 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		3980E01C213ECEDEABAC38C1CFD3946D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		3D31E8152CA817165BA6DC0D40A0BBF5 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F037B7AA8A7D31B6F70B04DCBC746B5 /* GFPhotosDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotosDataSource.m; sourceTree = "<group>"; };
+		3D4B8C71DB312099809E0D5756C104FD /* GFPhotoBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowser.h; sourceTree = "<group>"; };
 		45145337F293DA69B61BC93CC35099BB /* GFPhotoBrowser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GFPhotoBrowser-umbrella.h"; sourceTree = "<group>"; };
 		510D6A276D4623C4ABF6672BD501CEA8 /* GFPhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GFPhotoBrowser.framework; path = GFPhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		536D7A852BEB06D3EA957CEF6129470B /* GFPhotoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoCell.h; sourceTree = "<group>"; };
+		53474284EBB4755925A14D7290866424 /* GFPhotoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoCell.h; sourceTree = "<group>"; };
 		537638D0C329C86D4ED401237F5D895F /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		54BF81ED86825EFC86693CED2E62AD98 /* GFAlbumCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFAlbumCell.h; sourceTree = "<group>"; };
+		5632C0F8A48A4E1B6611C1BA9A194952 /* GFPhotoBrowserViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoBrowserViewController.m; sourceTree = "<group>"; };
 		5A649F9297535214EF97548C9EA9FA33 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		5BEAAA0C4F3B3FABA9473872207AB4A2 /* GFAlbumCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFAlbumCell.m; sourceTree = "<group>"; };
+		60596AF7C8CED7B9624E9768B5E98676 /* GFPhotoCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoCell.m; sourceTree = "<group>"; };
 		611E26C24600589F4729E5EF510272FB /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		616931F6FEFC26A83B0F3719599FC461 /* Pods-GFPhotoBrowser_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GFPhotoBrowser_Example-frameworks.sh"; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		61881F60AB333EA86CE7881063A4BA60 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		63372D003E9BE3BDC90C00BC37FB59E8 /* GFPhotoBrowser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GFPhotoBrowser.modulemap; sourceTree = "<group>"; };
-		687514F08AFD712105B708AFAA92047B /* GFAlbumViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFAlbumViewController.m; sourceTree = "<group>"; };
 		6E4875E63FFAFF84A3CDFE99F28B551E /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
 		77F2CF8861113B6F7AAE7EA65C6A7C1B /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		798D69E20319A9F012764D3588DCBB6E /* GFAlbumViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFAlbumViewController.h; sourceTree = "<group>"; };
 		79BEFB59B86F59C579FF7594DCF78FEB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		7EC0A25DD6F58D072A4ACFC92D9237BF /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7F44A621BE24B87AEF75DD7193846188 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A0C49EA2A2517BB57CB8F95F208EEDA /* GFPhotoBrowserNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoBrowserNavigationController.m; sourceTree = "<group>"; };
+		7FDA4B117993D06493D51B0A7E0D0D08 /* GFPhotosDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotosDataSource.h; sourceTree = "<group>"; };
 		8B64ED2833A6BD31D3519B3B49534FC5 /* GFPhotoBrowser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GFPhotoBrowser-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95F7C1C1625B32E7F5818519031C2D18 /* GFAlbumViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFAlbumViewController.h; sourceTree = "<group>"; };
 		96DCAB46CA2931B8140F2639F17404AF /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		986CB32629319F7F2256662716334944 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		9EF95CE46F82C74E2C0FD17A66FDC23D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A02D339E60E114FCC992372E93245BA1 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		A214B89738295B4A4B00EEB1960E8865 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		A41C513491328A5ACB8E966B46A6B6B0 /* GFPhotosDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotosDataSource.m; sourceTree = "<group>"; };
 		A4490F4FCAFCC776BF31A1A9BF60F144 /* Pods-GFPhotoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GFPhotoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A6B514C6E75C61B808ACB71EDB2E8315 /* Pods-GFPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GFPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A864B76F68488C55E7D779C391DB7BE1 /* GFPhotoBrowserNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoBrowserNavigationController.m; sourceTree = "<group>"; };
 		AD04C760F0EB4FE7B23D85D56145A97F /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		B15E8D11D3697A0918A0F6D37762247B /* GFPhotoBrowser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GFPhotoBrowser.xcconfig; sourceTree = "<group>"; };
 		B1C550CDA10D592ABB6A0383A3509F05 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		B466AE50C07506DC56DB4241266DF8AE /* GFPhotoBrowser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GFPhotoBrowser-dummy.m"; sourceTree = "<group>"; };
-		B569C17E9D95BF809938DDE6067F0702 /* GFAlbumCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFAlbumCell.m; sourceTree = "<group>"; };
 		B7B18C08D654F44C2AD84303D4FBC1B1 /* Pods-GFPhotoBrowser_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GFPhotoBrowser_Example-resources.sh"; sourceTree = "<group>"; };
 		C484EF8499F67EC81CA7E27930A63CDC /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		C6D5C71A7A4B3156186EC98A377E8543 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		C88500238BD802218F2E2E1B3B9CFC32 /* GFPhotoBrowserNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowserNavigationController.h; sourceTree = "<group>"; };
 		CB1E383C30620987161C0A9AD6E723E3 /* Pods-GFPhotoBrowser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GFPhotoBrowser_Example.modulemap"; sourceTree = "<group>"; };
 		CD9460636A228DA2C8F5EC4A2AB7EBB6 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		D1DB236D22BCA87FCEBE49E68870B03E /* GFAlbumViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFAlbumViewController.m; sourceTree = "<group>"; };
 		E5B0B304E652647FE0FC22B2F7423A86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECBBB506D4D551AB1A637EE3145A459E /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		EF9F22035C421E2BD82EAC93C0FBEBD3 /* GFPhotoCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoCell.m; sourceTree = "<group>"; };
+		EE17F3A4DDAE8C37DB4FB1043026A848 /* GFAlbumCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFAlbumCell.h; sourceTree = "<group>"; };
 		F46B0142C3181A7097E0BF126364A64C /* Pods-GFPhotoBrowser_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GFPhotoBrowser_Example-dummy.m"; sourceTree = "<group>"; };
-		F585B6205F4E2F807DB3ED4C72CB85E3 /* GFPhotoBrowserNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowserNavigationController.h; sourceTree = "<group>"; };
 		F8187F5CAD09C6C6B2B54C65B4A807C9 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		FC4CFA02D6D03D8BB29F1EB5285D6686 /* GFPhotoBrowserViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		FCA8A921BCED374ECD56F0381F1657FF /* GFPhotoBrowserViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowserViewController.h; sourceTree = "<group>"; };
 		FE937DE71A73D4B7779FF934EC2373E2 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		FF217FE4E512E3883BAD867868CB42D9 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		FF3818136FED67BD32E3A7FAEDE4F68F /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
@@ -172,16 +172,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05F73E38A7923455B5B54238FA5ED775 /* Classes */ = {
+		06EDCA9BA552C291EC7A064934906691 /* GFPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				1BF202147DBA05DC5C2799D8452423E3 /* GFPhotoBrowser.h */,
-				8A0CDD3AF29DAD6CD8E96ACF7BD11A92 /* Controllers */,
-				E9934356C785CE2B68B97E7926A37E0B /* Models */,
-				EAA7CCC18CB58702E1114B7A33EF4569 /* Views */,
+				C451112B4D6846D982E104E061DE0FF7 /* Classes */,
 			);
-			name = Classes;
-			path = Classes;
+			name = GFPhotoBrowser;
+			path = GFPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -222,35 +219,12 @@
 			path = "Target Support Files/Pods-GFPhotoBrowser_Example";
 			sourceTree = "<group>";
 		};
-		8A0CDD3AF29DAD6CD8E96ACF7BD11A92 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				95F7C1C1625B32E7F5818519031C2D18 /* GFAlbumViewController.h */,
-				687514F08AFD712105B708AFAA92047B /* GFAlbumViewController.m */,
-				F585B6205F4E2F807DB3ED4C72CB85E3 /* GFPhotoBrowserNavigationController.h */,
-				8A0C49EA2A2517BB57CB8F95F208EEDA /* GFPhotoBrowserNavigationController.m */,
-				FC4CFA02D6D03D8BB29F1EB5285D6686 /* GFPhotoBrowserViewController.h */,
-				125527E2CA4BEE1D9286CC8A8F1BF28D /* GFPhotoBrowserViewController.m */,
-			);
-			name = Controllers;
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		942AB1B2B0BEABB67B0634597DEE99FB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				8886C581FC41BF88868EDA68E8B4FB5F /* Pods-GFPhotoBrowser_Example */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		9F85D83A050739498D723C7201BFF475 /* GFPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				05F73E38A7923455B5B54238FA5ED775 /* Classes */,
-			);
-			name = GFPhotoBrowser;
-			path = GFPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		A2A20986957FCCEF3865AFC2DAE207A8 /* Masonry */ = {
@@ -309,6 +283,27 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		C451112B4D6846D982E104E061DE0FF7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EE17F3A4DDAE8C37DB4FB1043026A848 /* GFAlbumCell.h */,
+				5BEAAA0C4F3B3FABA9473872207AB4A2 /* GFAlbumCell.m */,
+				798D69E20319A9F012764D3588DCBB6E /* GFAlbumViewController.h */,
+				D1DB236D22BCA87FCEBE49E68870B03E /* GFAlbumViewController.m */,
+				3D4B8C71DB312099809E0D5756C104FD /* GFPhotoBrowser.h */,
+				C88500238BD802218F2E2E1B3B9CFC32 /* GFPhotoBrowserNavigationController.h */,
+				A864B76F68488C55E7D779C391DB7BE1 /* GFPhotoBrowserNavigationController.m */,
+				FCA8A921BCED374ECD56F0381F1657FF /* GFPhotoBrowserViewController.h */,
+				5632C0F8A48A4E1B6611C1BA9A194952 /* GFPhotoBrowserViewController.m */,
+				53474284EBB4755925A14D7290866424 /* GFPhotoCell.h */,
+				60596AF7C8CED7B9624E9768B5E98676 /* GFPhotoCell.m */,
+				7FDA4B117993D06493D51B0A7E0D0D08 /* GFPhotosDataSource.h */,
+				A41C513491328A5ACB8E966B46A6B6B0 /* GFPhotosDataSource.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		D04AC5C4BFE0070181DE1E308821F0E4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,7 +321,7 @@
 		E304A3A0B0FA2362B857B4561A43909F /* GFPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				9F85D83A050739498D723C7201BFF475 /* GFPhotoBrowser */,
+				06EDCA9BA552C291EC7A064934906691 /* GFPhotoBrowser */,
 				D04AC5C4BFE0070181DE1E308821F0E4 /* Support Files */,
 			);
 			name = GFPhotoBrowser;
@@ -352,34 +347,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E9934356C785CE2B68B97E7926A37E0B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				017482B127D83453B289529230CEE480 /* GFPhotosDataSource.h */,
-				3F037B7AA8A7D31B6F70B04DCBC746B5 /* GFPhotosDataSource.m */,
-			);
-			name = Models;
-			path = Models;
-			sourceTree = "<group>";
-		};
 		E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				A2A20986957FCCEF3865AFC2DAE207A8 /* Masonry */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		EAA7CCC18CB58702E1114B7A33EF4569 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				54BF81ED86825EFC86693CED2E62AD98 /* GFAlbumCell.h */,
-				B569C17E9D95BF809938DDE6067F0702 /* GFAlbumCell.m */,
-				536D7A852BEB06D3EA957CEF6129470B /* GFPhotoCell.h */,
-				EF9F22035C421E2BD82EAC93C0FBEBD3 /* GFPhotoCell.m */,
-			);
-			name = Views;
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

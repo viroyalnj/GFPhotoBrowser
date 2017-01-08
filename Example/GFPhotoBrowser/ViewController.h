@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-#import "GFPhotosDataSource.h"
+#import <GFPhotoBrowser/GFPhotoBrowser.h>
 
 @interface ViewController : UICollectionViewController
 
