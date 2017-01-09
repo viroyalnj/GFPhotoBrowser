@@ -1,6 +1,6 @@
 {
   "name": "GFPhotoBrowser",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "summary": "iOS Photos框架的简单封装",
   "description": "一个查询数据的Data source\n若干相关界面",
   "homepage": "https://github.com/guofengld/GFPhotoBrowser",
@@ -13,17 +13,43 @@
   },
   "source": {
     "git": "https://github.com/guofengld/GFPhotoBrowser.git",
-    "tag": "0.1.3"
+    "tag": "0.1.4"
   },
   "social_media_url": "https://twitter.com/guofengjd",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "GFPhotoBrowser/**/*",
+  "source_files": "GFPhotoBrowser/GFPhotoBrowser.h",
+  "public_header_files": "GFPhotoBrowser/GFPhotoBrowser.h",
   "subspecs": [
     {
       "name": "Models",
-      "source_files": "GFPhotoBrowser/GFPhotoDataSource.{h,m}"
+      "source_files": "GFPhotoBrowser/GFPhotosDataSource.{h,m}"
+    },
+    {
+      "name": "Cells",
+      "dependencies": {
+        "GFPhotoBrowser/Models": [
+
+        ]
+      },
+      "source_files": [
+        "GFPhotoBrowser/GFPhotoCell.{h,m}",
+        "GFPhotoBrowser/GFAlbumCell.{h,m}"
+      ]
+    },
+    {
+      "name": "Controllers",
+      "dependencies": {
+        "GFPhotoBrowser/Cells": [
+
+        ]
+      },
+      "source_files": [
+        "GFPhotoBrowser/GFAlbumViewController.{h,m}",
+        "GFPhotoBrowser/GFPhotoBrowserNavigationController.{h,m}",
+        "GFPhotoBrowser/GFPhotoBrowserViewController.{h,m}"
+      ]
     }
   ]
 }

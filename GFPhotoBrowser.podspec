@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GFPhotoBrowser'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'iOS Photos框架的简单封装'
 
 # This description is used to generate tags and improve search results.
@@ -27,18 +27,32 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'guofengld' => 'guofengld@gmail.com' }
   s.source           = { :git => 'https://github.com/guofengld/GFPhotoBrowser.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/guofengjd'
+  # s.social_media_url = 'https://twitter.com/guofengjd'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'GFPhotoBrowser/**/*'
+  s.source_files = 'GFPhotoBrowser/GFPhotoBrowser.h'
   
   # s.resource_bundles = {
   #   'GFPhotoBrowser' => ['GFPhotoBrowser/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'GFPhotoBrowser/GFPhotoBrowser.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.subspec 'Models' do |ss|
+    ss.source_files = 'GFPhotoBrowser/GFPhotosDataSource.{h,m}'
+  end
+
+  s.subspec 'Cells' do |ss|
+    ss.dependency 'GFPhotoBrowser/Models'
+    ss.source_files = 'GFPhotoBrowser/GFPhotoCell.{h,m}', 'GFPhotoBrowser/GFAlbumCell.{h,m}'
+  end
+
+  s.subspec 'Controllers' do |ss|
+    ss.dependency 'GFPhotoBrowser/Cells'
+    ss.source_files = 'GFPhotoBrowser/GFAlbumViewController.{h,m}', 'GFPhotoBrowser/GFPhotoBrowserNavigationController.{h,m}', 'GFPhotoBrowser/GFPhotoBrowserViewController.{h,m}'
+  end
 
 end
