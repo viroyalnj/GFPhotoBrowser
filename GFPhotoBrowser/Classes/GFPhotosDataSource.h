@@ -1,9 +1,9 @@
 //
 //  GFPhotosDataSource.h
-//  Photos
+//  GFPhotoBrowser
 //
-//  Created by 熊国锋 on 2016/11/3.
-//  Copyright © 2016年 guofengld. All rights reserved.
+//  Created by guofengld on 2016/11/3.
+//  Copyright © 2016年 guofengld@gmail.com. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 - (void)dataInitWillBegin;
-- (void)dataInitDidFinish;
+- (void)dataInitDidFinish:(NSArray <PhotoSectionInfo *> *)sections;
 
 @end
 

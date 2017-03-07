@@ -68,8 +68,8 @@
 
 @interface ViewController () < PhotosDataDelegate >
 
-@property (nonatomic, assign) PHAssetCollectionType     type;
-@property (nonatomic, strong) GFPhotosDataSource          *dataSource;
+@property (nonatomic, assign) PHAssetCollectionType         type;
+@property (nonatomic, strong) GFPhotosDataSource            *dataSource;
 
 @end
 

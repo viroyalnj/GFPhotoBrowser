@@ -2,7 +2,7 @@
 //  GFPhotoBrowser.h
 //  Pods
 //
-//  Created by 熊国锋 on 2017/1/8.
+//  Created by guofengld on 2017/1/8.
 //
 //
 
@@ -11,5 +11,6 @@
 
 #import "GFPhotosDataSource.h"
 #import "GFPhotoBrowserViewController.h"
+#import "GFPhotoBrowserNavigationController.h"
 
 #endif /* GFPhotoBrowser_h */

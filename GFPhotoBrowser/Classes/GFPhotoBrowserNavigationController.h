@@ -1,8 +1,8 @@
 //
 //  GFPhotoBrowserNavigationController.h
-//  Photos
+//  GFPhotoBrowser
 //
-//  Created by 熊国锋 on 2016/11/4.
+//  Created by guofengld on 2016/11/4.
 //  Copyright © 2016年 viroyal. All rights reserved.
 //
 
@@ -13,15 +13,17 @@
 
 @protocol PhotoBrowserNavigationDelegate <UINavigationControllerDelegate>
 
-- (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectItem:(PHAsset *)asset;
+- (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectItems:(NSArray<PHAsset *> *)items;
 
 @end
 
 @interface GFPhotoBrowserNavigationController : UINavigationController
 
 @property (nonatomic, weak) id <PhotoBrowserNavigationDelegate> delegate;
+@property (nonatomic) BOOL allowsMultipleSelection;
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
-                     subType:(PHAssetCollectionSubtype)subType;
+                     subType:(PHAssetCollectionSubtype)subType
+     allowsMultipleSelection:(BOOL)allowsMultipleSelection;
 
 @end

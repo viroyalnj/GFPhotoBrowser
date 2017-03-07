@@ -2,7 +2,7 @@
 //  GFAlbumCell.h
 //  Pods
 //
-//  Created by 熊国锋 on 2016/11/4.
+//  Created by guofengld on 2016/11/4.
 //
 //
 

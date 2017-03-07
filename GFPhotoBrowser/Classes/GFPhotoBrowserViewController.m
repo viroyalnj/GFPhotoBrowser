@@ -1,9 +1,9 @@
 //
 //  GFPhotoBrowserViewController.m
-//  Photos
+//  GFPhotoBrowser
 //
-//  Created by 熊国锋 on 2016/11/4.
-//  Copyright © 2016年 guofengld. All rights reserved.
+//  Created by guofengld on 2016/11/4.
+//  Copyright © 2016年 guofengld@gmail.com. All rights reserved.
 //
 
 #import "GFPhotoBrowserViewController.h"
@@ -12,16 +12,23 @@
 
 @interface GFPhotoBrowserViewController () < PhotosDataDelegate >
 
-@property (nonatomic, assign) PHAssetCollectionType     type;
-@property (nonatomic, assign) PHAssetCollectionSubtype  subType;
-@property (nonatomic, strong) GFPhotosDataSource          *dataSource;
+@property (nonatomic, assign) PHAssetCollectionType         type;
+@property (nonatomic, assign) PHAssetCollectionSubtype      subType;
+@property (nonatomic, copy)   NSString                      *title;
+
+@property (nonatomic, strong) GFPhotosDataSource            *dataSource;
+
+@property (nonatomic, strong) UIBarButtonItem               *cancelItem;
+@property (nonatomic, strong) UIBarButtonItem               *doneItem;
 
 @end
 
 @implementation GFPhotoBrowserViewController
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
-                     subType:(PHAssetCollectionSubtype)subType {
+                     subType:(PHAssetCollectionSubtype)subType
+     allowsMultipleSelection:(BOOL)allowsMultipleSelection {
+    
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
@@ -29,6 +36,8 @@
         self.type = type;
         self.subType = subType;
         self.collectionView.backgroundColor = [UIColor whiteColor];
+        
+        self.collectionView.allowsMultipleSelection = allowsMultipleSelection;
         
         [self.collectionView registerClass:[GFPhotoCell class]
                 forCellWithReuseIdentifier:[GFPhotoCell cellIdentifier]];
@@ -40,20 +49,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Photo browser";
-    
     self.dataSource = [[GFPhotosDataSource alloc] initWithType:self.type
-                                                     subType:self.subType];
+                                                       subType:self.subType];
     self.dataSource.delegate = self;
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Cancel"
-                                                                              style:UIBarButtonItemStylePlain
-                                                                             target:self
-                                                                             action:@selector(closeView)];
+    self.cancelItem = [[UIBarButtonItem alloc] initWithTitle:@"Cancel"
+                                                       style:UIBarButtonItemStylePlain
+                                                      target:self
+                                                      action:@selector(selectCancel)];
+    
+    self.doneItem = [[UIBarButtonItem alloc] initWithTitle:@"Done"
+                                                      style:UIBarButtonItemStylePlain
+                                                     target:self
+                                                     action:@selector(selectDone)];
+    
+    self.navigationItem.rightBarButtonItem = self.cancelItem;
 }
 
-- (void)closeView {
+- (void)selectCancel {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)selectDone {
+    NSMutableArray *arr = @[].mutableCopy;
+    for (NSIndexPath *item in [self.collectionView indexPathsForSelectedItems]) {
+        [arr addObject:[self.dataSource objectAtIndexPath:item]];
+    }
+    
+    [self.delegate browser:self selectItems:arr.copy];
 }
 
 #pragma mark - PhotosDataDelegate
@@ -62,7 +85,9 @@
     
 }
 
-- (void)dataInitDidFinish {
+- (void)dataInitDidFinish:(NSArray<PhotoSectionInfo *> *)sections {
+    self.title = [[sections firstObject] title];
+    
     [self.collectionView reloadData];
 }
 
@@ -106,7 +131,27 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    [self.delegate browser:self selectItem:[self.dataSource objectAtIndexPath:indexPath]];
+    if (collectionView.allowsMultipleSelection) {
+        [self selectionChanged];
+    }
+    else {
+        PHAsset *asset = [self.dataSource objectAtIndexPath:indexPath];
+        [self.delegate browser:self selectItems:@[asset]];
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [self selectionChanged];
+}
+
+- (void)selectionChanged {
+    NSArray *selected = [self.collectionView indexPathsForSelectedItems];
+    if ([selected count]) {
+        self.navigationItem.rightBarButtonItem = self.doneItem;
+    }
+    else {
+        self.navigationItem.rightBarButtonItem = self.cancelItem;
+    }
 }
 
 @end

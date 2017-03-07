@@ -1,8 +1,8 @@
 //
 //  GFAlbumViewController.m
-//  Photos
+//  GFPhotoBrowser
 //
-//  Created by 熊国锋 on 2016/11/4.
+//  Created by guofengld on 2016/11/4.
 //  Copyright © 2016年 viroyal. All rights reserved.
 //
 
@@ -49,7 +49,7 @@
     
 }
 
-- (void)dataInitDidFinish {
+- (void)dataInitDidFinish:(NSArray<PhotoSectionInfo *> *)sections {
     [self.tableView reloadData];
 }
 

@@ -1,9 +1,9 @@
 //
 //  GFPhotosDataSource.m
-//  Photos
+//  GFPhotoBrowser
 //
-//  Created by 熊国锋 on 2016/11/3.
-//  Copyright © 2016年 guofengld. All rights reserved.
+//  Created by guofengld on 2016/11/3.
+//  Copyright © 2016年 guofengld@gmail.com. All rights reserved.
 //
 
 #import "GFPhotosDataSource.h"
@@ -31,7 +31,7 @@
 
 @property (nonatomic, strong)   PHPhotoLibrary                      *photoLibrary;
 
-@property (nonatomic, strong)   NSMutableArray<PhotoSectionInfo *>  *sectionInfo;
+@property (nonatomic, strong)   NSMutableArray<PhotoSectionInfo *>  *sections;
 
 @end
 
@@ -89,11 +89,11 @@
 - (void)dataInitWillBegin {
     [self.delegate dataInitWillBegin];
     
-    self.sectionInfo = [NSMutableArray new];
+    self.sections = [NSMutableArray new];
 }
 
 - (void)dataInitDidFinish {
-    [self.delegate dataInitDidFinish];
+    [self.delegate dataInitDidFinish:self.sections];
 }
 
 - (void)fetchDataType:(PHAssetCollectionType)type
@@ -124,7 +124,7 @@
         info.subType = item.assetCollectionSubtype;
         
         info.objects = [NSArray arrayWithArray:arr];
-        [self.sectionInfo addObject:info];
+        [self.sections addObject:info];
     }
 }
 
@@ -133,7 +133,7 @@
         return 0;
     }
     
-    return [self.sectionInfo count];
+    return [self.sections count];
 }
 
 - (NSInteger)numberOfItemsInSection:(NSInteger)section {
@@ -141,20 +141,20 @@
         return 0;
     }
     
-    return [self.sectionInfo[section] numberOfObjects];
+    return [self.sections[section] numberOfObjects];
 }
 
 - (PHAsset *)objectAtIndexPath:(NSIndexPath *)indexPath {
-    return self.sectionInfo[indexPath.section].objects[indexPath.row];
+    return self.sections[indexPath.section].objects[indexPath.row];
 }
 
 - (PhotoSectionInfo *)sectionInfoForSection:(NSInteger)section {
-    return self.sectionInfo[section];
+    return self.sections[section];
 }
 
 - (NSArray<PHAsset *> *)fetchedObjects {
     NSMutableArray *arr = [NSMutableArray new];
-    for (PhotoSectionInfo *item in self.sectionInfo) {
+    for (PhotoSectionInfo *item in self.sections) {
         [arr addObjectsFromArray:item.objects];
     }
     

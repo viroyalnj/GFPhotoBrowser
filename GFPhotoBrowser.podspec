@@ -31,28 +31,28 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'GFPhotoBrowser/GFPhotoBrowser.h'
+  s.source_files = 'GFPhotoBrowser/Classes/GFPhotoBrowser.h'
   
-  # s.resource_bundles = {
-  #   'GFPhotoBrowser' => ['GFPhotoBrowser/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'GFPhotoBrowser' => ['GFPhotoBrowser/Assets/*.png']
+   }
 
-  s.public_header_files = 'GFPhotoBrowser/GFPhotoBrowser.h'
+  s.public_header_files = 'GFPhotoBrowser/Classes/GFPhotoBrowser.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry'
 
   s.subspec 'Models' do |ss|
-    ss.source_files = 'GFPhotoBrowser/GFPhotosDataSource.{h,m}'
+    ss.source_files = 'GFPhotoBrowser/Classes/GFPhotosDataSource.{h,m}', 'GFPhotoBrowser/Classes/UIImage+GFPhotoBrowser.{h,m}'
   end
 
   s.subspec 'Cells' do |ss|
     ss.dependency 'GFPhotoBrowser/Models'
-    ss.source_files = 'GFPhotoBrowser/GFPhotoCell.{h,m}', 'GFPhotoBrowser/GFAlbumCell.{h,m}'
+    ss.source_files = 'GFPhotoBrowser/Classes/GFPhotoCell.{h,m}', 'GFPhotoBrowser/Classes/GFAlbumCell.{h,m}'
   end
 
   s.subspec 'Controllers' do |ss|
     ss.dependency 'GFPhotoBrowser/Cells'
-    ss.source_files = 'GFPhotoBrowser/GFAlbumViewController.{h,m}', 'GFPhotoBrowser/GFPhotoBrowserNavigationController.{h,m}', 'GFPhotoBrowser/GFPhotoBrowserViewController.{h,m}'
+    ss.source_files = 'GFPhotoBrowser/Classes/GFAlbumViewController.{h,m}', 'GFPhotoBrowser/Classes/GFPhotoBrowserNavigationController.{h,m}', 'GFPhotoBrowser/Classes/GFPhotoBrowserViewController.{h,m}'
   end
 
 end
