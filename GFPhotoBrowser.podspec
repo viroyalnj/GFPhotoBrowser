@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GFPhotoBrowser'
-  s.version          = '0.1.5'
-  s.summary          = 'iOS Photos框架的简单封装'
+  s.version          = '0.1.6'
+  s.summary          = 'iOS Photos 框架的简单封装'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
