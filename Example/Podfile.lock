@@ -1,16 +1,16 @@
 PODS:
-  - GFPhotoBrowser (0.1.6):
-    - GFPhotoBrowser/Cells (= 0.1.6)
-    - GFPhotoBrowser/Controllers (= 0.1.6)
-    - GFPhotoBrowser/Models (= 0.1.6)
+  - GFPhotoBrowser (0.1.7):
+    - GFPhotoBrowser/Cells (= 0.1.7)
+    - GFPhotoBrowser/Controllers (= 0.1.7)
+    - GFPhotoBrowser/Models (= 0.1.7)
     - Masonry
-  - GFPhotoBrowser/Cells (0.1.6):
+  - GFPhotoBrowser/Cells (0.1.7):
     - GFPhotoBrowser/Models
     - Masonry
-  - GFPhotoBrowser/Controllers (0.1.6):
+  - GFPhotoBrowser/Controllers (0.1.7):
     - GFPhotoBrowser/Cells
     - Masonry
-  - GFPhotoBrowser/Models (0.1.6):
+  - GFPhotoBrowser/Models (0.1.7):
     - Masonry
   - Masonry (1.0.2)
 
@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GFPhotoBrowser: 7b9918f4f290c8290ae4a1e9ee23bcec90d0e4db
+  GFPhotoBrowser: 6a4686c916f038218e2e3e3aa5208f38f1731f3d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
 
 PODFILE CHECKSUM: 7173c162e36e76f61f2053f4c4607550defc6004
