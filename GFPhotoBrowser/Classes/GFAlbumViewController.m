@@ -9,6 +9,7 @@
 #import "GFAlbumViewController.h"
 #import "GFPhotosDataSource.h"
 #import "GFAlbumCell.h"
+#import "NSBundle+GFPhotoBrowser.h"
 
 
 @interface GFAlbumViewController () < PhotosDataDelegate >
@@ -30,12 +31,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Photos";
+    self.title = GFLocalizedString(@"Albums", nil);
     
     self.dataSource = [[GFPhotosDataSource alloc] init];
     self.dataSource.delegate = self;
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Cancel"
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:GFLocalizedString(@"Cancel", nil)
                                                                               style:UIBarButtonItemStylePlain
                                                                              target:self
                                                                              action:@selector(closeView)];

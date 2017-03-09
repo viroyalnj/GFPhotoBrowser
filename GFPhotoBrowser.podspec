@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.source_files = 'GFPhotoBrowser/Classes/GFPhotoBrowser.h'
   
    s.resource_bundles = {
-     'GFPhotoBrowser' => ['GFPhotoBrowser/Assets/*.png']
+     'GFPhotoBrowser' => ['GFPhotoBrowser/Assets/*.png', 'GFPhotoBrowser/Assets/*.lproj', 'GFPhotoBrowser/Classes/NSBundle+GFPhotoBrowser.{h,m}']
    }
 
   s.public_header_files = 'GFPhotoBrowser/Classes/GFPhotoBrowser.h'
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   s.dependency 'Masonry'
 
   s.subspec 'Models' do |ss|
-    ss.source_files = 'GFPhotoBrowser/Classes/GFPhotosDataSource.{h,m}', 'GFPhotoBrowser/Classes/UIImage+GFPhotoBrowser.{h,m}'
+    ss.source_files = 'GFPhotoBrowser/Classes/GFPhotosDataSource.{h,m}'
   end
 
   s.subspec 'Cells' do |ss|

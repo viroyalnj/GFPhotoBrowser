@@ -9,6 +9,7 @@
 #import "GFPhotoBrowserViewController.h"
 #import "GFPhotoCell.h"
 #import "GFPhotosDataSource.h"
+#import "NSBundle+GFPhotoBrowser.h"
 
 @interface GFPhotoBrowserViewController () < PhotosDataDelegate >
 
@@ -53,12 +54,12 @@
                                                        subType:self.subType];
     self.dataSource.delegate = self;
     
-    self.cancelItem = [[UIBarButtonItem alloc] initWithTitle:@"Cancel"
+    self.cancelItem = [[UIBarButtonItem alloc] initWithTitle:GFLocalizedString(@"Cancel", nil)
                                                        style:UIBarButtonItemStylePlain
                                                       target:self
                                                       action:@selector(selectCancel)];
     
-    self.doneItem = [[UIBarButtonItem alloc] initWithTitle:@"Done"
+    self.doneItem = [[UIBarButtonItem alloc] initWithTitle:GFLocalizedString(@"Save", nil)
                                                       style:UIBarButtonItemStylePlain
                                                      target:self
                                                      action:@selector(selectDone)];
@@ -76,7 +77,7 @@
         [arr addObject:[self.dataSource objectAtIndexPath:item]];
     }
     
-    [self.delegate browser:self selectItems:arr.copy];
+    [self.delegate browser:self selectAssets:arr.copy];
 }
 
 #pragma mark - PhotosDataDelegate
@@ -136,7 +137,7 @@
     }
     else {
         PHAsset *asset = [self.dataSource objectAtIndexPath:indexPath];
-        [self.delegate browser:self selectItems:@[asset]];
+        [self.delegate browser:self selectAssets:@[asset]];
     }
 }
 

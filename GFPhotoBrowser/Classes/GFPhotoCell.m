@@ -7,7 +7,7 @@
 //
 
 #import "GFPhotoCell.h"
-#import "UIImage+GFPhotoBrowser.h"
+#import "NSBundle+GFPhotoBrowser.h"
 
 @interface GFPhotoCell ()
 

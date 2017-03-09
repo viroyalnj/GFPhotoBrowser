@@ -13,7 +13,7 @@
 
 @protocol PhotoBrowserNavigationDelegate <UINavigationControllerDelegate>
 
-- (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectItems:(NSArray<PHAsset *> *)items;
+- (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectAssets:(NSArray<PHAsset *> *)assets;
 
 @end
 

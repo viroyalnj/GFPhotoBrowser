@@ -13,7 +13,7 @@
 
 @protocol PhotoBrowserDelegate <NSObject>
 
-- (void)browser:(GFPhotoBrowserViewController *)browser selectItems:(NSArray <PHAsset *> *)items;
+- (void)browser:(GFPhotoBrowserViewController *)browser selectAssets:(NSArray <PHAsset *> *)assets;
 
 @end
 

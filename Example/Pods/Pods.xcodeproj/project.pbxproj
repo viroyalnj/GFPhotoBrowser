@@ -7,54 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04A7D6AADAB213CE7D26F8EAD2F87536 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AD04C760F0EB4FE7B23D85D56145A97F /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		068EF598E554EC57038ACFB89CC2C47A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FF217FE4E512E3883BAD867868CB42D9 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091D17D5D8F832D28546A72B788CF0AE /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0183E721D7FD6AF70B4A911C1B1B95 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0CAB93FE559745D02FC624611C9E7C31 /* GFPhotoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BC000EF6F1A870C463A14BE6CB63E88 /* GFPhotoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F3DF5C3BEFCC9838B53C37735B414BE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A214B89738295B4A4B00EEB1960E8865 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		0FDB2B4F75591851F0F119EAE70B3F63 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F69E835336330FF06E7268D32D667C9 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1296A1AB6C74526543B4BC980156F9DF /* GFPhotoBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 80FED6D76A0FF9F119E382DA3E7BB320 /* GFPhotoBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12EAFCEF051E44578C9005A4C2497ADC /* GFAlbumCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DF07773102CE5FE10AF52EEDC7E11651 /* GFAlbumCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2854C9B1086758BD2B6681206B6759B4 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D5C71A7A4B3156186EC98A377E8543 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0187F45138601BC419ED88D6D5EEB04A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9A3FCE044F805F44733D26C30276A /* Foundation.framework */; };
+		0340740AD3501DC2114C33BFF768D0D1 /* UIImage+GFPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAF997265F1EFE494D9759A16FFBCCC /* UIImage+GFPhotoBrowser.m */; };
+		07995A50D8E6E9FB91C4CACABE073A32 /* GFPhotoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 68E08A68740DB7A86BD5FF3C2CDF561C /* GFPhotoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BD18AC5043407B9E15351819E4C2309 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BEFB59B86F59C579FF7594DCF78FEB /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D29440A621B176CA747C3128F706BF4 /* GFAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBEE40DDB93AF3E62FB40580B7EDFAC /* GFAlbumCell.m */; };
+		1137E941FFF83B4CE59B55D20EABE681 /* GFPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1785827A157B8C8C33C7CA13EE48FC7B /* GFPhotoBrowser.bundle */; };
+		11F32625FB582CA7DE114CA898EBE684 /* GFPhotosDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F45F172D95C7DABD1FBEEEF6F4A1DC /* GFPhotosDataSource.m */; };
+		193EB95696D2878093B1C431780658BE /* GFPhotoBrowser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A673BA2285D8C365300516B9C70244DC /* GFPhotoBrowser-dummy.m */; };
+		19C2E868A307F0C0B0169F04083B0247 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F2CF8861113B6F7AAE7EA65C6A7C1B /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19F476627E75E151FD9BF83C3B8CC43A /* GFPhotoBrowserNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 11EA3924C9DAEDE2115C0542810DB538 /* GFPhotoBrowserNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D2E48087BB1E3D5BA34AA802F3843C8 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0183E721D7FD6AF70B4A911C1B1B95 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26BB943F5C94AD9041F78A69362C0670 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4875E63FFAFF84A3CDFE99F28B551E /* MASViewConstraint.m */; };
+		2E5458E8C219409457F11D2A10B0A6D6 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 303B58A2959C8EEE96799AD558DDA1D3 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3205E9D7DCE048B857081AD7D48FA4C4 /* Pods-GFPhotoBrowser_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB21B3D937BA361C3CBCB61531FDF37 /* Pods-GFPhotoBrowser_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		457ACF9150DCF9AF445B129CC9678FB6 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FC8E35EDBC629D62166DD797E6DE52 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D4F2050654580FE1F1D5F4F82CEDDB8 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F2CF8861113B6F7AAE7EA65C6A7C1B /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53BDF81D0A52EA526D597A5C5B139D7F /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 537638D0C329C86D4ED401237F5D895F /* MASCompositeConstraint.m */; };
-		546A9090515F4E5F57EA3324036A0459 /* GFAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6E1EE68823E1E86C0900FACB4E7249 /* GFAlbumCell.m */; };
-		59F81DE0305CC2AC448D2A3C6B3280A2 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 986CB32629319F7F2256662716334944 /* MASConstraint.m */; };
-		5F3C7A5EEE31763D425F76A4F3E6C6BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		6230C102162087640821ABDE5F0BC534 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		62AF06973D1D2BF2C810A19E7ED9AC88 /* GFPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E065BEA9493172ADDD60E8A9E20C5A11 /* GFPhotoCell.m */; };
-		636BBA734C1A17A734761D674FAE8800 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 96DCAB46CA2931B8140F2639F17404AF /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6AFE011ABB03BD5BA8567A62FC418B70 /* GFPhotosDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DE86603EE4B5941475993CD6585D129F /* GFPhotosDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C23BBF56ED4DCC10CA1765A6736D1F8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 611E26C24600589F4729E5EF510272FB /* MASLayoutConstraint.m */; };
-		7060BC11865F9F3BACE995A65C1A7DA8 /* GFPhotoBrowserNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 407E7BFC292C8C7EAC80D3C8A50C392F /* GFPhotoBrowserNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73BBDACC22CCA36A6DAAA167AD780BAF /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3818136FED67BD32E3A7FAEDE4F68F /* MASConstraintMaker.m */; };
-		756DF24546C7D91459DCADC8F1C98660 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4875E63FFAFF84A3CDFE99F28B551E /* MASViewConstraint.m */; };
-		7C17BEA6034027310D1D205DB2008CA5 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C484EF8499F67EC81CA7E27930A63CDC /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82F4DDDD4D85B261E12942FF88311A3B /* GFPhotoBrowser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F7183F461D5E2D7D11F7746A566714D /* GFPhotoBrowser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88DE7BAB1F4999A5F4B617F44E5FD1D3 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = A02D339E60E114FCC992372E93245BA1 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A6EEF68E7625AB66A3A8DED1594F88F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3980E01C213ECEDEABAC38C1CFD3946D /* ViewController+MASAdditions.m */; };
-		8CD45B754192DE834B642975E85257AB /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BEFB59B86F59C579FF7594DCF78FEB /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92C77A9B6CBDF29983127D06DCC3D1F1 /* GFPhotosDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CBB7C7C61D25953565CD53748CDC5C7 /* GFPhotosDataSource.m */; };
-		9E76A03C1C04FCD4BA9E5A36C15AC425 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		A074EFE3FF0385591FFFD12BA53AD757 /* GFAlbumViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7680AABE20DCC273324CA4DD4BFB923 /* GFAlbumViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A08A8AB356264E248D01F1BC0EF08166 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE937DE71A73D4B7779FF934EC2373E2 /* Masonry-dummy.m */; };
-		A7370CE9231F9A4927142D79021879EC /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 0925CC604B01F156279E8952DDE3EDDB /* MASViewAttribute.m */; };
+		4481F033BF8B6958B4DC2AB831E09F07 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = A02D339E60E114FCC992372E93245BA1 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C1B39BB54CBFC91E9E4433E79F41867 /* GFAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A01C9CAB0507B8676795855351FB8 /* GFAlbumViewController.m */; };
+		57D95916562C771824C914BE61A3E1BA /* GFPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 692F0B02BBF96B69099C207325F1F33C /* GFPhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59A0D996C30D6F3EBE3AFA403AB48E00 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 611E26C24600589F4729E5EF510272FB /* MASLayoutConstraint.m */; };
+		63F39C0E79DFC906D6B365402FBDAEF2 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 986CB32629319F7F2256662716334944 /* MASConstraint.m */; };
+		69D6561B8928141EF76A005374B79812 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE937DE71A73D4B7779FF934EC2373E2 /* Masonry-dummy.m */; };
+		6B02BC55768DCA472D27CEF67D61A0D5 /* photo_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 855CF8550CECE60242650338570D268C /* photo_unselected@2x.png */; };
+		6FC0ACAFA541FFFED349E6B0704BC034 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F8187F5CAD09C6C6B2B54C65B4A807C9 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77D0DC64FCF37B3955BCC605CFBF439D /* GFAlbumViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AD7DC5049B937F8557D42AD58D15BA22 /* GFAlbumViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A4F519236209097B03B07575BEC8BA1 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 537638D0C329C86D4ED401237F5D895F /* MASCompositeConstraint.m */; };
+		7EC61395E1A431F8CAECF6823FD606C2 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 61881F60AB333EA86CE7881063A4BA60 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EEB942804E264B1A222C0EB75855D8A /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A649F9297535214EF97548C9EA9FA33 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F728210302F904F5C2BB03EB571A854 /* GFPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2D9F605E820B7FA8112A347036A58 /* GFPhotoBrowserViewController.m */; };
+		9FE5DE8BA1178400B9840D65C9084362 /* GFAlbumCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A71E4893E17EF82EEC577865A4281373 /* GFAlbumCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7AB2DED88C960B7034087C0B0B32956 /* Pods-GFPhotoBrowser_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F46B0142C3181A7097E0BF126364A64C /* Pods-GFPhotoBrowser_Example-dummy.m */; };
-		B44383A3FA435C1E986942C817339302 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 61881F60AB333EA86CE7881063A4BA60 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA16A4A9F592DE2DC808BFD3D074C762 /* GFPhotoBrowser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3B72202E03D28ACAF05CEE3FD0513E /* GFPhotoBrowser-dummy.m */; };
-		C0A16E00B4BC2D88A7833D5DAED62942 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A649F9297535214EF97548C9EA9FA33 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8DF22EAFFC2F81B0426E2165AC93E44 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = ECBBB506D4D551AB1A637EE3145A459E /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC8F9B4A1AC4E276EA8AA4C6F2BF3CD4 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 303B58A2959C8EEE96799AD558DDA1D3 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D84B2C1B8AABF5EC9C83511CCADCDE25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		D8B1525CB3DFCBD8E5032680530413D9 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F8187F5CAD09C6C6B2B54C65B4A807C9 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E72EDE323AC9F92EC8A00A93AC186093 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C550CDA10D592ABB6A0383A3509F05 /* NSArray+MASAdditions.m */; };
-		F292F44843FC49F77C43D15002E0447D /* GFPhotoBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77DEEFAFF340EB6DBC40C96F6D4F4E1 /* GFPhotoBrowserNavigationController.m */; };
-		F3E47FE2910F8FE676AC6AE368791FA6 /* GFPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40335FD4ECE35A436DE8B069B82973AB /* GFPhotoBrowserViewController.m */; };
-		F4B3E44D5D2F6508BC1BB35A9FBDEC70 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC0A25DD6F58D072A4ACFC92D9237BF /* View+MASAdditions.m */; };
-		F5CBEA9970E13F3B68555325BAAF5F57 /* GFAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCA34E51C3098056079D5714ED0542 /* GFAlbumViewController.m */; };
-		FCDE8C4D5B751399B52DA9AEDAB1A9DB /* GFPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 99253E6ADB494802D69BB7B0F95B1E7B /* GFPhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A930D9FB0FBC97BCAE96DE2F91809219 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF35C23E029BF10AE1D3595169AFBCF /* Masonry.framework */; };
+		AA210532EBCA0527745190C861A429B5 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = ECBBB506D4D551AB1A637EE3145A459E /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA228F7C454F7E24B0AD8BCBE0AC90D2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A214B89738295B4A4B00EEB1960E8865 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		AC1E779271D1509D46259041A187D52D /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 0925CC604B01F156279E8952DDE3EDDB /* MASViewAttribute.m */; };
+		B5923C30C15530625D89C410006917CF /* GFPhotosDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5739284D654B595A4CA3E81B4A7D8CBF /* GFPhotosDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B795465075E70F61139BD94900378DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9A3FCE044F805F44733D26C30276A /* Foundation.framework */; };
+		B86FFECFE70F21FADB9C17DDD664D95C /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D5C71A7A4B3156186EC98A377E8543 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B881696BEBDAA894245DD5422CF31970 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C484EF8499F67EC81CA7E27930A63CDC /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC4C135DEDCDE58F24B459112FA6CFEF /* photo_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 730F6350842BBB9A875427BC9B46B9C1 /* photo_selected@2x.png */; };
+		C0B69E726FD07A3B689FFEDFB203B605 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3818136FED67BD32E3A7FAEDE4F68F /* MASConstraintMaker.m */; };
+		C0DBA417F1392ABF1616C19F164CDC15 /* GFPhotoBrowser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4B025E50C5B22A02323A0508986982 /* GFPhotoBrowser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE5C0931E956DA07912A6DC01507105B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88521F0D0CD896EB7EB97EBCD22D91A6 /* UIKit.framework */; };
+		CE718158315D3C9D03DB91BDDC9FB10D /* GFPhotoBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7181E57C9200030934D897BE542E4C54 /* GFPhotoBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEC9243D024D91E3ECCCDEA695357DD4 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C550CDA10D592ABB6A0383A3509F05 /* NSArray+MASAdditions.m */; };
+		D5F85CF4171B7026C599E31B584C69C8 /* UIImage+GFPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 148F75A6F884E51CD8F640AF3FCCACD3 /* UIImage+GFPhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D84B2C1B8AABF5EC9C83511CCADCDE25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9A3FCE044F805F44733D26C30276A /* Foundation.framework */; };
+		E14C11DC6F62EEE4B3372D8A6B9DF6AB /* GFPhotoBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DD5B33290E1888E5CD61A001BB32A7 /* GFPhotoBrowserNavigationController.m */; };
+		E310A586794CC5456B73170743A4B8C5 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FF217FE4E512E3883BAD867868CB42D9 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3352A32221EC65AD3781725C41C50F8 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 96DCAB46CA2931B8140F2639F17404AF /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8F47FA03B261660606441951841AA17 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F69E835336330FF06E7268D32D667C9 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9DC9A296DF41AA93B6EF0C7241C0D71 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC0A25DD6F58D072A4ACFC92D9237BF /* View+MASAdditions.m */; };
+		EF77664DCC7398ECF69E52DA18C10B88 /* GFPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA975B470720679A30D8565F2CE987 /* GFPhotoCell.m */; };
+		F7B8BD6D50EA31C4261060136A3046C1 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AD04C760F0EB4FE7B23D85D56145A97F /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F82A3E1BCB401F8D7BF3CFD379D2FE16 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3980E01C213ECEDEABAC38C1CFD3946D /* ViewController+MASAdditions.m */; };
+		FF184302B7C93FAC5F410B4D260F8D4C /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FC8E35EDBC629D62166DD797E6DE52 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,82 +68,103 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D52144DE9D7255DE912490FF5A806573;
+			remoteGlobalIDString = BBCBD7FF73829F24A0592DE1F05A136D;
+			remoteInfo = Masonry;
+		};
+		B56623EE823695E359BB16C0CF75625C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBCBD7FF73829F24A0592DE1F05A136D;
 			remoteInfo = Masonry;
 		};
 		D46BBDE5D52B3FAAC6E52E4511605391 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 280694B537A890D0991148AE9618BA6B;
+			remoteGlobalIDString = 9E7682698E2388E37304AC25CA8B8243;
 			remoteInfo = GFPhotoBrowser;
+		};
+		DC8770F2175823F4DDD5F43D69308789 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F54BAE80DDEA198A11E2EBC1B810ADB5;
+			remoteInfo = "GFPhotoBrowser-GFPhotoBrowser";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0925CC604B01F156279E8952DDE3EDDB /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
-		0BC000EF6F1A870C463A14BE6CB63E88 /* GFPhotoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoCell.h; sourceTree = "<group>"; };
+		11EA3924C9DAEDE2115C0542810DB538 /* GFPhotoBrowserNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowserNavigationController.h; sourceTree = "<group>"; };
 		13FC8E35EDBC629D62166DD797E6DE52 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
-		1504AA25235C88ED33088CC0AAF09851 /* Pods_GFPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GFPhotoBrowser_Example.framework; path = "Pods-GFPhotoBrowser_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		148F75A6F884E51CD8F640AF3FCCACD3 /* UIImage+GFPhotoBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+GFPhotoBrowser.h"; sourceTree = "<group>"; };
+		1785827A157B8C8C33C7CA13EE48FC7B /* GFPhotoBrowser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GFPhotoBrowser.bundle; path = GFPhotoBrowser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D513D897FBA988FD23B74DCFB969111 /* Pods-GFPhotoBrowser_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GFPhotoBrowser_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1F0183E721D7FD6AF70B4A911C1B1B95 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		1FB21B3D937BA361C3CBCB61531FDF37 /* Pods-GFPhotoBrowser_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GFPhotoBrowser_Example-umbrella.h"; sourceTree = "<group>"; };
+		1FC2D9F605E820B7FA8112A347036A58 /* GFPhotoBrowserViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		2998CC27654E7770D81F8DBE76B3A4AE /* GFPhotoBrowser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GFPhotoBrowser.xcconfig; sourceTree = "<group>"; };
 		29C6F9C1B56876EC042FB009EA12A858 /* Pods-GFPhotoBrowser_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GFPhotoBrowser_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2F69E835336330FF06E7268D32D667C9 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		2FFCA34E51C3098056079D5714ED0542 /* GFAlbumViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFAlbumViewController.m; sourceTree = "<group>"; };
 		3027ECF3675B7D92CFE998E7807ED8BD /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Masonry.modulemap; sourceTree = "<group>"; };
 		303B58A2959C8EEE96799AD558DDA1D3 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		31A0D58BBCF555E7005262E42C0DA567 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3980E01C213ECEDEABAC38C1CFD3946D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		3D31E8152CA817165BA6DC0D40A0BBF5 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		40335FD4ECE35A436DE8B069B82973AB /* GFPhotoBrowserViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoBrowserViewController.m; sourceTree = "<group>"; };
-		407E7BFC292C8C7EAC80D3C8A50C392F /* GFPhotoBrowserNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowserNavigationController.h; sourceTree = "<group>"; };
-		510D6A276D4623C4ABF6672BD501CEA8 /* GFPhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GFPhotoBrowser.framework; path = GFPhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7A01C9CAB0507B8676795855351FB8 /* GFAlbumViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFAlbumViewController.m; sourceTree = "<group>"; };
+		4EBEE40DDB93AF3E62FB40580B7EDFAC /* GFAlbumCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFAlbumCell.m; sourceTree = "<group>"; };
 		537638D0C329C86D4ED401237F5D895F /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		56DD5B33290E1888E5CD61A001BB32A7 /* GFPhotoBrowserNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoBrowserNavigationController.m; sourceTree = "<group>"; };
+		5739284D654B595A4CA3E81B4A7D8CBF /* GFPhotosDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotosDataSource.h; sourceTree = "<group>"; };
 		5A649F9297535214EF97548C9EA9FA33 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		5B4B025E50C5B22A02323A0508986982 /* GFPhotoBrowser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GFPhotoBrowser-umbrella.h"; sourceTree = "<group>"; };
 		611E26C24600589F4729E5EF510272FB /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		616931F6FEFC26A83B0F3719599FC461 /* Pods-GFPhotoBrowser_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GFPhotoBrowser_Example-frameworks.sh"; sourceTree = "<group>"; };
-		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		61881F60AB333EA86CE7881063A4BA60 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
-		6CBB7C7C61D25953565CD53748CDC5C7 /* GFPhotosDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotosDataSource.m; sourceTree = "<group>"; };
+		68E08A68740DB7A86BD5FF3C2CDF561C /* GFPhotoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoCell.h; sourceTree = "<group>"; };
+		692F0B02BBF96B69099C207325F1F33C /* GFPhotoBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowser.h; sourceTree = "<group>"; };
+		6A5D4B74C5B23232A411AF301CC95C77 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BF35C23E029BF10AE1D3595169AFBCF /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4875E63FFAFF84A3CDFE99F28B551E /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		72C850E892C200B07B30C8E6744569C0 /* GFPhotoBrowser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GFPhotoBrowser.xcconfig; sourceTree = "<group>"; };
+		7181E57C9200030934D897BE542E4C54 /* GFPhotoBrowserViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		730F6350842BBB9A875427BC9B46B9C1 /* photo_selected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "photo_selected@2x.png"; sourceTree = "<group>"; };
+		7321519E477F1ED90AFFC0CE77F6F0F3 /* GFPhotoBrowser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GFPhotoBrowser.modulemap; sourceTree = "<group>"; };
 		77F2CF8861113B6F7AAE7EA65C6A7C1B /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		79BEFB59B86F59C579FF7594DCF78FEB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		7EC0A25DD6F58D072A4ACFC92D9237BF /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
-		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7F44A621BE24B87AEF75DD7193846188 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F7183F461D5E2D7D11F7746A566714D /* GFPhotoBrowser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GFPhotoBrowser-umbrella.h"; sourceTree = "<group>"; };
-		80ADA300300822895A8647DB057DA087 /* GFPhotoBrowser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GFPhotoBrowser-prefix.pch"; sourceTree = "<group>"; };
-		80FED6D76A0FF9F119E382DA3E7BB320 /* GFPhotoBrowserViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		855CF8550CECE60242650338570D268C /* photo_unselected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "photo_unselected@2x.png"; sourceTree = "<group>"; };
+		88521F0D0CD896EB7EB97EBCD22D91A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8C1BC543B62699445AD1C3DAE3F21FAC /* ResourceBundle-GFPhotoBrowser-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GFPhotoBrowser-Info.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96DCAB46CA2931B8140F2639F17404AF /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		986CB32629319F7F2256662716334944 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		99253E6ADB494802D69BB7B0F95B1E7B /* GFPhotoBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotoBrowser.h; sourceTree = "<group>"; };
+		9DA346DA7A803349FAD4BDEDFE6905E8 /* GFPhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GFPhotoBrowser.framework; path = GFPhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF95CE46F82C74E2C0FD17A66FDC23D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A02D339E60E114FCC992372E93245BA1 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		A214B89738295B4A4B00EEB1960E8865 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		A3F45F172D95C7DABD1FBEEEF6F4A1DC /* GFPhotosDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotosDataSource.m; sourceTree = "<group>"; };
 		A4490F4FCAFCC776BF31A1A9BF60F144 /* Pods-GFPhotoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GFPhotoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A673BA2285D8C365300516B9C70244DC /* GFPhotoBrowser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GFPhotoBrowser-dummy.m"; sourceTree = "<group>"; };
 		A6B514C6E75C61B808ACB71EDB2E8315 /* Pods-GFPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GFPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A71E4893E17EF82EEC577865A4281373 /* GFAlbumCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFAlbumCell.h; sourceTree = "<group>"; };
 		AD04C760F0EB4FE7B23D85D56145A97F /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		AD7DC5049B937F8557D42AD58D15BA22 /* GFAlbumViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFAlbumViewController.h; sourceTree = "<group>"; };
 		B1C550CDA10D592ABB6A0383A3509F05 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		B77DEEFAFF340EB6DBC40C96F6D4F4E1 /* GFPhotoBrowserNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoBrowserNavigationController.m; sourceTree = "<group>"; };
+		B3D9A3FCE044F805F44733D26C30276A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B7B18C08D654F44C2AD84303D4FBC1B1 /* Pods-GFPhotoBrowser_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GFPhotoBrowser_Example-resources.sh"; sourceTree = "<group>"; };
+		C220F952344AA3C1CCEFE7AF046D5987 /* GFPhotoBrowser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GFPhotoBrowser-prefix.pch"; sourceTree = "<group>"; };
 		C484EF8499F67EC81CA7E27930A63CDC /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		C6D5C71A7A4B3156186EC98A377E8543 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		C7680AABE20DCC273324CA4DD4BFB923 /* GFAlbumViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFAlbumViewController.h; sourceTree = "<group>"; };
+		C72F66A99DDC17E7B226AD84224D238F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB1E383C30620987161C0A9AD6E723E3 /* Pods-GFPhotoBrowser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GFPhotoBrowser_Example.modulemap"; sourceTree = "<group>"; };
-		CC6E1EE68823E1E86C0900FACB4E7249 /* GFAlbumCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFAlbumCell.m; sourceTree = "<group>"; };
 		CD9460636A228DA2C8F5EC4A2AB7EBB6 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		CF57C89344E0EDA5F54D778E1CC1E268 /* GFPhotoBrowser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GFPhotoBrowser.modulemap; sourceTree = "<group>"; };
-		DE86603EE4B5941475993CD6585D129F /* GFPhotosDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFPhotosDataSource.h; sourceTree = "<group>"; };
-		DF07773102CE5FE10AF52EEDC7E11651 /* GFAlbumCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GFAlbumCell.h; sourceTree = "<group>"; };
-		E065BEA9493172ADDD60E8A9E20C5A11 /* GFPhotoCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoCell.m; sourceTree = "<group>"; };
+		D3B468481BDABDA12D2F6122347A09DA /* Pods_GFPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GFPhotoBrowser_Example.framework; path = "Pods-GFPhotoBrowser_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBBB506D4D551AB1A637EE3145A459E /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		EFBA975B470720679A30D8565F2CE987 /* GFPhotoCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GFPhotoCell.m; sourceTree = "<group>"; };
 		F46B0142C3181A7097E0BF126364A64C /* Pods-GFPhotoBrowser_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GFPhotoBrowser_Example-dummy.m"; sourceTree = "<group>"; };
 		F8187F5CAD09C6C6B2B54C65B4A807C9 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		FB3B72202E03D28ACAF05CEE3FD0513E /* GFPhotoBrowser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GFPhotoBrowser-dummy.m"; sourceTree = "<group>"; };
+		FCAF997265F1EFE494D9759A16FFBCCC /* UIImage+GFPhotoBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GFPhotoBrowser.m"; sourceTree = "<group>"; };
 		FE937DE71A73D4B7779FF934EC2373E2 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		FF217FE4E512E3883BAD867868CB42D9 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		FF3818136FED67BD32E3A7FAEDE4F68F /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
@@ -152,60 +179,164 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C851447EDA65FBE9FE3ADDC8C2A08846 /* Frameworks */ = {
+		5376B4CFE16E4F8AA715041FC948BFBF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E76A03C1C04FCD4BA9E5A36C15AC425 /* Foundation.framework in Frameworks */,
+				B795465075E70F61139BD94900378DB3 /* Foundation.framework in Frameworks */,
+				A930D9FB0FBC97BCAE96DE2F91809219 /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6EC657AC5A7BEE9A3D288B582F4C5E9 /* Frameworks */ = {
+		58AF015DCFBEFFFA8818B0FA287863EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F3C7A5EEE31763D425F76A4F3E6C6BD /* Foundation.framework in Frameworks */,
-				6230C102162087640821ABDE5F0BC534 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68059D381A13016E203CC92374A6B761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0187F45138601BC419ED88D6D5EEB04A /* Foundation.framework in Frameworks */,
+				CE5C0931E956DA07912A6DC01507105B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D673F57BD96458712C1E9BDC0E7FBA4 /* Models */ = {
+		004655B08A7C5703C11FD4E07477843A /* GFPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				CED1BDE4E456F72E274273E101D6B070 /* GFPhotoBrowser */,
+				193C24B8528CE347BA2A31C8F6830096 /* Classes */,
 			);
-			name = Models;
+			name = GFPhotoBrowser;
+			path = GFPhotoBrowser;
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		00EEA48FA7C773B3AA198E7E919B03D4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+				5739284D654B595A4CA3E81B4A7D8CBF /* GFPhotosDataSource.h */,
+				A3F45F172D95C7DABD1FBEEEF6F4A1DC /* GFPhotosDataSource.m */,
+				148F75A6F884E51CD8F640AF3FCCACD3 /* UIImage+GFPhotoBrowser.h */,
+				FCAF997265F1EFE494D9759A16FFBCCC /* UIImage+GFPhotoBrowser.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1666A2113D7DE6C8F111E0521F205E1F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7DD9A9C0F6335BAFE0334D5755B1C192 /* GFPhotoBrowser */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		193C24B8528CE347BA2A31C8F6830096 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AD7DC5049B937F8557D42AD58D15BA22 /* GFAlbumViewController.h */,
+				4C7A01C9CAB0507B8676795855351FB8 /* GFAlbumViewController.m */,
+				11EA3924C9DAEDE2115C0542810DB538 /* GFPhotoBrowserNavigationController.h */,
+				56DD5B33290E1888E5CD61A001BB32A7 /* GFPhotoBrowserNavigationController.m */,
+				7181E57C9200030934D897BE542E4C54 /* GFPhotoBrowserViewController.h */,
+				1FC2D9F605E820B7FA8112A347036A58 /* GFPhotoBrowserViewController.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		237CAC74F3B05C73121E67E633790D0B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				730F6350842BBB9A875427BC9B46B9C1 /* photo_selected@2x.png */,
+				855CF8550CECE60242650338570D268C /* photo_unselected@2x.png */,
+			);
+			name = Assets;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3D1C66FA3992D8EAF1E54110B75BA851 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A71E4893E17EF82EEC577865A4281373 /* GFAlbumCell.h */,
+				4EBEE40DDB93AF3E62FB40580B7EDFAC /* GFAlbumCell.m */,
+				68E08A68740DB7A86BD5FF3C2CDF561C /* GFPhotoCell.h */,
+				EFBA975B470720679A30D8565F2CE987 /* GFPhotoCell.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4DEC08B1E72ACFF3AF24322EBC7DC781 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7321519E477F1ED90AFFC0CE77F6F0F3 /* GFPhotoBrowser.modulemap */,
+				2998CC27654E7770D81F8DBE76B3A4AE /* GFPhotoBrowser.xcconfig */,
+				A673BA2285D8C365300516B9C70244DC /* GFPhotoBrowser-dummy.m */,
+				C220F952344AA3C1CCEFE7AF046D5987 /* GFPhotoBrowser-prefix.pch */,
+				5B4B025E50C5B22A02323A0508986982 /* GFPhotoBrowser-umbrella.h */,
+				C72F66A99DDC17E7B226AD84224D238F /* Info.plist */,
+				8C1BC543B62699445AD1C3DAE3F21FAC /* ResourceBundle-GFPhotoBrowser-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GFPhotoBrowser";
+			sourceTree = "<group>";
+		};
+		59511511C2B4BC905C933DCC67E365C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BF35C23E029BF10AE1D3595169AFBCF /* Masonry.framework */,
+				B4F0BA4A38BC9D168D667B378E89C6D9 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		641960FA06E1BAE05349E29840ED57BE /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				CCDAFCB72A8F6F6FD89573CE96986816 /* GFPhotoBrowser */,
-			);
-			name = Controllers;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				FDB8713ADA176EE40FAD29A591488E62 /* Development Pods */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				9B94036C50D9C858D96489D2CA60CD99 /* Development Pods */,
+				59511511C2B4BC905C933DCC67E365C4 /* Frameworks */,
 				E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */,
-				E53B6A1A46C71340E8A9A8E0D5ABC2D6 /* Products */,
+				996A702994C166831905D97B0C2CD1C5 /* Products */,
 				942AB1B2B0BEABB67B0634597DEE99FB /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7DD9A9C0F6335BAFE0334D5755B1C192 /* GFPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				237CAC74F3B05C73121E67E633790D0B /* Assets */,
+			);
+			name = GFPhotoBrowser;
+			path = GFPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		8418A7773F7D5E24CE02219D4ECF7DB9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9BAFB1D937BDB0B0B25D386F815D5A1A /* GFPhotoBrowser */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		887BFFDC72DA499F082E80958CC20459 /* GFPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				8418A7773F7D5E24CE02219D4ECF7DB9 /* Cells */,
+				9DA8C03FB698C863E0723AA22574D390 /* Controllers */,
+				E4592A1F8B08124BD334AC1CEA5A00E2 /* GFPhotoBrowser */,
+				AF10A36EF439BB853762D131B7EDAC6F /* Models */,
+				1666A2113D7DE6C8F111E0521F205E1F /* Resources */,
+				4DEC08B1E72ACFF3AF24322EBC7DC781 /* Support Files */,
+			);
+			name = GFPhotoBrowser;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		8886C581FC41BF88868EDA68E8B4FB5F /* Pods-GFPhotoBrowser_Example */ = {
@@ -234,21 +365,49 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		981C4AAA4D9916E5818EB31BB32846AE /* GFPhotoBrowser */ = {
+		996A702994C166831905D97B0C2CD1C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				99253E6ADB494802D69BB7B0F95B1E7B /* GFPhotoBrowser.h */,
+				1785827A157B8C8C33C7CA13EE48FC7B /* GFPhotoBrowser.bundle */,
+				9DA346DA7A803349FAD4BDEDFE6905E8 /* GFPhotoBrowser.framework */,
+				6A5D4B74C5B23232A411AF301CC95C77 /* Masonry.framework */,
+				D3B468481BDABDA12D2F6122347A09DA /* Pods_GFPhotoBrowser_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B94036C50D9C858D96489D2CA60CD99 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				887BFFDC72DA499F082E80958CC20459 /* GFPhotoBrowser */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9BAFB1D937BDB0B0B25D386F815D5A1A /* GFPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				3D1C66FA3992D8EAF1E54110B75BA851 /* Classes */,
 			);
 			name = GFPhotoBrowser;
 			path = GFPhotoBrowser;
 			sourceTree = "<group>";
 		};
-		9F4607F40F8DC108B9AAB5A9523F2E01 /* Cells */ = {
+		9DA8C03FB698C863E0723AA22574D390 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DDC1650E90E97461A2F4B062FD94B8E9 /* GFPhotoBrowser */,
+				004655B08A7C5703C11FD4E07477843A /* GFPhotoBrowser */,
 			);
-			name = Cells;
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A1B06F814C11A6A68A416C7E18ED5851 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				692F0B02BBF96B69099C207325F1F33C /* GFPhotoBrowser.h */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		A2A20986957FCCEF3865AFC2DAE207A8 /* Masonry */ = {
@@ -285,19 +444,6 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		A68772DB7F9CD15581381CBE41AA02EE /* GFPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				9F4607F40F8DC108B9AAB5A9523F2E01 /* Cells */,
-				641960FA06E1BAE05349E29840ED57BE /* Controllers */,
-				981C4AAA4D9916E5818EB31BB32846AE /* GFPhotoBrowser */,
-				3D673F57BD96458712C1E9BDC0E7FBA4 /* Models */,
-				F553196BC46978CB1AB64078ADB5312D /* Support Files */,
-			);
-			name = GFPhotoBrowser;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		AB2D74BCA437C31F2B7B0E2905262257 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,59 +458,39 @@
 			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
-		CCDAFCB72A8F6F6FD89573CE96986816 /* GFPhotoBrowser */ = {
+		AF10A36EF439BB853762D131B7EDAC6F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C7680AABE20DCC273324CA4DD4BFB923 /* GFAlbumViewController.h */,
-				2FFCA34E51C3098056079D5714ED0542 /* GFAlbumViewController.m */,
-				407E7BFC292C8C7EAC80D3C8A50C392F /* GFPhotoBrowserNavigationController.h */,
-				B77DEEFAFF340EB6DBC40C96F6D4F4E1 /* GFPhotoBrowserNavigationController.m */,
-				80FED6D76A0FF9F119E382DA3E7BB320 /* GFPhotoBrowserViewController.h */,
-				40335FD4ECE35A436DE8B069B82973AB /* GFPhotoBrowserViewController.m */,
+				E3FA3E810C50C0BF596F3F41FA54D25A /* GFPhotoBrowser */,
 			);
-			name = GFPhotoBrowser;
-			path = GFPhotoBrowser;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		CED1BDE4E456F72E274273E101D6B070 /* GFPhotoBrowser */ = {
+		B4F0BA4A38BC9D168D667B378E89C6D9 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DE86603EE4B5941475993CD6585D129F /* GFPhotosDataSource.h */,
-				6CBB7C7C61D25953565CD53748CDC5C7 /* GFPhotosDataSource.m */,
-			);
-			name = GFPhotoBrowser;
-			path = GFPhotoBrowser;
-			sourceTree = "<group>";
-		};
-		DDC1650E90E97461A2F4B062FD94B8E9 /* GFPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				DF07773102CE5FE10AF52EEDC7E11651 /* GFAlbumCell.h */,
-				CC6E1EE68823E1E86C0900FACB4E7249 /* GFAlbumCell.m */,
-				0BC000EF6F1A870C463A14BE6CB63E88 /* GFPhotoCell.h */,
-				E065BEA9493172ADDD60E8A9E20C5A11 /* GFPhotoCell.m */,
-			);
-			name = GFPhotoBrowser;
-			path = GFPhotoBrowser;
-			sourceTree = "<group>";
-		};
-		E53B6A1A46C71340E8A9A8E0D5ABC2D6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				510D6A276D4623C4ABF6672BD501CEA8 /* GFPhotoBrowser.framework */,
-				3D31E8152CA817165BA6DC0D40A0BBF5 /* Masonry.framework */,
-				1504AA25235C88ED33088CC0AAF09851 /* Pods_GFPhotoBrowser_Example.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
-				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+				B3D9A3FCE044F805F44733D26C30276A /* Foundation.framework */,
+				88521F0D0CD896EB7EB97EBCD22D91A6 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		E3FA3E810C50C0BF596F3F41FA54D25A /* GFPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				00EEA48FA7C773B3AA198E7E919B03D4 /* Classes */,
+			);
+			name = GFPhotoBrowser;
+			path = GFPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		E4592A1F8B08124BD334AC1CEA5A00E2 /* GFPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				A1B06F814C11A6A68A416C7E18ED5851 /* Classes */,
+			);
+			name = GFPhotoBrowser;
+			path = GFPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */ = {
@@ -373,28 +499,6 @@
 				A2A20986957FCCEF3865AFC2DAE207A8 /* Masonry */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		F553196BC46978CB1AB64078ADB5312D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CF57C89344E0EDA5F54D778E1CC1E268 /* GFPhotoBrowser.modulemap */,
-				72C850E892C200B07B30C8E6744569C0 /* GFPhotoBrowser.xcconfig */,
-				FB3B72202E03D28ACAF05CEE3FD0513E /* GFPhotoBrowser-dummy.m */,
-				80ADA300300822895A8647DB057DA087 /* GFPhotoBrowser-prefix.pch */,
-				7F7183F461D5E2D7D11F7746A566714D /* GFPhotoBrowser-umbrella.h */,
-				31A0D58BBCF555E7005262E42C0DA567 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GFPhotoBrowser";
-			sourceTree = "<group>";
-		};
-		FDB8713ADA176EE40FAD29A591488E62 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A68772DB7F9CD15581381CBE41AA02EE /* GFPhotoBrowser */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,64 +512,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		665028EE01373768AC94E04D46DF65D9 /* Headers */ = {
+		C8EAAEA01842156E80624F2AD0080A6E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12EAFCEF051E44578C9005A4C2497ADC /* GFAlbumCell.h in Headers */,
-				A074EFE3FF0385591FFFD12BA53AD757 /* GFAlbumViewController.h in Headers */,
-				82F4DDDD4D85B261E12942FF88311A3B /* GFPhotoBrowser-umbrella.h in Headers */,
-				FCDE8C4D5B751399B52DA9AEDAB1A9DB /* GFPhotoBrowser.h in Headers */,
-				7060BC11865F9F3BACE995A65C1A7DA8 /* GFPhotoBrowserNavigationController.h in Headers */,
-				1296A1AB6C74526543B4BC980156F9DF /* GFPhotoBrowserViewController.h in Headers */,
-				0CAB93FE559745D02FC624611C9E7C31 /* GFPhotoCell.h in Headers */,
-				6AFE011ABB03BD5BA8567A62FC418B70 /* GFPhotosDataSource.h in Headers */,
+				0BD18AC5043407B9E15351819E4C2309 /* MASCompositeConstraint.h in Headers */,
+				19C2E868A307F0C0B0169F04083B0247 /* MASConstraint+Private.h in Headers */,
+				AA210532EBCA0527745190C861A429B5 /* MASConstraint.h in Headers */,
+				4481F033BF8B6958B4DC2AB831E09F07 /* MASConstraintMaker.h in Headers */,
+				B881696BEBDAA894245DD5422CF31970 /* MASLayoutConstraint.h in Headers */,
+				FF184302B7C93FAC5F410B4D260F8D4C /* Masonry-umbrella.h in Headers */,
+				2E5458E8C219409457F11D2A10B0A6D6 /* Masonry.h in Headers */,
+				F7B8BD6D50EA31C4261060136A3046C1 /* MASUtilities.h in Headers */,
+				E3352A32221EC65AD3781725C41C50F8 /* MASViewAttribute.h in Headers */,
+				1D2E48087BB1E3D5BA34AA802F3843C8 /* MASViewConstraint.h in Headers */,
+				7EEB942804E264B1A222C0EB75855D8A /* NSArray+MASAdditions.h in Headers */,
+				6FC0ACAFA541FFFED349E6B0704BC034 /* NSArray+MASShorthandAdditions.h in Headers */,
+				E8F47FA03B261660606441951841AA17 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				E310A586794CC5456B73170743A4B8C5 /* View+MASAdditions.h in Headers */,
+				7EC61395E1A431F8CAECF6823FD606C2 /* View+MASShorthandAdditions.h in Headers */,
+				B86FFECFE70F21FADB9C17DDD664D95C /* ViewController+MASAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3E9930C736C01D12F5733EFD1F0A948 /* Headers */ = {
+		CD26F7FA2BE4BA3E638246A5F40E1112 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CD45B754192DE834B642975E85257AB /* MASCompositeConstraint.h in Headers */,
-				4D4F2050654580FE1F1D5F4F82CEDDB8 /* MASConstraint+Private.h in Headers */,
-				C8DF22EAFFC2F81B0426E2165AC93E44 /* MASConstraint.h in Headers */,
-				88DE7BAB1F4999A5F4B617F44E5FD1D3 /* MASConstraintMaker.h in Headers */,
-				7C17BEA6034027310D1D205DB2008CA5 /* MASLayoutConstraint.h in Headers */,
-				457ACF9150DCF9AF445B129CC9678FB6 /* Masonry-umbrella.h in Headers */,
-				CC8F9B4A1AC4E276EA8AA4C6F2BF3CD4 /* Masonry.h in Headers */,
-				04A7D6AADAB213CE7D26F8EAD2F87536 /* MASUtilities.h in Headers */,
-				636BBA734C1A17A734761D674FAE8800 /* MASViewAttribute.h in Headers */,
-				091D17D5D8F832D28546A72B788CF0AE /* MASViewConstraint.h in Headers */,
-				C0A16E00B4BC2D88A7833D5DAED62942 /* NSArray+MASAdditions.h in Headers */,
-				D8B1525CB3DFCBD8E5032680530413D9 /* NSArray+MASShorthandAdditions.h in Headers */,
-				0FDB2B4F75591851F0F119EAE70B3F63 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
-				068EF598E554EC57038ACFB89CC2C47A /* View+MASAdditions.h in Headers */,
-				B44383A3FA435C1E986942C817339302 /* View+MASShorthandAdditions.h in Headers */,
-				2854C9B1086758BD2B6681206B6759B4 /* ViewController+MASAdditions.h in Headers */,
+				9FE5DE8BA1178400B9840D65C9084362 /* GFAlbumCell.h in Headers */,
+				77D0DC64FCF37B3955BCC605CFBF439D /* GFAlbumViewController.h in Headers */,
+				C0DBA417F1392ABF1616C19F164CDC15 /* GFPhotoBrowser-umbrella.h in Headers */,
+				57D95916562C771824C914BE61A3E1BA /* GFPhotoBrowser.h in Headers */,
+				19F476627E75E151FD9BF83C3B8CC43A /* GFPhotoBrowserNavigationController.h in Headers */,
+				CE718158315D3C9D03DB91BDDC9FB10D /* GFPhotoBrowserViewController.h in Headers */,
+				07995A50D8E6E9FB91C4CACABE073A32 /* GFPhotoCell.h in Headers */,
+				B5923C30C15530625D89C410006917CF /* GFPhotosDataSource.h in Headers */,
+				D5F85CF4171B7026C599E31B584C69C8 /* UIImage+GFPhotoBrowser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		280694B537A890D0991148AE9618BA6B /* GFPhotoBrowser */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1599BE18C0271A05745DD45D82237C24 /* Build configuration list for PBXNativeTarget "GFPhotoBrowser" */;
-			buildPhases = (
-				6960A41A3629B84A840E2E3DA35E13B5 /* Sources */,
-				C851447EDA65FBE9FE3ADDC8C2A08846 /* Frameworks */,
-				665028EE01373768AC94E04D46DF65D9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GFPhotoBrowser;
-			productName = GFPhotoBrowser;
-			productReference = 510D6A276D4623C4ABF6672BD501CEA8 /* GFPhotoBrowser.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		6FA564FD07D778B08547B4091B49561D /* Pods-GFPhotoBrowser_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AE52754442E51FEEFA61BE860FB22FC /* Build configuration list for PBXNativeTarget "Pods-GFPhotoBrowser_Example" */;
@@ -482,16 +570,36 @@
 			);
 			name = "Pods-GFPhotoBrowser_Example";
 			productName = "Pods-GFPhotoBrowser_Example";
-			productReference = 1504AA25235C88ED33088CC0AAF09851 /* Pods_GFPhotoBrowser_Example.framework */;
+			productReference = D3B468481BDABDA12D2F6122347A09DA /* Pods_GFPhotoBrowser_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D52144DE9D7255DE912490FF5A806573 /* Masonry */ = {
+		9E7682698E2388E37304AC25CA8B8243 /* GFPhotoBrowser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02D024184BD368B565F3B6257DF3C605 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildConfigurationList = F78FAD6CC564C82D71A5E87592DC7F66 /* Build configuration list for PBXNativeTarget "GFPhotoBrowser" */;
 			buildPhases = (
-				00A62ED60FF8A98AB74C8F2CECD850BA /* Sources */,
-				F6EC657AC5A7BEE9A3D288B582F4C5E9 /* Frameworks */,
-				F3E9930C736C01D12F5733EFD1F0A948 /* Headers */,
+				AF3AF1A77CED6A8B5D7A60246B44FF67 /* Sources */,
+				5376B4CFE16E4F8AA715041FC948BFBF /* Frameworks */,
+				DFAF4051ACF3C7B968390E30CFB5E618 /* Resources */,
+				CD26F7FA2BE4BA3E638246A5F40E1112 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E057DBDBC6475E89B612AE6118EA40A7 /* PBXTargetDependency */,
+				1451657808D98DD7B1E9744B74460860 /* PBXTargetDependency */,
+			);
+			name = GFPhotoBrowser;
+			productName = GFPhotoBrowser;
+			productReference = 9DA346DA7A803349FAD4BDEDFE6905E8 /* GFPhotoBrowser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BBCBD7FF73829F24A0592DE1F05A136D /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54EDD70854441E038CF342BA1C02E04D /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				99F91DF55BFCC9D2A856DB8E99F9A97D /* Sources */,
+				68059D381A13016E203CC92374A6B761 /* Frameworks */,
+				C8EAAEA01842156E80624F2AD0080A6E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -499,8 +607,25 @@
 			);
 			name = Masonry;
 			productName = Masonry;
-			productReference = 3D31E8152CA817165BA6DC0D40A0BBF5 /* Masonry.framework */;
+			productReference = 6A5D4B74C5B23232A411AF301CC95C77 /* Masonry.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		F54BAE80DDEA198A11E2EBC1B810ADB5 /* GFPhotoBrowser-GFPhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C9F51DE35CB24226FD13594BFCFF05F /* Build configuration list for PBXNativeTarget "GFPhotoBrowser-GFPhotoBrowser" */;
+			buildPhases = (
+				B0E33405739B1BF272494FEF3FAD6D9E /* Sources */,
+				58AF015DCFBEFFFA8818B0FA287863EF /* Frameworks */,
+				F3DB83D9EEF11998D17F89A9C2EA14DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GFPhotoBrowser-GFPhotoBrowser";
+			productName = "GFPhotoBrowser-GFPhotoBrowser";
+			productReference = 1785827A157B8C8C33C7CA13EE48FC7B /* GFPhotoBrowser.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -519,50 +644,39 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E53B6A1A46C71340E8A9A8E0D5ABC2D6 /* Products */;
+			productRefGroup = 996A702994C166831905D97B0C2CD1C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				280694B537A890D0991148AE9618BA6B /* GFPhotoBrowser */,
-				D52144DE9D7255DE912490FF5A806573 /* Masonry */,
+				9E7682698E2388E37304AC25CA8B8243 /* GFPhotoBrowser */,
+				F54BAE80DDEA198A11E2EBC1B810ADB5 /* GFPhotoBrowser-GFPhotoBrowser */,
+				BBCBD7FF73829F24A0592DE1F05A136D /* Masonry */,
 				6FA564FD07D778B08547B4091B49561D /* Pods-GFPhotoBrowser_Example */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		DFAF4051ACF3C7B968390E30CFB5E618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1137E941FFF83B4CE59B55D20EABE681 /* GFPhotoBrowser.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DB83D9EEF11998D17F89A9C2EA14DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4C135DEDCDE58F24B459112FA6CFEF /* photo_selected@2x.png in Resources */,
+				6B02BC55768DCA472D27CEF67D61A0D5 /* photo_unselected@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		00A62ED60FF8A98AB74C8F2CECD850BA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53BDF81D0A52EA526D597A5C5B139D7F /* MASCompositeConstraint.m in Sources */,
-				59F81DE0305CC2AC448D2A3C6B3280A2 /* MASConstraint.m in Sources */,
-				73BBDACC22CCA36A6DAAA167AD780BAF /* MASConstraintMaker.m in Sources */,
-				6C23BBF56ED4DCC10CA1765A6736D1F8 /* MASLayoutConstraint.m in Sources */,
-				A08A8AB356264E248D01F1BC0EF08166 /* Masonry-dummy.m in Sources */,
-				A7370CE9231F9A4927142D79021879EC /* MASViewAttribute.m in Sources */,
-				756DF24546C7D91459DCADC8F1C98660 /* MASViewConstraint.m in Sources */,
-				E72EDE323AC9F92EC8A00A93AC186093 /* NSArray+MASAdditions.m in Sources */,
-				0F3DF5C3BEFCC9838B53C37735B414BE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				F4B3E44D5D2F6508BC1BB35A9FBDEC70 /* View+MASAdditions.m in Sources */,
-				8A6EEF68E7625AB66A3A8DED1594F88F /* ViewController+MASAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6960A41A3629B84A840E2E3DA35E13B5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				546A9090515F4E5F57EA3324036A0459 /* GFAlbumCell.m in Sources */,
-				F5CBEA9970E13F3B68555325BAAF5F57 /* GFAlbumViewController.m in Sources */,
-				BA16A4A9F592DE2DC808BFD3D074C762 /* GFPhotoBrowser-dummy.m in Sources */,
-				F292F44843FC49F77C43D15002E0447D /* GFPhotoBrowserNavigationController.m in Sources */,
-				F3E47FE2910F8FE676AC6AE368791FA6 /* GFPhotoBrowserViewController.m in Sources */,
-				62AF06973D1D2BF2C810A19E7ED9AC88 /* GFPhotoCell.m in Sources */,
-				92C77A9B6CBDF29983127D06DCC3D1F1 /* GFPhotosDataSource.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		94AA92CD47507A17CDC5468F8229293C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -571,25 +685,94 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99F91DF55BFCC9D2A856DB8E99F9A97D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4F519236209097B03B07575BEC8BA1 /* MASCompositeConstraint.m in Sources */,
+				63F39C0E79DFC906D6B365402FBDAEF2 /* MASConstraint.m in Sources */,
+				C0B69E726FD07A3B689FFEDFB203B605 /* MASConstraintMaker.m in Sources */,
+				59A0D996C30D6F3EBE3AFA403AB48E00 /* MASLayoutConstraint.m in Sources */,
+				69D6561B8928141EF76A005374B79812 /* Masonry-dummy.m in Sources */,
+				AC1E779271D1509D46259041A187D52D /* MASViewAttribute.m in Sources */,
+				26BB943F5C94AD9041F78A69362C0670 /* MASViewConstraint.m in Sources */,
+				CEC9243D024D91E3ECCCDEA695357DD4 /* NSArray+MASAdditions.m in Sources */,
+				AA228F7C454F7E24B0AD8BCBE0AC90D2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				E9DC9A296DF41AA93B6EF0C7241C0D71 /* View+MASAdditions.m in Sources */,
+				F82A3E1BCB401F8D7BF3CFD379D2FE16 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3AF1A77CED6A8B5D7A60246B44FF67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D29440A621B176CA747C3128F706BF4 /* GFAlbumCell.m in Sources */,
+				4C1B39BB54CBFC91E9E4433E79F41867 /* GFAlbumViewController.m in Sources */,
+				193EB95696D2878093B1C431780658BE /* GFPhotoBrowser-dummy.m in Sources */,
+				E14C11DC6F62EEE4B3372D8A6B9DF6AB /* GFPhotoBrowserNavigationController.m in Sources */,
+				9F728210302F904F5C2BB03EB571A854 /* GFPhotoBrowserViewController.m in Sources */,
+				EF77664DCC7398ECF69E52DA18C10B88 /* GFPhotoCell.m in Sources */,
+				11F32625FB582CA7DE114CA898EBE684 /* GFPhotosDataSource.m in Sources */,
+				0340740AD3501DC2114C33BFF768D0D1 /* UIImage+GFPhotoBrowser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E33405739B1BF272494FEF3FAD6D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1451657808D98DD7B1E9744B74460860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = BBCBD7FF73829F24A0592DE1F05A136D /* Masonry */;
+			targetProxy = B56623EE823695E359BB16C0CF75625C /* PBXContainerItemProxy */;
+		};
 		2650A13936EE4777655984487A564A74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GFPhotoBrowser;
-			target = 280694B537A890D0991148AE9618BA6B /* GFPhotoBrowser */;
+			target = 9E7682698E2388E37304AC25CA8B8243 /* GFPhotoBrowser */;
 			targetProxy = D46BBDE5D52B3FAAC6E52E4511605391 /* PBXContainerItemProxy */;
 		};
 		A1E5310707D0CE236EB81C1FFB5F7F1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
-			target = D52144DE9D7255DE912490FF5A806573 /* Masonry */;
+			target = BBCBD7FF73829F24A0592DE1F05A136D /* Masonry */;
 			targetProxy = A0F00377FA3E3BD08E8C5A0E745814F0 /* PBXContainerItemProxy */;
+		};
+		E057DBDBC6475E89B612AE6118EA40A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GFPhotoBrowser-GFPhotoBrowser";
+			target = F54BAE80DDEA198A11E2EBC1B810ADB5 /* GFPhotoBrowser-GFPhotoBrowser */;
+			targetProxy = DC8770F2175823F4DDD5F43D69308789 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		201CB7B7C8BBA6694937731DFB096C38 /* Debug */ = {
+		1BCF813E76F4B48533821DFB87C713F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2998CC27654E7770D81F8DBE76B3A4AE /* GFPhotoBrowser.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GFPhotoBrowser";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/GFPhotoBrowser/ResourceBundle-GFPhotoBrowser-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = GFPhotoBrowser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		441332C3B2DC793A12C2727820CE23DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4490F4FCAFCC776BF31A1A9BF60F144 /* Pods-GFPhotoBrowser_Example.debug.xcconfig */;
 			buildSettings = {
@@ -606,7 +789,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GFPhotoBrowser_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example.modulemap";
@@ -624,9 +807,9 @@
 			};
 			name = Debug;
 		};
-		4439B983041A1C68AEFB9C4F4B5B1DCC /* Debug */ = {
+		63CF192FCD50ADE67BD8D1EC28FCAB57 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72C850E892C200B07B30C8E6744569C0 /* GFPhotoBrowser.xcconfig */;
+			baseConfigurationReference = 61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -639,14 +822,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GFPhotoBrowser/GFPhotoBrowser-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GFPhotoBrowser/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GFPhotoBrowser/GFPhotoBrowser.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = GFPhotoBrowser;
+				PRODUCT_NAME = Masonry;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -655,7 +838,7 @@
 			};
 			name = Debug;
 		};
-		7CC747A8B09F50D8EA3191B7C5EDD18B /* Release */ = {
+		6737DF64DBCA6AA56576DD970B583EAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */;
 			buildSettings = {
@@ -686,47 +869,42 @@
 			};
 			name = Release;
 		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+		826B5E5A687E72F377B001F58D7736F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6B514C6E75C61B808ACB71EDB2E8315 /* Pods-GFPhotoBrowser_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GFPhotoBrowser_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GFPhotoBrowser_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+		A435E3C35B2666C25C53422D898980A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -762,7 +940,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -770,44 +948,9 @@
 			};
 			name = Debug;
 		};
-		BBDD8068333CBD9F347274106F74A326 /* Release */ = {
+		A52C10EC0633AAE4ED6B119FDCF5C58B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6B514C6E75C61B808ACB71EDB2E8315 /* Pods-GFPhotoBrowser_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GFPhotoBrowser_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GFPhotoBrowser_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DDBED416AF7EF4E0711DC078BAC8DC3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61C635FA63B207AC12EA2BD25D894A65 /* Masonry.xcconfig */;
+			baseConfigurationReference = 2998CC27654E7770D81F8DBE76B3A4AE /* GFPhotoBrowser.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -820,14 +963,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Masonry/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/GFPhotoBrowser/GFPhotoBrowser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GFPhotoBrowser/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				MODULEMAP_FILE = "Target Support Files/GFPhotoBrowser/GFPhotoBrowser.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Masonry;
+				PRODUCT_NAME = GFPhotoBrowser;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -836,9 +979,26 @@
 			};
 			name = Debug;
 		};
-		F067F3834D2B9DFCCA071C45AEFAE1E6 /* Release */ = {
+		DC68EC237F73F7DDCE04CC57F7AC2363 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72C850E892C200B07B30C8E6744569C0 /* GFPhotoBrowser.xcconfig */;
+			baseConfigurationReference = 2998CC27654E7770D81F8DBE76B3A4AE /* GFPhotoBrowser.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GFPhotoBrowser";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/GFPhotoBrowser/ResourceBundle-GFPhotoBrowser-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = GFPhotoBrowser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DD414EDFA205DB03172B29392E6BDE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2998CC27654E7770D81F8DBE76B3A4AE /* GFPhotoBrowser.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -867,32 +1027,63 @@
 			};
 			name = Release;
 		};
+		F2C4F47FC8AD76198661C5EFDE751899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02D024184BD368B565F3B6257DF3C605 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DDBED416AF7EF4E0711DC078BAC8DC3E /* Debug */,
-				7CC747A8B09F50D8EA3191B7C5EDD18B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1599BE18C0271A05745DD45D82237C24 /* Build configuration list for PBXNativeTarget "GFPhotoBrowser" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4439B983041A1C68AEFB9C4F4B5B1DCC /* Debug */,
-				F067F3834D2B9DFCCA071C45AEFAE1E6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				A435E3C35B2666C25C53422D898980A7 /* Debug */,
+				F2C4F47FC8AD76198661C5EFDE751899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54EDD70854441E038CF342BA1C02E04D /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63CF192FCD50ADE67BD8D1EC28FCAB57 /* Debug */,
+				6737DF64DBCA6AA56576DD970B583EAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -900,8 +1091,26 @@
 		6AE52754442E51FEEFA61BE860FB22FC /* Build configuration list for PBXNativeTarget "Pods-GFPhotoBrowser_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				201CB7B7C8BBA6694937731DFB096C38 /* Debug */,
-				BBDD8068333CBD9F347274106F74A326 /* Release */,
+				441332C3B2DC793A12C2727820CE23DA /* Debug */,
+				826B5E5A687E72F377B001F58D7736F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C9F51DE35CB24226FD13594BFCFF05F /* Build configuration list for PBXNativeTarget "GFPhotoBrowser-GFPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCF813E76F4B48533821DFB87C713F8 /* Debug */,
+				DC68EC237F73F7DDCE04CC57F7AC2363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F78FAD6CC564C82D71A5E87592DC7F66 /* Build configuration list for PBXNativeTarget "GFPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52C10EC0633AAE4ED6B119FDCF5C58B /* Debug */,
+				DD414EDFA205DB03172B29392E6BDE2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

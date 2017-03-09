@@ -60,9 +60,9 @@
 
 #pragma mark - PhotoBrowserDelegate
 
-- (void)browser:(GFPhotoBrowserViewController *)browser selectItems:(NSArray<PHAsset *> *)items {
+- (void)browser:(GFPhotoBrowserViewController *)browser selectAssets:(NSArray<PHAsset *> *)assets {
     [self dismissViewControllerAnimated:YES completion:^{
-        [self.delegate browserNavi:self selectItems:items];
+        [self.delegate browserNavi:self selectAssets:assets];
     }];
 }
 

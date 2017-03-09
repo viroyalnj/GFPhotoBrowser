@@ -106,7 +106,8 @@
                                                                      subtype:subType
                                                                      options:options];
     for (PHAssetCollection *item in result) {
-        PHFetchResult *assets = [PHAsset fetchAssetsInAssetCollection:item options:nil];
+        PHFetchOptions *options = [[PHFetchOptions alloc] init];
+        PHFetchResult *assets = [PHAsset fetchAssetsInAssetCollection:item options:options];
         NSMutableArray *arr = [NSMutableArray new];
         for (PHAsset *ass in assets) {
             [arr addObject:ass];
