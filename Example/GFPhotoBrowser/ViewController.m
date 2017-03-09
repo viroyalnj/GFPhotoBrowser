@@ -122,7 +122,7 @@
     
 }
 
-- (void)dataInitDidFinish {
+- (void)dataInitDidFinish:(NSArray<PhotoSectionInfo *> *)sections {
     [self.collectionView reloadData];
 }
 

@@ -56,12 +56,13 @@
 
 - (void)selectPhoto {
     GFPhotoBrowserNavigationController *nav = [[GFPhotoBrowserNavigationController alloc] initWithType:PHAssetCollectionTypeSmartAlbum
-                                                                                           subType:PHAssetCollectionSubtypeSmartAlbumUserLibrary];
+                                                                                               subType:PHAssetCollectionSubtypeSmartAlbumUserLibrary
+                                                                               allowsMultipleSelection:YES];
     nav.delegate = self;
     
-    [self.navigationController presentViewController:nav
-                                            animated:YES
-                                          completion:nil];
+    [self presentViewController:nav
+                       animated:YES
+                     completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -72,12 +73,12 @@
 #pragma mark - PhotoBrowserNavigationDelegate
 
 - (void)browserNavi:(GFPhotoBrowserNavigationController *)nav
-         selectItem:(PHAsset *)asset {
+       selectAssets:(NSArray<PHAsset *> *)assets {
     PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
     options.networkAccessAllowed = YES;
     
     __weak typeof(self) wself = self;
-    [[PHImageManager defaultManager] requestImageForAsset:asset
+    [[PHImageManager defaultManager] requestImageForAsset:[assets firstObject]
                                                targetSize:CGSizeMake(1024, 1024)
                                               contentMode:PHImageContentModeDefault
                                                   options:options

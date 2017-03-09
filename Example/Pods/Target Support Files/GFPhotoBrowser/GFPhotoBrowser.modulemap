@@ -1,6 +1,0 @@
-framework module GFPhotoBrowser {
-  umbrella header "GFPhotoBrowser-umbrella.h"
-
-  export *
-  module * { export * }
-}

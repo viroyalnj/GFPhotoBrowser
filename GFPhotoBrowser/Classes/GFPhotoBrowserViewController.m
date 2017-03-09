@@ -15,7 +15,6 @@
 
 @property (nonatomic, assign) PHAssetCollectionType         type;
 @property (nonatomic, assign) PHAssetCollectionSubtype      subType;
-@property (nonatomic, copy)   NSString                      *title;
 
 @property (nonatomic, strong) GFPhotosDataSource            *dataSource;
 
@@ -59,10 +58,10 @@
                                                       target:self
                                                       action:@selector(selectCancel)];
     
-    self.doneItem = [[UIBarButtonItem alloc] initWithTitle:GFLocalizedString(@"Save", nil)
-                                                      style:UIBarButtonItemStylePlain
-                                                     target:self
-                                                     action:@selector(selectDone)];
+    self.doneItem = [[UIBarButtonItem alloc] initWithTitle:GFLocalizedString(@"Done", nil)
+                                                     style:UIBarButtonItemStylePlain
+                                                    target:self
+                                                    action:@selector(selectDone)];
     
     self.navigationItem.rightBarButtonItem = self.cancelItem;
 }

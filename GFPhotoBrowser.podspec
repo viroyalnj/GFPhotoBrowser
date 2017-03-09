@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GFPhotoBrowser'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'iOS Photos 框架的简单封装'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.source_files = 'GFPhotoBrowser/Classes/GFPhotoBrowser.h'
   
    s.resource_bundles = {
-     'GFPhotoBrowser' => ['GFPhotoBrowser/Assets/*.png', 'GFPhotoBrowser/Assets/*.lproj', 'GFPhotoBrowser/Classes/NSBundle+GFPhotoBrowser.{h,m}']
+     'GFPhotoBrowser' => ['GFPhotoBrowser/Assets/*.png', 'GFPhotoBrowser/Assets/*.lproj']
    }
 
   s.public_header_files = 'GFPhotoBrowser/Classes/GFPhotoBrowser.h'
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   s.dependency 'Masonry'
 
   s.subspec 'Models' do |ss|
-    ss.source_files = 'GFPhotoBrowser/Classes/GFPhotosDataSource.{h,m}'
+    ss.source_files = ['GFPhotoBrowser/Classes/GFPhotosDataSource.{h,m}', 'GFPhotoBrowser/Classes/NSBundle+GFPhotoBrowser.{h,m}']
   end
 
   s.subspec 'Cells' do |ss|

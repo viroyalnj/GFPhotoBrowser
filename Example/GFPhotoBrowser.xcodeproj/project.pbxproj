@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		034433031DCC7443004E55EA /* PhotoSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034433021DCC7443004E55EA /* PhotoSelectViewController.m */; };
 		034433111DCC757F004E55EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034433101DCC757F004E55EA /* LaunchScreen.storyboard */; };
-		079776945C3C76AA8DEF58CA /* Pods_GFPhotoBrowser_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF3E65438765A0EE95BFF5E /* Pods_GFPhotoBrowser_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -18,6 +17,7 @@
 		6003F59E195388D20070C39A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AppDelegate.m */; };
 		6003F5A7195388D20070C39A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* ViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		BB7E8AECEF92BB14F138D326 /* libPods-GFPhotoBrowser_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B832268AF246F1BED92926C4 /* libPods-GFPhotoBrowser_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,9 +48,9 @@
 		6BDECC104523377EB7C10A41 /* Pods-GFPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
 		83FCCC9FE2B25C13071E29AB /* Pods-GFPhotoBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Tests/Pods-GFPhotoBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA7AE5E1E13425500C44636 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
+		B832268AF246F1BED92926C4 /* libPods-GFPhotoBrowser_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GFPhotoBrowser_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F13C85DE8DDB2D83E11F46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E2901D9361B508FB936C373D /* Pods-GFPhotoBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Tests/Pods-GFPhotoBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FDF3E65438765A0EE95BFF5E /* Pods_GFPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GFPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0D4109DDAAB50CAE8B4250 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +62,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				079776945C3C76AA8DEF58CA /* Pods_GFPhotoBrowser_Example.framework in Frameworks */,
+				BB7E8AECEF92BB14F138D326 /* libPods-GFPhotoBrowser_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +107,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				FDF3E65438765A0EE95BFF5E /* Pods_GFPhotoBrowser_Example.framework */,
 				4CD76D121FE7E3CD95D9C76A /* Pods_GFPhotoBrowser_Tests.framework */,
+				B832268AF246F1BED92926C4 /* libPods-GFPhotoBrowser_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -1,16 +1,16 @@
 PODS:
-  - GFPhotoBrowser (0.1.5):
-    - GFPhotoBrowser/Cells (= 0.1.5)
-    - GFPhotoBrowser/Controllers (= 0.1.5)
-    - GFPhotoBrowser/Models (= 0.1.5)
+  - GFPhotoBrowser (0.1.6):
+    - GFPhotoBrowser/Cells (= 0.1.6)
+    - GFPhotoBrowser/Controllers (= 0.1.6)
+    - GFPhotoBrowser/Models (= 0.1.6)
     - Masonry
-  - GFPhotoBrowser/Cells (0.1.5):
+  - GFPhotoBrowser/Cells (0.1.6):
     - GFPhotoBrowser/Models
     - Masonry
-  - GFPhotoBrowser/Controllers (0.1.5):
+  - GFPhotoBrowser/Controllers (0.1.6):
     - GFPhotoBrowser/Cells
     - Masonry
-  - GFPhotoBrowser/Models (0.1.5):
+  - GFPhotoBrowser/Models (0.1.6):
     - Masonry
   - Masonry (1.0.2)
 
@@ -23,9 +23,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GFPhotoBrowser: ffb7dfe7ea6377ba02f904f4578ec0d5d158a804
+  GFPhotoBrowser: 7b9918f4f290c8290ae4a1e9ee23bcec90d0e4db
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
 
-PODFILE CHECKSUM: 46ddeed8652f82b6c321b4c7a4d322014983b1c3
+PODFILE CHECKSUM: 7173c162e36e76f61f2053f4c4607550defc6004
 
 COCOAPODS: 1.2.0
