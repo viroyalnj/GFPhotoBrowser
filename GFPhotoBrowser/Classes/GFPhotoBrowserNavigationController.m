@@ -3,7 +3,7 @@
 //  GFPhotoBrowser
 //
 //  Created by guofengld on 2016/11/4.
-//  Copyright © 2016年 viroyal. All rights reserved.
+//  Copyright © 2016年 guofengld@gmail.com. All rights reserved.
 //
 
 #import "GFPhotoBrowserNavigationController.h"

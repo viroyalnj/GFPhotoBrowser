@@ -1,9 +1,9 @@
 //
 //  GFPhotoBrowser.h
-//  Pods
+//  GFPhotoBrowser
 //
 //  Created by guofengld on 2017/1/8.
-//
+//  Copyright © 2016年 guofengld@gmail.com. All rights reserved.
 //
 
 #ifndef GFPhotoBrowser_h
