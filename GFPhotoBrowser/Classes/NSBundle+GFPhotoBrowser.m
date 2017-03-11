@@ -10,8 +10,8 @@
 
 @implementation UIImage (GFPhotoBrowser)
 
-+ (UIImage *)bundleImageNamed:(NSString *)name {
-    NSBundle *bundle = [NSBundle GFBundle];
++ (UIImage *)photoBrowserImageNamed:(NSString *)name {
+    NSBundle *bundle = [NSBundle photoBrowserBundle];
     
     NSString *string = [NSString stringWithFormat:@"@%.0fx", [UIScreen mainScreen].scale];
     NSArray *end = @[string, @"@3x", @"@2x"];
@@ -34,7 +34,7 @@
 
 @implementation NSBundle (GFPhotoBrowser)
 
-+ (instancetype)GFBundle {
++ (instancetype)photoBrowserBundle {
     static dispatch_once_t onceToken;
     static NSBundle *bundle;
     dispatch_once(&onceToken, ^{
@@ -49,7 +49,7 @@
     static dispatch_once_t onceToken;
     static NSBundle *stringBundle;
     dispatch_once(&onceToken, ^{
-        NSBundle *bundle = [NSBundle GFBundle];
+        NSBundle *bundle = [NSBundle photoBrowserBundle];
         NSString *resource;
         NSString *local = [[NSLocale preferredLanguages] firstObject];
         if ([local containsString:@"zh"]) {
@@ -70,7 +70,7 @@
     return stringBundle;
 }
 
-- (NSString *)GFBundleStringForKey:(NSString *)key value:(NSString *)value table:(NSString *)tableName {
+- (NSString *)photoBrowserStringForKey:(NSString *)key value:(NSString *)value table:(NSString *)tableName {
     return [[self localizedStringBundle] localizedStringForKey:key value:value table:tableName];
 }
 

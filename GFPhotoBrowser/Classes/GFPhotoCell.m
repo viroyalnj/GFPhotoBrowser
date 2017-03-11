@@ -63,7 +63,7 @@
                                                                     multiplier:1.0
                                                                       constant:-1]];
         
-        self.selectView = [[UIImageView alloc] initWithImage:[UIImage bundleImageNamed:@"photo_unselected"]];
+        self.selectView = [[UIImageView alloc] initWithImage:[UIImage photoBrowserImageNamed:@"photo_unselected"]];
         [self.contentView addSubview:self.selectView];
         
         self.selectView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -103,7 +103,7 @@
 - (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
     
-    [self.selectView setImage:[UIImage bundleImageNamed:selected?@"photo_selected":@"photo_unselected"]];
+    [self.selectView setImage:[UIImage photoBrowserImageNamed:selected?@"photo_selected":@"photo_unselected"]];
 }
 
 @end

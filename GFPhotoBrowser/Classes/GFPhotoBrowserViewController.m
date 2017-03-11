@@ -108,7 +108,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     GFPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[GFPhotoCell cellIdentifier]
-                                                                forIndexPath:indexPath];
+                                                                  forIndexPath:indexPath];
     
     return cell;
 }

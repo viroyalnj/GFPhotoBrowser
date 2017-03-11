@@ -10,17 +10,17 @@
 
 @interface UIImage (GFPhotoBrowser)
 
-+ (UIImage *)bundleImageNamed:(NSString *)name;
++ (UIImage *)photoBrowserImageNamed:(NSString *)name;
 
 @end
 
 @interface NSBundle (GFPhotoBrowser)
 
-+ (instancetype)GFBundle;
++ (instancetype)photoBrowserBundle;
 
-- (NSString *)GFBundleStringForKey:(NSString *)key value:(NSString *)value table:(NSString *)tableName;
+- (NSString *)photoBrowserStringForKey:(NSString *)key value:(NSString *)value table:(NSString *)tableName;
 
 @end
 
 #define GFLocalizedString(key, comment) \
-    [[NSBundle GFBundle] GFBundleStringForKey:(key) value:(key) table:@"Localizable"]
+    [[NSBundle photoBrowserBundle] photoBrowserStringForKey:(key) value:(key) table:@"Localizable"]
