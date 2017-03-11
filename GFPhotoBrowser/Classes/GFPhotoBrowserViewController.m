@@ -21,6 +21,8 @@
 @property (nonatomic, strong) UIBarButtonItem               *cancelItem;
 @property (nonatomic, strong) UIBarButtonItem               *doneItem;
 
+@property (nonatomic, strong) NSMutableArray                *selectedAssets;
+
 @end
 
 @implementation GFPhotoBrowserViewController
@@ -64,6 +66,7 @@
                                                     action:@selector(selectDone)];
     
     self.navigationItem.rightBarButtonItem = self.cancelItem;
+    self.selectedAssets = [NSMutableArray new];
 }
 
 - (void)selectCancel {
@@ -71,12 +74,7 @@
 }
 
 - (void)selectDone {
-    NSMutableArray *arr = @[].mutableCopy;
-    for (NSIndexPath *item in [self.collectionView indexPathsForSelectedItems]) {
-        [arr addObject:[self.dataSource objectAtIndexPath:item]];
-    }
-    
-    [self.delegate browser:self selectAssets:arr.copy];
+    [self.delegate browser:self selectAssets:self.selectedAssets.copy];
 }
 
 #pragma mark - PhotosDataDelegate
@@ -131,16 +129,21 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    PHAsset *asset = [self.dataSource objectAtIndexPath:indexPath];
     if (collectionView.allowsMultipleSelection) {
+        [self.selectedAssets addObject:asset];
+        
         [self selectionChanged];
     }
     else {
-        PHAsset *asset = [self.dataSource objectAtIndexPath:indexPath];
         [self.delegate browser:self selectAssets:@[asset]];
     }
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    PHAsset *asset = [self.dataSource objectAtIndexPath:indexPath];
+    [self.selectedAssets removeObject:asset];
+    
     [self selectionChanged];
 }
 

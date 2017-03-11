@@ -12,7 +12,7 @@
 #import <Masonry/Masonry.h>
 #import "GFPhotoBrowserNavigationController.h"
 
-@interface PhotoSelectViewController () < PhotoBrowserNavigationDelegate >
+@interface PhotoSelectViewController () < GFPhotoBrowserNavigationDelegate >
 
 @property (nonatomic, strong)   UIImageView         *imageView;
 

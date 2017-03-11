@@ -11,7 +11,7 @@
 
 @class GFPhotoBrowserNavigationController;
 
-@protocol PhotoBrowserNavigationDelegate <UINavigationControllerDelegate>
+@protocol GFPhotoBrowserNavigationDelegate <UINavigationControllerDelegate>
 
 - (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectAssets:(NSArray<PHAsset *> *)assets;
 
@@ -19,7 +19,7 @@
 
 @interface GFPhotoBrowserNavigationController : UINavigationController
 
-@property (nonatomic, weak) id <PhotoBrowserNavigationDelegate> delegate;
+@property (nonatomic, weak) id <GFPhotoBrowserNavigationDelegate> delegate;
 @property (nonatomic) BOOL allowsMultipleSelection;
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
