@@ -57,7 +57,8 @@
 - (void)selectPhoto {
     GFPhotoBrowserNavigationController *nav = [[GFPhotoBrowserNavigationController alloc] initWithType:PHAssetCollectionTypeSmartAlbum
                                                                                                subType:PHAssetCollectionSubtypeSmartAlbumUserLibrary
-                                                                               allowsMultipleSelection:YES];
+                                                                                             mediaType:PHAssetMediaTypeImage
+                                                                               allowsMultipleSelection:NO];
     nav.delegate = self;
     
     [self presentViewController:nav

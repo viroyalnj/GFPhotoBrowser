@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@protocol PhotosDataDelegate <NSObject>
+@protocol GFPhotosDataDelegate <NSObject>
 
 @optional
 - (void)dataInitWillBegin;
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GFPhotosDataSource : NSObject
 
-@property (nonatomic, weak) id <PhotosDataDelegate>   delegate;
+@property (nonatomic, weak) id <GFPhotosDataDelegate>   delegate;
 
 - (instancetype)initWithType:(PHAssetCollectionType)type;
 

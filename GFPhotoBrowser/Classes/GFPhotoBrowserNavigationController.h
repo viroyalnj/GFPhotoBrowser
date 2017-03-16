@@ -20,10 +20,13 @@
 @interface GFPhotoBrowserNavigationController : UINavigationController
 
 @property (nonatomic, weak) id <GFPhotoBrowserNavigationDelegate> delegate;
-@property (nonatomic) BOOL allowsMultipleSelection;
+
+@property (nonatomic) PHAssetMediaType      mediaType;
+@property (nonatomic) BOOL                  allowsMultipleSelection;
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType
+                   mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection;
 
 @end

@@ -87,13 +87,17 @@
 }
 
 - (void)dataInitWillBegin {
-    [self.delegate dataInitWillBegin];
-    
     self.sections = [NSMutableArray new];
+    
+    if ([self.delegate respondsToSelector:@selector(dataInitWillBegin)]) {
+        [self.delegate dataInitWillBegin];
+    }
 }
 
 - (void)dataInitDidFinish {
-    [self.delegate dataInitDidFinish:self.sections];
+    if ([self.delegate respondsToSelector:@selector(dataInitDidFinish:)]) {
+        [self.delegate dataInitDidFinish:self.sections];
+    }
 }
 
 - (void)fetchDataType:(PHAssetCollectionType)type
@@ -107,6 +111,10 @@
                                                                      options:options];
     for (PHAssetCollection *item in result) {
         PHFetchOptions *options = [[PHFetchOptions alloc] init];
+        if (mediaType != PHAssetMediaTypeUnknown) {
+            options.predicate = [NSPredicate predicateWithFormat:@"mediaType == %i", mediaType];
+        }
+        
         PHFetchResult *assets = [PHAsset fetchAssetsInAssetCollection:item options:options];
         NSMutableArray *arr = [NSMutableArray new];
         for (PHAsset *ass in assets) {

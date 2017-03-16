@@ -12,6 +12,7 @@
 @interface GFPhotoCell : UICollectionViewCell
 
 @property (nonatomic, strong)   PHAsset         *asset;
+@property (nonatomic)           BOOL            allowsMultipleSelection;
 
 + (NSString *)cellIdentifier;
 

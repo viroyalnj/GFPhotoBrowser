@@ -27,13 +27,17 @@
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType
+                   mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection {
+    
     GFAlbumViewController *album = [[GFAlbumViewController alloc] init];
     if (self = [super initWithRootViewController:album]) {
+        self.mediaType = mediaType;
         self.allowsMultipleSelection = allowsMultipleSelection;
         
         self.browserView = [[GFPhotoBrowserViewController alloc] initWithType:type
                                                                       subType:subType
+                                                                    mediaType:mediaType
                                                       allowsMultipleSelection:self.allowsMultipleSelection];
         
         album.delegate = self;
@@ -53,6 +57,7 @@
 - (void)album:(GFAlbumViewController *)album selectSection:(PhotoSectionInfo *)sectionInfo {
     self.browserView = [[GFPhotoBrowserViewController alloc] initWithType:sectionInfo.type
                                                                   subType:sectionInfo.subType
+                                                                mediaType:self.mediaType
                                                   allowsMultipleSelection:self.allowsMultipleSelection];
     self.browserView.delegate = self;
     [self pushViewController:self.browserView animated:YES];

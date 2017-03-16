@@ -66,7 +66,7 @@
 
 #pragma mark - ViewController
 
-@interface ViewController () < PhotosDataDelegate >
+@interface ViewController () < GFPhotosDataDelegate >
 
 @property (nonatomic, assign) PHAssetCollectionType         type;
 @property (nonatomic, strong) GFPhotosDataSource            *dataSource;
@@ -116,7 +116,7 @@
     self.dataSource.delegate = self;
 }
 
-#pragma mark - PhotosDataDelegate
+#pragma mark - GFPhotosDataDelegate
 
 - (void)dataInitWillBegin {
     

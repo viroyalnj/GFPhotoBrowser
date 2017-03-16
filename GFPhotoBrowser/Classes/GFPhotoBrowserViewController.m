@@ -11,10 +11,11 @@
 #import "GFPhotosDataSource.h"
 #import "NSBundle+GFPhotoBrowser.h"
 
-@interface GFPhotoBrowserViewController () < PhotosDataDelegate >
+@interface GFPhotoBrowserViewController () < GFPhotosDataDelegate >
 
 @property (nonatomic, assign) PHAssetCollectionType         type;
 @property (nonatomic, assign) PHAssetCollectionSubtype      subType;
+@property (nonatomic, assign) PHAssetMediaType              mediaType;
 
 @property (nonatomic, strong) GFPhotosDataSource            *dataSource;
 
@@ -29,6 +30,7 @@
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType
+                   mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection {
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -37,8 +39,9 @@
     if (self = [super initWithCollectionViewLayout:layout]) {
         self.type = type;
         self.subType = subType;
-        self.collectionView.backgroundColor = [UIColor whiteColor];
+        self.mediaType = mediaType;
         
+        self.collectionView.backgroundColor = [UIColor whiteColor];
         self.collectionView.allowsMultipleSelection = allowsMultipleSelection;
         
         [self.collectionView registerClass:[GFPhotoCell class]
@@ -52,7 +55,9 @@
     [super viewDidLoad];
     
     self.dataSource = [[GFPhotosDataSource alloc] initWithType:self.type
-                                                       subType:self.subType];
+                                                       subType:self.subType
+                                                     mediaType:self.mediaType];
+    
     self.dataSource.delegate = self;
     
     self.cancelItem = [[UIBarButtonItem alloc] initWithTitle:GFLocalizedString(@"Cancel", nil)
@@ -77,7 +82,7 @@
     [self.delegate browser:self selectAssets:self.selectedAssets.copy];
 }
 
-#pragma mark - PhotosDataDelegate
+#pragma mark - GFPhotosDataDelegate
 
 - (void)dataInitWillBegin {
     
@@ -87,6 +92,14 @@
     self.title = [[sections firstObject] title];
     
     [self.collectionView reloadData];
+    
+    NSInteger count = [self.collectionView numberOfItemsInSection:0];
+    if (count > 0) {
+        NSIndexPath *last = [NSIndexPath indexPathForItem:count - 1 inSection:0];
+        [self.collectionView scrollToItemAtIndexPath:last
+                                    atScrollPosition:UICollectionViewScrollPositionBottom
+                                            animated:NO];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -119,6 +132,7 @@
        willDisplayCell:(GFPhotoCell *)cell
     forItemAtIndexPath:(NSIndexPath *)indexPath {
     cell.asset = [self.dataSource objectAtIndexPath:indexPath];
+    cell.allowsMultipleSelection = self.collectionView.allowsMultipleSelection;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView

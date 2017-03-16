@@ -12,7 +12,7 @@
 #import "NSBundle+GFPhotoBrowser.h"
 
 
-@interface GFAlbumViewController () < PhotosDataDelegate >
+@interface GFAlbumViewController () < GFPhotosDataDelegate >
 
 @property (nonatomic, strong) GFPhotosDataSource          *dataSource;
 
@@ -44,7 +44,7 @@
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
 }
 
-#pragma mark - PhotosDataDelegate
+#pragma mark - GFPhotosDataDelegate
 
 - (void)dataInitWillBegin {
     

@@ -64,6 +64,7 @@
                                                                       constant:-1]];
         
         self.selectView = [[UIImageView alloc] initWithImage:[UIImage photoBrowserImageNamed:@"photo_unselected"]];
+        self.selectView.hidden = YES;
         [self.contentView addSubview:self.selectView];
         
         self.selectView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -98,6 +99,10 @@
                                             resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
                                                 wself.imageView.image = result;
                                             }];
+}
+
+- (void)setAllowsMultipleSelection:(BOOL)allowsMultipleSelection {
+    self.selectView.hidden = !allowsMultipleSelection;
 }
 
 - (void)setSelected:(BOOL)selected {
