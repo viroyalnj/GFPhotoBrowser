@@ -12,5 +12,6 @@
 #import "GFPhotosDataSource.h"
 #import "GFPhotoBrowserViewController.h"
 #import "GFPhotoBrowserNavigationController.h"
+#import "GFPhotoCropViewController.h"
 
 #endif /* GFPhotoBrowser_h */

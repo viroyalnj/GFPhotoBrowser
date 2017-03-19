@@ -7,12 +7,10 @@
 //
 
 #import "PhotoSelectViewController.h"
-#import "GFPhotoBrowserViewController.h"
-#import "GFAlbumViewController.h"
 #import <Masonry/Masonry.h>
-#import "GFPhotoBrowserNavigationController.h"
+#import <GFPhotoBrowser/GFPhotoBrowser.h>
 
-@interface PhotoSelectViewController () < GFPhotoBrowserNavigationDelegate >
+@interface PhotoSelectViewController () < GFPhotoBrowserNavigationDelegate, GFPhotoCropViewControllerDelegate >
 
 @property (nonatomic, strong)   UIImageView         *imageView;
 
@@ -85,14 +83,31 @@
                                                   options:options
                                             resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
                                                 if (result) {
-                                                    NSLog(@"image size: %@", NSStringFromCGSize(result.size));
-                                                    wself.imageView.image = result;
-                                                    wself.imageView.backgroundColor = [UIColor clearColor];
+                                                    GFPhotoCropViewController *crop = [[GFPhotoCropViewController alloc] initWithImage:result];
+                                                    crop.delegate = self;
+                                                    [self presentViewController:crop
+                                                                       animated:YES
+                                                                     completion:nil];
                                                 }
                                                 else {
                                                     wself.imageView.backgroundColor = [UIColor purpleColor];
                                                 }
                                             }];
+}
+
+#pragma mark - GFPhotoCropViewControllerDelegate
+
+- (void)photoCropViewControllerDidCancel:(GFPhotoCropViewController *)cropViewController {
+    [cropViewController dismissViewControllerAnimated:YES
+                                           completion:nil];
+}
+
+- (void)photoCropViewController:(GFPhotoCropViewController *)cropViewController
+         didFinishCroppingImage:(UIImage *)image {
+    [cropViewController dismissViewControllerAnimated:YES
+                                           completion:^{
+                                               
+                                           }];
 }
 
 @end

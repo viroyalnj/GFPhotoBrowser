@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Controllers' do |ss|
     ss.dependency 'GFPhotoBrowser/Cells'
-    ss.source_files = 'GFPhotoBrowser/Classes/GFAlbumViewController.{h,m}', 'GFPhotoBrowser/Classes/GFPhotoBrowserNavigationController.{h,m}', 'GFPhotoBrowser/Classes/GFPhotoBrowserViewController.{h,m}'
+    ss.source_files = 'GFPhotoBrowser/Classes/GFAlbumViewController.{h,m}', 'GFPhotoBrowser/Classes/GFPhotoBrowserNavigationController.{h,m}', 'GFPhotoBrowser/Classes/GFPhotoBrowserViewController.{h,m}', 'GFPhotoBrowser/Classes/GFPhotoCropViewController.{h,m}'
   end
 
 end
