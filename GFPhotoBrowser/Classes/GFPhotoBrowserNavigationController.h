@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import <Photos/Photos.h>
+#import "GFPhotoBrowserViewController.h"
 
 @class GFPhotoBrowserNavigationController;
 
 @protocol GFPhotoBrowserNavigationDelegate <UINavigationControllerDelegate>
 
+@optional
+
 - (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectAssets:(NSArray<PHAsset *> *)assets;
+- (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectImages:(NSArray<UIImage *> *)images;
 
 @end
 
@@ -23,10 +27,17 @@
 
 @property (nonatomic) PHAssetMediaType      mediaType;
 @property (nonatomic) BOOL                  allowsMultipleSelection;
+@property (nonatomic) GFPhotoReturnType     returnType;
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType
                    mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection;
+
+- (instancetype)initWithType:(PHAssetCollectionType)type
+                     subType:(PHAssetCollectionSubtype)subType
+                   mediaType:(PHAssetMediaType)mediaType
+     allowsMultipleSelection:(BOOL)allowsMultipleSelection
+                  returnType:(GFPhotoReturnType)returnType;
 
 @end

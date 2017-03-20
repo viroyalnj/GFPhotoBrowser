@@ -10,6 +10,7 @@
 #import "GFPhotoCell.h"
 #import "GFPhotosDataSource.h"
 #import "NSBundle+GFPhotoBrowser.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface GFPhotoBrowserViewController () < GFPhotosDataDelegate >
 
@@ -32,6 +33,18 @@
                      subType:(PHAssetCollectionSubtype)subType
                    mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection {
+    return [self initWithType:type
+                      subType:subType
+                    mediaType:mediaType
+      allowsMultipleSelection:allowsMultipleSelection
+                   returnType:PhotoOriginal];
+}
+
+- (instancetype)initWithType:(PHAssetCollectionType)type
+                     subType:(PHAssetCollectionSubtype)subType
+                   mediaType:(PHAssetMediaType)mediaType
+     allowsMultipleSelection:(BOOL)allowsMultipleSelection
+                  returnType:(GFPhotoReturnType)returnType {
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.minimumLineSpacing = 0;
@@ -40,6 +53,7 @@
         self.type = type;
         self.subType = subType;
         self.mediaType = mediaType;
+        self.returnType = returnType;
         
         self.collectionView.backgroundColor = [UIColor whiteColor];
         self.collectionView.allowsMultipleSelection = allowsMultipleSelection;
@@ -53,6 +67,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.dataSource = [[GFPhotosDataSource alloc] initWithType:self.type
                                                        subType:self.subType
@@ -79,7 +95,68 @@
 }
 
 - (void)selectDone {
-    [self.delegate browser:self selectAssets:self.selectedAssets.copy];
+    if (self.returnType == PhotoAsset) {
+        if ([self.delegate respondsToSelector:@selector(browser:selectAssets:)]) {
+            [self.delegate browser:self selectAssets:self.selectedAssets.copy];
+        }
+    }
+    else {
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        
+        NSMutableArray *arr = [NSMutableArray array];
+        
+        CGSize size;
+        switch (self.returnType) {
+            case PhotoOriginal:
+                size = PHImageManagerMaximumSize;
+                break;
+                
+            case PhotoLarge:
+                size = CGSizeMake(1024, 1024);
+                break;
+                
+            case PhotoMedium:
+                size = CGSizeMake(512, 512);
+                break;
+                
+            case PhotoSmall:
+                size = CGSizeMake(256, 256);
+                break;
+                
+            default:
+                size = PHImageManagerMaximumSize;
+                break;
+        }
+        
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            dispatch_group_t group = dispatch_group_create();
+            for (PHAsset *item in self.selectedAssets) {
+                PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+                options.networkAccessAllowed = YES;
+                options.synchronous = YES;
+                
+                dispatch_group_enter(group);
+                [[PHImageManager defaultManager] requestImageForAsset:item
+                                                           targetSize:size
+                                                          contentMode:PHImageContentModeDefault
+                                                              options:options
+                                                        resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                                                            [arr addObject:result];
+                                                            
+                                                            dispatch_group_leave(group);
+                                                        }];
+            }
+            
+            dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+                [hud hideAnimated:YES];
+                hud.completionBlock = ^() {
+                    if ([self.delegate respondsToSelector:@selector(browser:selectImages:)]) {
+                        [self.delegate browser:self selectImages:arr.copy];
+                    }
+                };
+            });
+        });
+    }
 }
 
 #pragma mark - GFPhotosDataDelegate
@@ -93,9 +170,12 @@
     
     [self.collectionView reloadData];
     
-    NSInteger count = [self.collectionView numberOfItemsInSection:0];
+    NSInteger section = [sections count] - 1;
+    PhotoSectionInfo *info = sections[section];
+    NSInteger count = [info numberOfObjects];
+    
     if (count > 0) {
-        NSIndexPath *last = [NSIndexPath indexPathForItem:count - 1 inSection:0];
+        NSIndexPath *last = [NSIndexPath indexPathForItem:count - 1 inSection:section];
         [self.collectionView scrollToItemAtIndexPath:last
                                     atScrollPosition:UICollectionViewScrollPositionBottom
                                             animated:NO];
@@ -144,13 +224,13 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     PHAsset *asset = [self.dataSource objectAtIndexPath:indexPath];
+    [self.selectedAssets addObject:asset];
+    
     if (collectionView.allowsMultipleSelection) {
-        [self.selectedAssets addObject:asset];
-        
         [self selectionChanged];
     }
     else {
-        [self.delegate browser:self selectAssets:@[asset]];
+        [self selectDone];
     }
 }
 

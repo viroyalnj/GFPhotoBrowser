@@ -17,13 +17,16 @@
 
 - (instancetype)initWithImage:(UIImage *)image {
     if (self = [super init]) {
-        
+        self.backgroundColor = [UIColor purpleColor];
     }
     
     return self;
 }
 
 @end
+
+#pragma mark - GFPhotoCropViewController
+
 @interface GFPhotoCropViewController ()
 
 @property (nonatomic, strong) UIImage           *image;
@@ -45,6 +48,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     if (self.navigationController) {
         self.navigationController.navigationBarHidden = YES;
@@ -109,6 +114,31 @@
                                                           attribute:NSLayoutAttributeBottomMargin
                                                          multiplier:1.
                                                            constant:.0]];
+    
+    UIButton *btnDone = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btnDone setTitle:GFLocalizedString(@"Done", nil) forState:UIControlStateNormal];
+    [btnDone addTarget:self
+                action:@selector(touchDone)
+      forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnDone];
+    
+    btnDone.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnDone
+                                                          attribute:NSLayoutAttributeRight
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeRightMargin
+                                                         multiplier:1.
+                                                           constant:.0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:btnDone
+                                                          attribute:NSLayoutAttributeBottom
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeBottomMargin
+                                                         multiplier:1.
+                                                           constant:.0]];
+
     
 }
 

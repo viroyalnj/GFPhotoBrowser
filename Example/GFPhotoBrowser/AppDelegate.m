@@ -12,23 +12,25 @@
 
 @implementation AppDelegate
 
++ (instancetype)appDelegate {
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    UIViewController *vc1 = [[UINavigationController alloc]
-                             initWithRootViewController:[[ViewController alloc]
-                                                         initWithType:PHAssetCollectionTypeAlbum]];
+    UIViewController *vc1 = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] initWithType:PHAssetCollectionTypeAlbum]];
     
-    UIViewController *vc2 = [[UINavigationController alloc]
-                             initWithRootViewController:[[ViewController alloc]
-                                                         initWithType:PHAssetCollectionTypeSmartAlbum]];
+    UIViewController *vc2 = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] initWithType:PHAssetCollectionTypeSmartAlbum]];
     
-    UIViewController *vc3 = [[UINavigationController alloc]
-                             initWithRootViewController:[[ViewController alloc]
-                                                         initWithType:PHAssetCollectionTypeMoment]];
+    UIViewController *vc3 = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] initWithType:PHAssetCollectionTypeMoment]];
     
-    UIViewController *vc4 = [[UINavigationController alloc]
-                             initWithRootViewController:[[PhotoSelectViewController alloc] init]];
+    UIViewController *vc4 = [[UINavigationController alloc] initWithRootViewController:[[PhotoSelectViewController alloc] init]];
+    
+    vc1.tabBarItem.image = [UIImage imageNamed:@"ic_heart"];
+    vc2.tabBarItem.image = [UIImage imageNamed:@"ic_heart"];
+    vc3.tabBarItem.image = [UIImage imageNamed:@"ic_heart"];
+    vc4.tabBarItem.image = [UIImage imageNamed:@"ic_heart"];
     
     UITabBarController *tab = [[UITabBarController alloc] init];
     [tab setViewControllers:@[vc1, vc2, vc3, vc4]];

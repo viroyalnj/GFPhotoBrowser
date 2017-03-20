@@ -9,6 +9,7 @@
 #import "PhotoSelectViewController.h"
 #import <Masonry/Masonry.h>
 #import <GFPhotoBrowser/GFPhotoBrowser.h>
+#import "AppDelegate.h"
 
 @interface PhotoSelectViewController () < GFPhotoBrowserNavigationDelegate, GFPhotoCropViewControllerDelegate >
 
@@ -56,7 +57,8 @@
     GFPhotoBrowserNavigationController *nav = [[GFPhotoBrowserNavigationController alloc] initWithType:PHAssetCollectionTypeSmartAlbum
                                                                                                subType:PHAssetCollectionSubtypeSmartAlbumUserLibrary
                                                                                              mediaType:PHAssetMediaTypeImage
-                                                                               allowsMultipleSelection:NO];
+                                                                               allowsMultipleSelection:NO
+                                                                                            returnType:PhotoMedium];
     nav.delegate = self;
     
     [self presentViewController:nav
@@ -71,28 +73,15 @@
 
 #pragma mark - PhotoBrowserNavigationDelegate
 
-- (void)browserNavi:(GFPhotoBrowserNavigationController *)nav
-       selectAssets:(NSArray<PHAsset *> *)assets {
-    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-    options.networkAccessAllowed = YES;
-    
-    __weak typeof(self) wself = self;
-    [[PHImageManager defaultManager] requestImageForAsset:[assets firstObject]
-                                               targetSize:CGSizeMake(1024, 1024)
-                                              contentMode:PHImageContentModeDefault
-                                                  options:options
-                                            resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                                                if (result) {
-                                                    GFPhotoCropViewController *crop = [[GFPhotoCropViewController alloc] initWithImage:result];
-                                                    crop.delegate = self;
-                                                    [self presentViewController:crop
-                                                                       animated:YES
-                                                                     completion:nil];
-                                                }
-                                                else {
-                                                    wself.imageView.backgroundColor = [UIColor purpleColor];
-                                                }
-                                            }];
+- (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectImages:(NSArray<UIImage *> *)images {
+    UIImage *image = [images firstObject];
+    if (image) {
+        GFPhotoCropViewController *crop = [[GFPhotoCropViewController alloc] initWithImage:image];
+        crop.delegate = self;
+        [self presentViewController:crop
+                           animated:YES
+                         completion:nil];
+    }
 }
 
 #pragma mark - GFPhotoCropViewControllerDelegate

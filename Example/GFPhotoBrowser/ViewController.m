@@ -124,6 +124,16 @@
 
 - (void)dataInitDidFinish:(NSArray<PhotoSectionInfo *> *)sections {
     [self.collectionView reloadData];
+    
+    NSInteger section = [sections count] - 1;
+    PhotoSectionInfo *info = sections[section];
+    NSInteger count = [info numberOfObjects];
+    if (count > 0) {
+        NSIndexPath *last = [NSIndexPath indexPathForItem:count - 1 inSection:section];
+        [self.collectionView scrollToItemAtIndexPath:last
+                                    atScrollPosition:UICollectionViewScrollPositionBottom
+                                            animated:NO];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
