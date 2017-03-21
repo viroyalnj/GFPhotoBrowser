@@ -22,6 +22,6 @@
 
 @property (nonatomic, weak) id<GFPhotoCropViewControllerDelegate>       delegate;
 
-- (instancetype)initWithImage:(UIImage *)image;
+- (instancetype)initWithImage:(UIImage *)image fixedRatio:(CGFloat)ratio;
 
 @end

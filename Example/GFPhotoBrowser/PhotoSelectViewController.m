@@ -76,7 +76,7 @@
 - (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectImages:(NSArray<UIImage *> *)images {
     UIImage *image = [images firstObject];
     if (image) {
-        GFPhotoCropViewController *crop = [[GFPhotoCropViewController alloc] initWithImage:image];
+        GFPhotoCropViewController *crop = [[GFPhotoCropViewController alloc] initWithImage:image fixedRatio:1.];
         crop.delegate = self;
         [self presentViewController:crop
                            animated:YES
@@ -93,10 +93,10 @@
 
 - (void)photoCropViewController:(GFPhotoCropViewController *)cropViewController
          didFinishCroppingImage:(UIImage *)image {
+    self.imageView.image = image;
+    
     [cropViewController dismissViewControllerAnimated:YES
-                                           completion:^{
-                                               
-                                           }];
+                                           completion:nil];
 }
 
 @end

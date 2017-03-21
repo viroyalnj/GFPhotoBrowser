@@ -39,8 +39,8 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'GFPhotoBrowser/Classes/GFPhotoBrowser.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Masonry'
   s.dependency 'MBProgressHUD'
+  s.dependency 'Masonry'
 
   s.subspec 'Models' do |ss|
     ss.source_files = ['GFPhotoBrowser/Classes/GFPhotosDataSource.{h,m}', 'GFPhotoBrowser/Classes/NSBundle+GFPhotoBrowser.{h,m}']
