@@ -141,7 +141,9 @@
                                                           contentMode:PHImageContentModeDefault
                                                               options:options
                                                         resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                                                            [arr addObject:result];
+                                                            if (result) {
+                                                                [arr addObject:result];
+                                                            }
                                                             
                                                             dispatch_group_leave(group);
                                                         }];
