@@ -21,6 +21,7 @@
 @interface GFPhotoCropViewController : UIViewController
 
 @property (nonatomic, weak) id<GFPhotoCropViewControllerDelegate>       delegate;
+@property (assign)          CGFloat                                     outputWidth;
 
 - (instancetype)initWithImage:(UIImage *)image fixedRatio:(CGFloat)ratio;
 

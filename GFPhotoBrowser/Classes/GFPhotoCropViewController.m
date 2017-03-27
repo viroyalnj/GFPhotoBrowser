@@ -197,10 +197,10 @@
 - (void)setBounds:(CGRect)bounds {
     [super setBounds:bounds];
     
-    CGFloat paddingx = 20;
-    CGFloat paddingy = 40;
+    CGFloat paddingx = 10;
+    CGFloat paddingy = 10;
     
-    self.centerY = (CGRectGetHeight(bounds) - 80) / 2;
+    self.centerY = (CGRectGetHeight(bounds) - 20) / 2;
     
     CGFloat scaleX = self.image.size.width / (CGRectGetWidth(bounds) - paddingx * 2);
     CGFloat scaleY = self.image.size.height / (CGRectGetHeight(bounds) - paddingy * 2);
@@ -256,7 +256,7 @@
     return self.scrollView;
 }
 
-- (UIImage *)croppedImage {
+- (UIImage *)croppedImageWithWidth:(CGFloat)width {
     CGAffineTransform transform = CGAffineTransformIdentity;
     
     // translate
@@ -272,11 +272,15 @@
     CGFloat yScale = sqrt(t.b * t.b + t.d * t.d);
     transform = CGAffineTransformScale(transform, xScale, yScale);
     
+    if (width == 0) {
+        width = self.gridView.frame.size.width * [UIScreen mainScreen].scale;
+    }
+    
     CGImageRef imageRef = [self newTransformedImage:transform
                                         sourceImage:self.image.CGImage
                                          sourceSize:self.image.size
                                   sourceOrientation:self.image.imageOrientation
-                                        outputWidth:self.gridView.frame.size.width
+                                        outputWidth:width
                                            cropSize:self.gridView.frame.size
                                       imageViewSize:self.contentView.bounds.size];
     
@@ -290,7 +294,7 @@
     CGRect rect = [self.contentView convertRect:self.contentView.bounds toView:self];
     CGPoint point = CGPointMake(rect.origin.x + rect.size.width / 2, rect.origin.y + rect.size.height / 2);
     
-    CGPoint zeroPoint = CGPointMake(CGRectGetWidth(self.frame) / 2, self.centerY);
+    CGPoint zeroPoint = CGPointMake(CGRectGetWidth(self.frame) / 2, self.centerY + 10);
     
     return CGPointMake(point.x - zeroPoint.x, point.y - zeroPoint.y);
 }
@@ -540,7 +544,7 @@
 
 - (void)touchDone {
     [self.delegate photoCropViewController:self
-                    didFinishCroppingImage:[self.cropView croppedImage]];
+                    didFinishCroppingImage:[self.cropView croppedImageWithWidth:self.outputWidth]];
 }
 
 - (void)didReceiveMemoryWarning {
