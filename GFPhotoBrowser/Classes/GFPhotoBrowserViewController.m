@@ -88,6 +88,8 @@
     
     self.navigationItem.rightBarButtonItem = self.cancelItem;
     self.selectedAssets = [NSMutableArray new];
+    
+    self.automaticallyAdjustsScrollViewInsets = YES;
 }
 
 - (void)selectCancel {

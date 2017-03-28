@@ -97,7 +97,9 @@
                                               contentMode:PHImageContentModeDefault
                                                   options:nil
                                             resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                                                wself.imageView.image = result;
+                                                if (result) {
+                                                    wself.imageView.image = result;
+                                                }
                                             }];
 }
 
