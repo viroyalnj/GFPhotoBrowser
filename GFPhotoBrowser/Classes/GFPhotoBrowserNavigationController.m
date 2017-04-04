@@ -33,26 +33,26 @@
                       subType:subType
                     mediaType:mediaType
       allowsMultipleSelection:allowsMultipleSelection
-                   returnType:PhotoOriginal];
+                   returnSize:PHImageManagerMaximumSize];
 }
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType
                    mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection
-                  returnType:(GFPhotoReturnType)returnType {
+                  returnSize:(CGSize)returnSize {
     
     GFAlbumViewController *album = [[GFAlbumViewController alloc] init];
     if (self = [super initWithRootViewController:album]) {
         self.mediaType = mediaType;
         self.allowsMultipleSelection = allowsMultipleSelection;
-        self.returnType = returnType;
+        self.returnSize = returnSize;
         
         self.browserView = [[GFPhotoBrowserViewController alloc] initWithType:type
                                                                       subType:subType
                                                                     mediaType:mediaType
                                                       allowsMultipleSelection:self.allowsMultipleSelection
-                                                                   returnType:returnType];
+                                                                   returnSize:returnSize];
         
         album.delegate = self;
         self.browserView.delegate = self;
@@ -73,7 +73,7 @@
                                                                   subType:sectionInfo.subType
                                                                 mediaType:self.mediaType
                                                   allowsMultipleSelection:self.allowsMultipleSelection
-                                                               returnType:self.returnType];
+                                                               returnSize:self.returnSize];
     self.browserView.delegate = self;
     [self pushViewController:self.browserView animated:YES];
 }

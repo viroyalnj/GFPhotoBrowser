@@ -27,7 +27,7 @@
 
 @property (nonatomic) PHAssetMediaType      mediaType;
 @property (nonatomic) BOOL                  allowsMultipleSelection;
-@property (nonatomic) GFPhotoReturnType     returnType;
+@property (nonatomic) CGSize                returnSize;
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType
@@ -38,6 +38,6 @@
                      subType:(PHAssetCollectionSubtype)subType
                    mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection
-                  returnType:(GFPhotoReturnType)returnType;
+                  returnSize:(CGSize)returnSize;
 
 @end

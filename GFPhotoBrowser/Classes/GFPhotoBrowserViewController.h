@@ -9,14 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Photos/Photos.h>
 
-typedef NS_ENUM(NSUInteger, GFPhotoReturnType) {
-    PhotoAsset,
-    PhotoOriginal,
-    PhotoLarge,
-    PhotoMedium,
-    PhotoSmall,
-};
-
 @class GFPhotoBrowserViewController;
 
 @protocol PhotoBrowserDelegate <NSObject>
@@ -31,7 +23,7 @@ typedef NS_ENUM(NSUInteger, GFPhotoReturnType) {
 @interface GFPhotoBrowserViewController : UICollectionViewController
 
 @property (nonatomic, weak) id <PhotoBrowserDelegate>   delegate;
-@property (nonatomic, assign) GFPhotoReturnType         returnType;
+@property (nonatomic, assign) CGSize                    returnSize;
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType
@@ -42,6 +34,6 @@ typedef NS_ENUM(NSUInteger, GFPhotoReturnType) {
                      subType:(PHAssetCollectionSubtype)subType
                    mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection
-                  returnType:(GFPhotoReturnType)returnType;
+                  returnSize:(CGSize)returnSize;
 
 @end
