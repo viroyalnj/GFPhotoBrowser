@@ -40,11 +40,21 @@
                    returnSize:PHImageManagerMaximumSize];
 }
 
+- (instancetype)initWithType:(PHAssetCollectionType)type subType:(PHAssetCollectionSubtype)subType mediaType:(PHAssetMediaType)mediaType allowsMultipleSelection:(BOOL)allowsMultipleSelection returnSize:(CGSize)returnSize {
+    return [self initWithType:type
+                      subType:subType
+                    mediaType:mediaType
+      allowsMultipleSelection:allowsMultipleSelection
+                   returnSize:returnSize
+              imageCountLimit:0];
+}
+
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType
                    mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection
-                  returnSize:(CGSize)returnSize {
+                  returnSize:(CGSize)returnSize
+             imageCountLimit:(NSInteger)imageCountLimit {
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.minimumLineSpacing = 0;
@@ -54,6 +64,7 @@
         self.subType = subType;
         self.mediaType = mediaType;
         self.returnSize = returnSize;
+        self.imageCountLimit = imageCountLimit;
         
         self.collectionView.backgroundColor = [UIColor whiteColor];
         self.collectionView.allowsMultipleSelection = allowsMultipleSelection;
@@ -196,6 +207,19 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.imageCountLimit > 0 && [self.selectedAssets count] >= self.imageCountLimit) {
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.mode = MBProgressHUDModeText;
+        NSString *msg = GFLocalizedString(@"select picture up limit message", nil);
+        hud.label.text = [NSString stringWithFormat:msg, (long)self.imageCountLimit];
+        [hud hideAnimated:YES afterDelay:2];
+        hud.completionBlock = ^{
+            [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+        };
+        
+        return;
+    }
+    
     PHAsset *asset = [self.dataSource objectAtIndexPath:indexPath];
     [self.selectedAssets addObject:asset];
     

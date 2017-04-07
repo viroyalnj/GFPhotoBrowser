@@ -28,6 +28,7 @@
 @property (nonatomic) PHAssetMediaType      mediaType;
 @property (nonatomic) BOOL                  allowsMultipleSelection;
 @property (nonatomic) CGSize                returnSize;
+@property (nonatomic) NSInteger             imageCountLimit;
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType
@@ -39,5 +40,12 @@
                    mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection
                   returnSize:(CGSize)returnSize;
+
+- (instancetype)initWithType:(PHAssetCollectionType)type
+                     subType:(PHAssetCollectionSubtype)subType
+                   mediaType:(PHAssetMediaType)mediaType
+     allowsMultipleSelection:(BOOL)allowsMultipleSelection
+                  returnSize:(CGSize)returnSize
+             imageCountLimit:(NSInteger)imageCountLimit;
 
 @end

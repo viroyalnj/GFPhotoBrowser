@@ -5,3 +5,6 @@
 "Save" = "存儲";
 
 "Albums" = "相簿";
+
+"select picture up limit message" = "最多可以選擇 %ld 張圖片";
+

@@ -58,7 +58,7 @@
                                                                                                subType:PHAssetCollectionSubtypeSmartAlbumUserLibrary
                                                                                              mediaType:PHAssetMediaTypeImage
                                                                                allowsMultipleSelection:NO
-                                                                                            returnType:PhotoMedium];
+                                                                                            returnSize:CGSizeMake(1024, 1024)];
     nav.delegate = self;
     
     [self presentViewController:nav

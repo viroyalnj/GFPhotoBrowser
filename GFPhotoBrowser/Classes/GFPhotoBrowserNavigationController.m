@@ -41,18 +41,34 @@
                    mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection
                   returnSize:(CGSize)returnSize {
+    return [self initWithType:type
+                      subType:subType
+                    mediaType:mediaType
+      allowsMultipleSelection:allowsMultipleSelection
+                   returnSize:returnSize
+              imageCountLimit:0];
+}
+
+- (instancetype)initWithType:(PHAssetCollectionType)type
+                     subType:(PHAssetCollectionSubtype)subType
+                   mediaType:(PHAssetMediaType)mediaType
+     allowsMultipleSelection:(BOOL)allowsMultipleSelection
+                  returnSize:(CGSize)returnSize
+             imageCountLimit:(NSInteger)imageCountLimit {
     
     GFAlbumViewController *album = [[GFAlbumViewController alloc] init];
     if (self = [super initWithRootViewController:album]) {
         self.mediaType = mediaType;
         self.allowsMultipleSelection = allowsMultipleSelection;
         self.returnSize = returnSize;
+        self.imageCountLimit = imageCountLimit;
         
         self.browserView = [[GFPhotoBrowserViewController alloc] initWithType:type
                                                                       subType:subType
                                                                     mediaType:mediaType
                                                       allowsMultipleSelection:self.allowsMultipleSelection
-                                                                   returnSize:returnSize];
+                                                                   returnSize:returnSize
+                                                              imageCountLimit:imageCountLimit];
         
         album.delegate = self;
         self.browserView.delegate = self;
