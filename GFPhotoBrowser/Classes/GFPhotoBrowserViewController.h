@@ -15,7 +15,6 @@
 
 @optional
 
-- (void)browser:(GFPhotoBrowserViewController *)browser selectAssets:(NSArray <PHAsset *> *)assets;
 - (void)browser:(GFPhotoBrowserViewController *)browser selectImages:(NSArray <UIImage *> *)images;
 
 @end

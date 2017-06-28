@@ -16,7 +16,6 @@
 
 @optional
 
-- (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectAssets:(NSArray<PHAsset *> *)assets;
 - (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectImages:(NSArray<UIImage *> *)images;
 
 @end

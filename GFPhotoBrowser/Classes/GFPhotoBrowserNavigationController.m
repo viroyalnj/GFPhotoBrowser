@@ -96,14 +96,6 @@
 
 #pragma mark - PhotoBrowserDelegate
 
-- (void)browser:(GFPhotoBrowserViewController *)browser selectAssets:(NSArray<PHAsset *> *)assets {
-    [self dismissViewControllerAnimated:YES completion:^{
-        if ([self.delegate respondsToSelector:@selector(browserNavi:selectAssets:)]) {
-            [self.delegate browserNavi:self selectAssets:assets];
-        }
-    }];
-}
-
 - (void)browser:(GFPhotoBrowserViewController *)browser selectImages:(NSArray<UIImage *> *)images {
     [self dismissViewControllerAnimated:YES completion:^{
         if ([self.delegate respondsToSelector:@selector(browserNavi:selectImages:)]) {
