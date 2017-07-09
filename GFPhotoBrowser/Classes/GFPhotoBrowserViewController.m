@@ -103,6 +103,20 @@
     self.automaticallyAdjustsScrollViewInsets = YES;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        CGRect rect = CGRectMake(0, self.collectionView.contentSize.height - 1, 1, 1);
+        [self.collectionView scrollRectToVisible:rect animated:NO];
+    });
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+}
+
 - (void)selectCancel {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -153,17 +167,6 @@
     self.title = [[sections firstObject] title];
     
     [self.collectionView reloadData];
-    
-    NSInteger section = [sections count] - 1;
-    PhotoSectionInfo *info = sections[section];
-    NSInteger count = [info numberOfObjects];
-    
-    if (count > 0) {
-        NSIndexPath *last = [NSIndexPath indexPathForItem:count - 1 inSection:section];
-        [self.collectionView scrollToItemAtIndexPath:last
-                                    atScrollPosition:UICollectionViewScrollPositionBottom
-                                            animated:NO];
-    }
 }
 
 - (void)didReceiveMemoryWarning {
