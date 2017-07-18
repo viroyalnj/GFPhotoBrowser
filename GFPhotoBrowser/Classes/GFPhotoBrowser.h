@@ -13,5 +13,6 @@
 #import "GFPhotoBrowserViewController.h"
 #import "GFPhotoBrowserNavigationController.h"
 #import "GFPhotoCropViewController.h"
+#import "NSBundle+GFPhotoBrowser.h"
 
 #endif /* GFPhotoBrowser_h */
