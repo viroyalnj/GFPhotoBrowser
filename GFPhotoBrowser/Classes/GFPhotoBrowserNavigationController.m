@@ -104,6 +104,14 @@
     }];
 }
 
+- (void)browser:(GFPhotoBrowserViewController *)browser selectVideos:(NSArray<NSURL *> *)videos {
+    [self dismissViewControllerAnimated:YES completion:^{
+        if ([self.delegate respondsToSelector:@selector(browserNavi:selectVideos:)]) {
+            [self.delegate browserNavi:self selectVideos:videos];
+        }
+    }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

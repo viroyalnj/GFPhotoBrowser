@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/guofengld/GFPhotoBrowser.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/guofengjd'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '8.1'
 
   s.source_files = 'GFPhotoBrowser/Classes/GFPhotoBrowser.h'
   
@@ -41,6 +41,7 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'MBProgressHUD'
   s.dependency 'Masonry'
+  s.dependency 'GFCocoaTools'
 
   s.subspec 'Models' do |ss|
     ss.source_files = ['GFPhotoBrowser/Classes/GFPhotosDataSource.{h,m}', 'GFPhotoBrowser/Classes/NSBundle+GFPhotoBrowser.{h,m}']

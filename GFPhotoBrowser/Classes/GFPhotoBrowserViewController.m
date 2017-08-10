@@ -128,29 +128,65 @@
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         dispatch_group_t group = dispatch_group_create();
         for (PHAsset *item in self.selectedAssets) {
-            PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-            options.networkAccessAllowed = YES;
-            options.synchronous = YES;
-            
-            dispatch_group_enter(group);
-            [[PHImageManager defaultManager] requestImageForAsset:item
-                                                       targetSize:self.returnSize
-                                                      contentMode:PHImageContentModeDefault
-                                                          options:options
-                                                    resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                                                        if (result) {
-                                                            [arr addObject:result];
-                                                        }
-                                                        
-                                                        dispatch_group_leave(group);
-                                                    }];
+            if (item.mediaType == PHAssetMediaTypeVideo) {
+                PHVideoRequestOptions *options = [[PHVideoRequestOptions alloc] init];
+                options.networkAccessAllowed = YES;
+                
+                dispatch_group_enter(group);
+                [[PHImageManager defaultManager] requestExportSessionForVideo:item
+                                                                      options:options
+                                                                 exportPreset:AVAssetExportPreset640x480
+                                                                resultHandler:^(AVAssetExportSession * _Nullable exportSession, NSDictionary * _Nullable info) {
+                                                                    NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask] lastObject];
+                                                                    url = [url URLByAppendingPathComponent:@"video.mov"];
+                                                                    [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
+                                                                    
+                                                                    exportSession.outputURL = url;
+                                                                    exportSession.outputFileType = AVFileTypeQuickTimeMovie;
+                                                                    
+                                                                    [exportSession exportAsynchronouslyWithCompletionHandler:^{
+                                                                        if (exportSession.status == AVAssetExportSessionStatusCompleted) {
+                                                                            [arr addObject:url];
+                                                                            dispatch_group_leave(group);
+                                                                        }
+                                                                        else {
+                                                                            dispatch_group_leave(group);
+                                                                        }
+                                                                    }];
+                                                                }];
+            }
+            else if (item.mediaType == PHAssetMediaTypeImage) {
+                PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+                options.networkAccessAllowed = YES;
+                options.synchronous = YES;
+                
+                dispatch_group_enter(group);
+                [[PHImageManager defaultManager] requestImageForAsset:item
+                                                           targetSize:self.returnSize
+                                                          contentMode:PHImageContentModeDefault
+                                                              options:options
+                                                        resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                                                            if (result) {
+                                                                [arr addObject:result];
+                                                            }
+                                                            
+                                                            dispatch_group_leave(group);
+                                                        }];
+            }
         }
         
         dispatch_group_notify(group, dispatch_get_main_queue(), ^{
             [hud hideAnimated:YES];
             hud.completionBlock = ^() {
-                if ([self.delegate respondsToSelector:@selector(browser:selectImages:)]) {
-                    [self.delegate browser:self selectImages:arr.copy];
+                if (self.mediaType == PHAssetMediaTypeImage) {
+                    if ([self.delegate respondsToSelector:@selector(browser:selectImages:)]) {
+                        [self.delegate browser:self selectImages:arr.copy];
+                    }
+                }
+                else if (self.mediaType == PHAssetMediaTypeVideo) {
+                    if ([self.delegate respondsToSelector:@selector(browser:selectVideos:)]) {
+                        [self.delegate browser:self selectVideos:arr.copy];
+                    }
                 }
             };
         });

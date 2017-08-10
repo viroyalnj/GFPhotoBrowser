@@ -17,6 +17,7 @@
 @optional
 
 - (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectImages:(NSArray<UIImage *> *)images;
+- (void)browserNavi:(GFPhotoBrowserNavigationController *)nav selectVideos:(NSArray<NSURL *> *)videos;
 
 @end
 
