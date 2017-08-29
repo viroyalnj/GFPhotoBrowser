@@ -92,10 +92,15 @@
     _asset = asset;
     
     __weak typeof(self) wself = self;
+    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+    options.networkAccessAllowed = YES;
+    options.synchronous = YES;
+    options.resizeMode = PHImageRequestOptionsResizeModeFast;
+    
     [[PHImageManager defaultManager] requestImageForAsset:asset
                                                targetSize:CGSizeMake(128, 128)
                                               contentMode:PHImageContentModeDefault
-                                                  options:nil
+                                                  options:options
                                             resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
                                                 if (result) {
                                                     wself.imageView.image = result;

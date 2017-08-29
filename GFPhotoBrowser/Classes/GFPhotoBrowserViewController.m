@@ -159,6 +159,7 @@
                 PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
                 options.networkAccessAllowed = YES;
                 options.synchronous = YES;
+                options.resizeMode = PHImageRequestOptionsResizeModeFast;
                 
                 dispatch_group_enter(group);
                 [[PHImageManager defaultManager] requestImageForAsset:item
