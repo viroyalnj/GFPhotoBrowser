@@ -125,22 +125,23 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     NSMutableArray *arr = [NSMutableArray array];
+    NSMutableDictionary *videoThumbnail = [NSMutableDictionary dictionary];
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         dispatch_group_t group = dispatch_group_create();
         for (PHAsset *item in self.selectedAssets) {
             if (item.mediaType == PHAssetMediaTypeVideo) {
-                PHVideoRequestOptions *options = [[PHVideoRequestOptions alloc] init];
-                options.networkAccessAllowed = YES;
+                PHVideoRequestOptions *videoOptions = [[PHVideoRequestOptions alloc] init];
+                videoOptions.networkAccessAllowed = YES;
+                
+                NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask] lastObject];
+                url = [url URLByAppendingPathComponent:@"video.mov"];
+                [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
                 
                 dispatch_group_enter(group);
                 [[PHImageManager defaultManager] requestExportSessionForVideo:item
-                                                                      options:options
+                                                                      options:videoOptions
                                                                  exportPreset:AVAssetExportPreset640x480
                                                                 resultHandler:^(AVAssetExportSession * _Nullable exportSession, NSDictionary * _Nullable info) {
-                                                                    NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask] lastObject];
-                                                                    url = [url URLByAppendingPathComponent:@"video.mov"];
-                                                                    [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
-                                                                    
                                                                     exportSession.outputURL = url;
                                                                     exportSession.outputFileType = AVFileTypeQuickTimeMovie;
                                                                     
@@ -154,6 +155,24 @@
                                                                         }
                                                                     }];
                                                                 }];
+                
+                PHImageRequestOptions *imageOptions = [[PHImageRequestOptions alloc] init];
+                imageOptions.networkAccessAllowed = YES;
+                imageOptions.synchronous = YES;
+                
+                dispatch_group_enter(group);
+                [[PHImageManager defaultManager] requestImageForAsset:item
+                                                           targetSize:CGSizeMake(516, 516)
+                                                          contentMode:PHImageContentModeAspectFit
+                                                              options:imageOptions
+                                                        resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                                                            if (result) {
+                                                                [videoThumbnail setObject:result forKey:url];
+                                                                [videoThumbnail setObject:@(result.size.height) forKey:@"height"];
+                                                                [videoThumbnail setObject:@(result.size.width) forKey:@"width"];
+                                                            }
+                                                            dispatch_group_leave(group);
+                                                        }];
             }
             else if (item.mediaType == PHAssetMediaTypeImage) {
                 PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
@@ -186,7 +205,22 @@
                 }
                 else if (self.mediaType == PHAssetMediaTypeVideo) {
                     if ([self.delegate respondsToSelector:@selector(browser:selectVideos:)]) {
-                        [self.delegate browser:self selectVideos:arr.copy];
+                        NSMutableArray *result = [NSMutableArray array];
+                        for (NSURL *item in arr) {
+                            UIImage *thumbnail = videoThumbnail[item];
+                            NSMutableDictionary *data = [NSMutableDictionary dictionary];
+                            [data setObject:item forKey:@"filePath"];
+                            if (thumbnail) {
+                                [data setObject:thumbnail forKeyedSubscript:@"thumbnail"];
+                                NSNumber *height = videoThumbnail[@"height"];
+                                [data setObject:height forKey:@"height"];
+                                NSNumber *width = videoThumbnail[@"width"];
+                                [data setObject:width forKey:@"width"];
+                            }
+                            
+                            [result addObject:data];
+                        }
+                        [self.delegate browser:self selectVideos:result.copy];
                     }
                 }
             };

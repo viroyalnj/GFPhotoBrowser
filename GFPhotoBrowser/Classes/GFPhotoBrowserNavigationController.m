@@ -104,7 +104,8 @@
     }];
 }
 
-- (void)browser:(GFPhotoBrowserViewController *)browser selectVideos:(NSArray<NSURL *> *)videos {
+- (void)browser:(GFPhotoBrowserViewController *)browser
+   selectVideos:(NSArray<NSURL *> *)videos {
     [self dismissViewControllerAnimated:YES completion:^{
         if ([self.delegate respondsToSelector:@selector(browserNavi:selectVideos:)]) {
             [self.delegate browserNavi:self selectVideos:videos];
