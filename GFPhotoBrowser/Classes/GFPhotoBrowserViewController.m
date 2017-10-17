@@ -209,7 +209,7 @@
                         for (NSURL *item in arr) {
                             UIImage *thumbnail = videoThumbnail[item];
                             NSMutableDictionary *data = [NSMutableDictionary dictionary];
-                            [data setObject:item forKey:@"filePath"];
+                            [data setObject:item forKey:@"fileUrl"];
                             if (thumbnail) {
                                 [data setObject:thumbnail forKeyedSubscript:@"thumbnail"];
                                 NSNumber *height = videoThumbnail[@"height"];
