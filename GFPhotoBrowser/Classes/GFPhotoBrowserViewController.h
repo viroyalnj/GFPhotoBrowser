@@ -25,6 +25,7 @@
 @property (nonatomic, weak) id <PhotoBrowserDelegate>   delegate;
 @property (nonatomic, assign) CGSize                    returnSize;
 @property (nonatomic, assign) NSInteger                 imageCountLimit;
+@property (nonatomic, assign) NSUInteger                fileLengthLimit;
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
                      subType:(PHAssetCollectionSubtype)subType
@@ -42,7 +43,7 @@
                    mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection
                   returnSize:(CGSize)returnSize
-             imageCountLimit:(NSInteger)imageCountLimit;
-;
+             imageCountLimit:(NSInteger)imageCountLimit
+             fileLengthLimit:(NSUInteger)fileLengthLimit;
 
 @end

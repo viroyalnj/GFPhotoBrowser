@@ -46,7 +46,8 @@
                     mediaType:mediaType
       allowsMultipleSelection:allowsMultipleSelection
                    returnSize:returnSize
-              imageCountLimit:0];
+              imageCountLimit:0
+              fileLengthLimit:0];
 }
 
 - (instancetype)initWithType:(PHAssetCollectionType)type
@@ -54,7 +55,8 @@
                    mediaType:(PHAssetMediaType)mediaType
      allowsMultipleSelection:(BOOL)allowsMultipleSelection
                   returnSize:(CGSize)returnSize
-             imageCountLimit:(NSInteger)imageCountLimit {
+             imageCountLimit:(NSInteger)imageCountLimit
+             fileLengthLimit:(NSUInteger)fileLengthLimit {
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.minimumLineSpacing = 0;
@@ -65,6 +67,7 @@
         self.mediaType = mediaType;
         self.returnSize = returnSize;
         self.imageCountLimit = imageCountLimit;
+        self.fileLengthLimit = fileLengthLimit;
         
         self.collectionView.backgroundColor = [UIColor whiteColor];
         self.collectionView.allowsMultipleSelection = allowsMultipleSelection;
@@ -144,7 +147,7 @@
                                                                 resultHandler:^(AVAssetExportSession * _Nullable exportSession, NSDictionary * _Nullable info) {
                                                                     exportSession.outputURL = url;
                                                                     exportSession.outputFileType = AVFileTypeQuickTimeMovie;
-                                                                    
+                                                                    exportSession.fileLengthLimit = self.fileLengthLimit;
                                                                     [exportSession exportAsynchronouslyWithCompletionHandler:^{
                                                                         if (exportSession.status == AVAssetExportSessionStatusCompleted) {
                                                                             [arr addObject:url];
