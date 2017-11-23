@@ -126,6 +126,7 @@
 
 - (void)selectDone {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.label.text = @"导出中";
     
     NSMutableArray *arr = [NSMutableArray array];
     NSMutableDictionary *videoThumbnail = [NSMutableDictionary dictionary];
