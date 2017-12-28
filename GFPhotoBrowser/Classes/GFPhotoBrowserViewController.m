@@ -200,9 +200,23 @@
         }
         
         dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+            BOOL success = self.selectedAssets.count == arr.count;
             [hud hideAnimated:YES];
+            
             hud.completionBlock = ^() {
-                if (self.mediaType == PHAssetMediaTypeImage) {
+                if (arr.count == 0) {
+                    [self.selectedAssets removeAllObjects];
+                    
+                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
+                                                                                   message:@"选择失败，请检查网络"
+                                                                            preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertAction *done = [UIAlertAction actionWithTitle:@"知道了"
+                                                                   style:UIAlertActionStyleCancel
+                                                                 handler:nil];
+                    [alert addAction:done];
+                    [self presentViewController:alert animated:YES completion:nil];
+                }
+                else if (self.mediaType == PHAssetMediaTypeImage) {
                     if ([self.delegate respondsToSelector:@selector(browser:selectImages:)]) {
                         [self.delegate browser:self selectImages:arr.copy];
                     }
