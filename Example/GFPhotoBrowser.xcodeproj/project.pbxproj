@@ -17,7 +17,7 @@
 		6003F59E195388D20070C39A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AppDelegate.m */; };
 		6003F5A7195388D20070C39A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* ViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		BB7E8AECEF92BB14F138D326 /* libPods-GFPhotoBrowser_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B832268AF246F1BED92926C4 /* libPods-GFPhotoBrowser_Example.a */; };
+		70534E23B102F891D20D1F07 /* Pods_GFPhotoBrowser_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1F13514D5F91F451C44D8A /* Pods_GFPhotoBrowser_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +48,7 @@
 		6BDECC104523377EB7C10A41 /* Pods-GFPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
 		83FCCC9FE2B25C13071E29AB /* Pods-GFPhotoBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Tests/Pods-GFPhotoBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA7AE5E1E13425500C44636 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
-		B832268AF246F1BED92926C4 /* libPods-GFPhotoBrowser_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GFPhotoBrowser_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1F13514D5F91F451C44D8A /* Pods_GFPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GFPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F13C85DE8DDB2D83E11F46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E2901D9361B508FB936C373D /* Pods-GFPhotoBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Tests/Pods-GFPhotoBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FE0D4109DDAAB50CAE8B4250 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				BB7E8AECEF92BB14F138D326 /* libPods-GFPhotoBrowser_Example.a in Frameworks */,
+				70534E23B102F891D20D1F07 /* Pods_GFPhotoBrowser_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +108,7 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				4CD76D121FE7E3CD95D9C76A /* Pods_GFPhotoBrowser_Tests.framework */,
-				B832268AF246F1BED92926C4 /* libPods-GFPhotoBrowser_Example.a */,
+				BF1F13514D5F91F451C44D8A /* Pods_GFPhotoBrowser_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,8 +266,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/GFCocoaTools/GFCocoaTools.bundle,
-				$PODS_CONFIGURATION_BUILD_DIR/GFPhotoBrowser/GFPhotoBrowser.bundle,
+				"$PODS_CONFIGURATION_BUILD_DIR/GFCocoaTools/GFCocoaTools.bundle",
+				"$PODS_CONFIGURATION_BUILD_DIR/GFPhotoBrowser/GFPhotoBrowser.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -284,9 +284,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GFCocoaTools/GFCocoaTools.framework",
+				"${BUILT_PRODUCTS_DIR}/GFPhotoBrowser/GFPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GFCocoaTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GFPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

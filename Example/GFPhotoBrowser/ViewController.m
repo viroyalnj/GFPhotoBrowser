@@ -35,9 +35,9 @@
         self.titleLabel = [[UILabel alloc] init];
         [self addSubview:self.titleLabel];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.mas_leftMargin);
-            make.top.equalTo(self.mas_topMargin);
-            make.bottom.equalTo(self.mas_bottomMargin);
+            make.left.equalTo(self.mas_left);
+            make.top.equalTo(self.mas_top);
+            make.bottom.equalTo(self.mas_bottom);
         }];
         
         self.detailLabel = [[UILabel alloc] init];
@@ -45,9 +45,9 @@
         [self addSubview:self.detailLabel];
         [self.detailLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.greaterThanOrEqualTo(self.titleLabel.mas_right);
-            make.right.equalTo(self.mas_rightMargin);
-            make.top.equalTo(self.mas_topMargin);
-            make.bottom.equalTo(self.mas_bottomMargin);
+            make.right.equalTo(self.mas_right);
+            make.top.equalTo(self.mas_top);
+            make.bottom.equalTo(self.mas_bottom);
         }];
     }
     

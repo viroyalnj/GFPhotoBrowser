@@ -200,7 +200,6 @@
         }
         
         dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-            BOOL success = self.selectedAssets.count == arr.count;
             [hud hideAnimated:YES];
             
             hud.completionBlock = ^() {

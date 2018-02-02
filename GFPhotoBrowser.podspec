@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GFPhotoBrowser'
-  s.version          = '0.2.1'
+  s.version          = '0.3.0'
   s.summary          = 'iOS Photos 框架的简单封装'
+  s.module_name      = 'GFPhotoBrowser'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,6 +31,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/guofengjd'
 
   s.ios.deployment_target = '8.1'
+  s.requires_arc = true
 
   s.source_files = 'GFPhotoBrowser/Classes/GFPhotoBrowser.h'
   
