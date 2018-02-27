@@ -38,7 +38,8 @@
     static dispatch_once_t onceToken;
     static NSBundle *bundle;
     dispatch_once(&onceToken, ^{
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"GFPhotoBrowser" ofType:@"bundle"];
+        NSBundle *frameworkBundle = [NSBundle bundleForClass:@"GFPhotoBrowser"];
+        NSString *path = [frameworkBundle pathForResource:@"Resources" ofType:@"bundle"];
         bundle = [NSBundle bundleWithPath:path];
     });
     

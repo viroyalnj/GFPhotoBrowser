@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   s.source_files = 'GFPhotoBrowser/Classes/GFPhotoBrowser.h'
   
    s.resource_bundles = {
-     'GFPhotoBrowser' => ['GFPhotoBrowser/Assets/*.png', 'GFPhotoBrowser/Assets/*.lproj']
+     'Resources' => ['GFPhotoBrowser/Assets/*.png', 'GFPhotoBrowser/Assets/*.lproj']
    }
 
   s.public_header_files = 'GFPhotoBrowser/Classes/GFPhotoBrowser.h'
