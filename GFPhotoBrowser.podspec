@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GFPhotoBrowser'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'iOS Photos 框架的简单封装'
   s.module_name      = 'GFPhotoBrowser'
 
