@@ -138,7 +138,7 @@
                 videoOptions.networkAccessAllowed = YES;
                 
                 NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask] lastObject];
-                url = [url URLByAppendingPathComponent:@"video.mov"];
+                url = [url URLByAppendingPathComponent:@"video.mp4"];
                 [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
                 
                 dispatch_group_enter(group);
@@ -147,7 +147,7 @@
                                                                  exportPreset:AVAssetExportPreset640x480
                                                                 resultHandler:^(AVAssetExportSession * _Nullable exportSession, NSDictionary * _Nullable info) {
                                                                     exportSession.outputURL = url;
-                                                                    exportSession.outputFileType = AVFileTypeQuickTimeMovie;
+                                                                    exportSession.outputFileType = AVFileTypeMPEG4;
                                                                     exportSession.fileLengthLimit = self.fileLengthLimit;
                                                                     [exportSession exportAsynchronouslyWithCompletionHandler:^{
                                                                         if (exportSession.status == AVAssetExportSessionStatusCompleted) {
