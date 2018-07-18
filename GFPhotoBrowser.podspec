@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'MBProgressHUD'
   s.dependency 'Masonry'
-  s.dependency 'GFCocoaTools'
+  s.dependency 'VICocoaTools'
 
   s.subspec 'Models' do |ss|
     ss.source_files = ['GFPhotoBrowser/Classes/GFPhotosDataSource.{h,m}', 'GFPhotoBrowser/Classes/NSBundle+GFPhotoBrowser.{h,m}']
