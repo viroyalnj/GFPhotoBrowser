@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/guofengjd/work/github/VIPhotoBrowser/Example/VIPhotoBrowser.xcodeproj">
+      location = "group:VIPhotoBrowser.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

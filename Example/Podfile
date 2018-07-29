@@ -3,10 +3,10 @@ platform :ios, '8.1'
 inhibit_all_warnings!
 use_frameworks!
 
-target 'GFPhotoBrowser_Example' do
+target 'VIPhotoBrowser_Example' do
 
-  # Pods for GFPhotoBrowser_Example
-  pod 'GFPhotoBrowser', :path => '../'
+  # Pods for VIPhotoBrowser_Example
+  pod 'VIPhotoBrowser', :path => '../'
   pod 'Masonry'
 
 end

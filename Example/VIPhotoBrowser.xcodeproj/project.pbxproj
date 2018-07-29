@@ -17,24 +17,25 @@
 		6003F59E195388D20070C39A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AppDelegate.m */; };
 		6003F5A7195388D20070C39A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* ViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		70534E23B102F891D20D1F07 /* Pods_GFPhotoBrowser_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1F13514D5F91F451C44D8A /* Pods_GFPhotoBrowser_Example.framework */; };
+		F8F7B038B07FE9E7F39889C7 /* Pods_VIPhotoBrowser_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85570C5071FF56BB4DA01921 /* Pods_VIPhotoBrowser_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		034433011DCC7443004E55EA /* PhotoSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSelectViewController.h; sourceTree = "<group>"; };
 		034433021DCC7443004E55EA /* PhotoSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSelectViewController.m; sourceTree = "<group>"; };
 		034433101DCC757F004E55EA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		32F7C5A70D1FCA7D087ACFAE /* GFPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GFPhotoBrowser.podspec; path = ../GFPhotoBrowser.podspec; sourceTree = "<group>"; };
+		32F7C5A70D1FCA7D087ACFAE /* VIPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VIPhotoBrowser.podspec; path = ../VIPhotoBrowser.podspec; sourceTree = "<group>"; };
 		3A73FAE4EB28F4723A321BD3 /* Pods-GFPhotoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4CD76D121FE7E3CD95D9C76A /* Pods_GFPhotoBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GFPhotoBrowser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* GFPhotoBrowser_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFPhotoBrowser_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5446E48AC7E77ACDE825A311 /* Pods-VIPhotoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPhotoBrowser_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPhotoBrowser_Example/Pods-VIPhotoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* VIPhotoBrowser_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPhotoBrowser_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* GFPhotoBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GFPhotoBrowser-Info.plist"; sourceTree = "<group>"; };
+		6003F595195388D20070C39A /* VIPhotoBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VIPhotoBrowser-Info.plist"; sourceTree = "<group>"; };
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* GFPhotoBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GFPhotoBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* VIPhotoBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VIPhotoBrowser-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -47,8 +48,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6BDECC104523377EB7C10A41 /* Pods-GFPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
 		83FCCC9FE2B25C13071E29AB /* Pods-GFPhotoBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Tests/Pods-GFPhotoBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		85570C5071FF56BB4DA01921 /* Pods_VIPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA7AE5E1E13425500C44636 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		BF1F13514D5F91F451C44D8A /* Pods_GFPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GFPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C4E64AE53CB356A41FC0A7 /* Pods-VIPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPhotoBrowser_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIPhotoBrowser_Example/Pods-VIPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C9F13C85DE8DDB2D83E11F46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E2901D9361B508FB936C373D /* Pods-GFPhotoBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFPhotoBrowser_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFPhotoBrowser_Tests/Pods-GFPhotoBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FE0D4109DDAAB50CAE8B4250 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -62,7 +65,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				70534E23B102F891D20D1F07 /* Pods_GFPhotoBrowser_Example.framework in Frameworks */,
+				F8F7B038B07FE9E7F39889C7 /* Pods_VIPhotoBrowser_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,8 @@
 				6BDECC104523377EB7C10A41 /* Pods-GFPhotoBrowser_Example.release.xcconfig */,
 				83FCCC9FE2B25C13071E29AB /* Pods-GFPhotoBrowser_Tests.debug.xcconfig */,
 				E2901D9361B508FB936C373D /* Pods-GFPhotoBrowser_Tests.release.xcconfig */,
+				5446E48AC7E77ACDE825A311 /* Pods-VIPhotoBrowser_Example.debug.xcconfig */,
+				C8C4E64AE53CB356A41FC0A7 /* Pods-VIPhotoBrowser_Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -95,7 +100,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* GFPhotoBrowser_Example.app */,
+				6003F58A195388D20070C39A /* VIPhotoBrowser_Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				4CD76D121FE7E3CD95D9C76A /* Pods_GFPhotoBrowser_Tests.framework */,
 				BF1F13514D5F91F451C44D8A /* Pods_GFPhotoBrowser_Example.framework */,
+				85570C5071FF56BB4DA01921 /* Pods_VIPhotoBrowser_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,10 +139,10 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* GFPhotoBrowser-Info.plist */,
+				6003F595195388D20070C39A /* VIPhotoBrowser-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* GFPhotoBrowser-Prefix.pch */,
+				6003F59B195388D20070C39A /* VIPhotoBrowser-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -163,7 +169,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				32F7C5A70D1FCA7D087ACFAE /* GFPhotoBrowser.podspec */,
+				32F7C5A70D1FCA7D087ACFAE /* VIPhotoBrowser.podspec */,
 				FE0D4109DDAAB50CAE8B4250 /* README.md */,
 				C9F13C85DE8DDB2D83E11F46 /* LICENSE */,
 				AEA7AE5E1E13425500C44636 /* .travis.yml */,
@@ -174,24 +180,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* GFPhotoBrowser_Example */ = {
+		6003F589195388D20070C39A /* VIPhotoBrowser_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "GFPhotoBrowser_Example" */;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "VIPhotoBrowser_Example" */;
 			buildPhases = (
 				2017367D76E05D7095070394 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				CA1677E672AC58D7D52552EC /* [CP] Embed Pods Frameworks */,
-				BEAA5F75FB59B3DB76E3925E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GFPhotoBrowser_Example;
+			name = VIPhotoBrowser_Example;
 			productName = GFPhotoBrowser;
-			productReference = 6003F58A195388D20070C39A /* GFPhotoBrowser_Example.app */;
+			productReference = 6003F58A195388D20070C39A /* VIPhotoBrowser_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -201,7 +206,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = GF;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = guofengld;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
@@ -209,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "GFPhotoBrowser" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "VIPhotoBrowser" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -222,7 +227,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* GFPhotoBrowser_Example */,
+				6003F589195388D20070C39A /* VIPhotoBrowser_Example */,
 			);
 		};
 /* End PBXProject section */
@@ -252,30 +257,11 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GFPhotoBrowser_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-VIPhotoBrowser_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BEAA5F75FB59B3DB76E3925E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/GFCocoaTools/GFCocoaTools.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/GFPhotoBrowser/GFPhotoBrowser.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CA1677E672AC58D7D52552EC /* [CP] Embed Pods Frameworks */ = {
@@ -284,26 +270,28 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GFCocoaTools/GFCocoaTools.framework",
-				"${BUILT_PRODUCTS_DIR}/GFPhotoBrowser/GFPhotoBrowser.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-VIPhotoBrowser_Example/Pods-VIPhotoBrowser_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/VICocoaTools/VICocoaTools.framework",
+				"${BUILT_PRODUCTS_DIR}/VIPhotoBrowser/VIPhotoBrowser.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GFCocoaTools.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GFPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VICocoaTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VIPhotoBrowser.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GFPhotoBrowser_Example/Pods-GFPhotoBrowser_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPhotoBrowser_Example/Pods-VIPhotoBrowser_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -354,12 +342,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -405,12 +395,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -439,13 +431,13 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A73FAE4EB28F4723A321BD3 /* Pods-GFPhotoBrowser_Example.debug.xcconfig */;
+			baseConfigurationReference = 5446E48AC7E77ACDE825A311 /* Pods-VIPhotoBrowser_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N7F69UBB9A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GFPhotoBrowser/GFPhotoBrowser-Prefix.pch";
-				INFOPLIST_FILE = "GFPhotoBrowser/GFPhotoBrowser-Info.plist";
+				GCC_PREFIX_HEADER = "GFPhotoBrowser/VIPhotoBrowser-Prefix.pch";
+				INFOPLIST_FILE = "GFPhotoBrowser/VIPhotoBrowser-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viroyal.photosBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,13 +447,13 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BDECC104523377EB7C10A41 /* Pods-GFPhotoBrowser_Example.release.xcconfig */;
+			baseConfigurationReference = C8C4E64AE53CB356A41FC0A7 /* Pods-VIPhotoBrowser_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N7F69UBB9A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GFPhotoBrowser/GFPhotoBrowser-Prefix.pch";
-				INFOPLIST_FILE = "GFPhotoBrowser/GFPhotoBrowser-Info.plist";
+				GCC_PREFIX_HEADER = "GFPhotoBrowser/VIPhotoBrowser-Prefix.pch";
+				INFOPLIST_FILE = "GFPhotoBrowser/VIPhotoBrowser-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viroyal.photosBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,7 +464,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "GFPhotoBrowser" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "VIPhotoBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,
@@ -481,7 +473,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "GFPhotoBrowser_Example" */ = {
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "VIPhotoBrowser_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,

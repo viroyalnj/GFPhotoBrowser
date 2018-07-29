@@ -8,7 +8,6 @@
 
 #import "PhotoSelectViewController.h"
 #import <Masonry/Masonry.h>
-#import <GFPhotoBrowser/GFPhotoBrowser.h>
 #import "AppDelegate.h"
 
 @interface PhotoSelectViewController () < GFPhotoBrowserNavigationDelegate, GFPhotoCropViewControllerDelegate >
