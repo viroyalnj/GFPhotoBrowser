@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VIPhotoBrowser'
-  s.version          = '0.4'
+  s.version          = '0.4.1'
   s.summary          = 'iOS Photos 框架的简单封装'
   s.module_name      = 'VIPhotoBrowser'
 

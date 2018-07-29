@@ -38,7 +38,7 @@
     static dispatch_once_t onceToken;
     static NSBundle *bundle;
     dispatch_once(&onceToken, ^{
-        NSBundle *frameworkBundle = [NSBundle bundleWithIdentifier:@"org.cocoapods.GFPhotoBrowser"];
+        NSBundle *frameworkBundle = [NSBundle bundleWithIdentifier:@"org.cocoapods.VIPhotoBrowser"];
         NSString *path = [frameworkBundle pathForResource:@"Resources" ofType:@"bundle"];
         bundle = [NSBundle bundleWithPath:path];
     });
